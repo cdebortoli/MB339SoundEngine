@@ -1,0 +1,2150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{AB3C5C07-49BD-4B39-B9A1-DE426F8E20E6}" SchemaVersion="97">
+	<AudioObjects>
+		<WorkUnit Name="MyCompany_Simple_Aircraft_AI" ID="{AB3C5C07-49BD-4B39-B9A1-DE426F8E20E6}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="3D" ID="{B13A6F93-8D8C-475B-BB8F-1BA567D44EF8}" ShortID="763719936">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+						<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>28</Value>
+							</ValueList>
+						</Property>
+						<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+						<Property Name="OverrideAnalysis" Type="bool" Value="True"/>
+						<Property Name="OverridePriority" Type="bool" Value="True"/>
+						<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+						<Property Name="Priority" Type="int16">
+							<ValueList>
+								<Value>75</Value>
+							</ValueList>
+						</Property>
+						<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
+						<Property Name="PriorityDistanceOffset" Type="int16">
+							<ValueList>
+								<Value>-75</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{26DFA8B9-2139-4BE0-A396-B093B58E5602}" ShortID="101408921">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="NPC_ALPHA_PERCENT" ID="{14F1853C-1D12-4F07-B583-A7274D2A0E83}" WorkUnitID="{742EF63C-F0A5-48E1-975E-6473B4EFF249}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{384B6738-8AC2-46A7-B581-DE11DEB7EADF}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-200</YPos>
+												<Flags>5</Flags>
+												<SegmentShape>Exp2</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>0.1</XPos>
+												<YPos>-200</YPos>
+												<Flags>0</Flags>
+												<SegmentShape>SCurve</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="aircraft_wwisedata_ai" ID="{D7886F48-F5D1-42DF-96D4-56494342581A}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Folder Name="engine" ID="{0ED95BD9-1AAA-466C-B8D0-0C86D9BB5CD2}" ShortID="878472827">
+							<ChildrenList>
+								<ActorMixer Name="engine" ID="{8CA5606F-2D3C-4D4D-86D1-B7DE468FCBEC}" ShortID="1056116018">
+									<PropertyList>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+										<Property Name="CenterPercentage" Type="int32">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
+										</Property>
+										<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+										<Property Name="OverrideConversion" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<RTPCList>
+												<RTPC Name="" ID="{61EE23C2-DCEA-449F-80C4-9C8C58C46BEA}" ShortID="305471610">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="ENV_DOPPLERCENTS" ID="{05BB02CD-EBB3-47D1-9A4B-320AA5FE6C21}" WorkUnitID="{53AC294C-40DF-4FF3-A7A2-A02A6282BF91}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{2D2F2FBF-20F3-497F-A506-C7375DF2A307}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>-4800</XPos>
+																<YPos>-4800</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>4800</XPos>
+																<YPos>4800</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="Priority" Type="int16">
+											<ValueList>
+												<Value>75</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
+										<Property Name="PriorityDistanceOffset" Type="int16">
+											<ValueList>
+												<Value>-75</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="NoDCOffset_Conversion_Settings" ID="{2463764E-1C92-49C9-B7B9-69C9CD89583D}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<BlendContainer Name="combustion_start_propeller" ID="{2614FB51-200C-4A25-820C-DA7BF1BD388D}" ShortID="583061370">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="Highpass" Type="int16">
+													<RTPCList>
+														<RTPC Name="" ID="{6A07CD84-5D1D-4462-B2B7-8853F6A05B12}" ShortID="164707673">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="SIMVAR_GENERAL_ENG_COMBUSTION_SOUND_PERCENT" ID="{6248DE76-391F-4AD0-84AA-AC5683CBB4A3}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{6CCDC4AF-C352-4839-A2AE-0C7DAA42760E}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>28</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.6</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Exp3</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+												<Property Name="Priority" Type="int16">
+													<ValueList>
+														<Value>75</Value>
+													</ValueList>
+												</Property>
+												<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
+												<Property Name="PriorityDistanceOffset" Type="int16">
+													<ValueList>
+														<Value>-75</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{7A73682D-A37F-4931-A2C4-7B5BCC740C66}" ShortID="956954477">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="SIMVAR_GENERAL_ENG_COMBUSTION_SOUND_PERCENT" ID="{6248DE76-391F-4AD0-84AA-AC5683CBB4A3}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{9E000CF8-8FE7-4F4B-BCC3-718A7E05605B}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-3</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="aircraft_player_outside_piston_1500m_propeller_01" ID="{0D903A56-C1B5-4CC1-9230-12DF1DC2D0AB}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="NoDCOffset_Conversion_Settings" ID="{2463764E-1C92-49C9-B7B9-69C9CD89583D}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="propeller_ai" ID="{26EA3E07-9FD7-404A-B687-524D51E62BD1}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="rev_outdoor_aircraft" ID="{3070D14E-37F3-4DB4-8C7E-262318A02693}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+												<Reference Name="UserAuxSend1">
+													<ObjectRef Name="disto_overspeed" ID="{5815E54F-778D-4C14-BF59-097980689171}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Sample_Aircraft_Piston_engine_outside_front_combustion_start" ID="{4AEE327F-DDD1-4447-B24A-B45EBF2920C2}" ShortID="568955896">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-6</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="aircraft_player_outside_piston_1500m_propeller_01" ID="{0D903A56-C1B5-4CC1-9230-12DF1DC2D0AB}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="propeller_outside_generic" ID="{2A84999E-F49C-4CA6-9DA5-58EEE17A3559}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sample_Aircraft_Piston_engine_outside_front_combustion_start" ID="{05F4768C-5750-4FE5-95CD-9ACCE84F126E}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.199962933581447"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0430196230567435"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.600004703827867"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Sample_Aircraft_Piston_engine_outside_front_combustion_start.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Sample_Aircraft_Piston_engine_outside_front_combustion_start" ID="{05F4768C-5750-4FE5-95CD-9ACCE84F126E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{F37A93BE-69CA-453B-8EFF-F668D75A1FFE}"/>
+											</PositioningInfo>
+										</BlendContainer>
+										<BlendContainer Name="combustion_start" ID="{D9A76D1F-4D41-4968-8D54-C1CD663958ED}" ShortID="139224989">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+												<Property Name="Priority" Type="int16">
+													<ValueList>
+														<Value>75</Value>
+													</ValueList>
+												</Property>
+												<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
+												<Property Name="PriorityDistanceOffset" Type="int16">
+													<ValueList>
+														<Value>-75</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-8</Value>
+													</ValueList>
+													<RTPCList>
+														<RTPC Name="" ID="{E6A860B6-4951-4DA5-88CF-14A81B7F60AD}" ShortID="789420182">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="SIMVAR_GENERAL_ENG_COMBUSTION_SOUND_PERCENT" ID="{6248DE76-391F-4AD0-84AA-AC5683CBB4A3}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{53A2FD93-4D9D-4B16-867B-52879CF5E9D4}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-6</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Log3</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="aircraft_player_outside_piston_1500m_exhaust" ID="{B80386C1-15B8-4A13-9F2E-916939852F64}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="NoDCOffset_Conversion_Settings" ID="{2463764E-1C92-49C9-B7B9-69C9CD89583D}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="combustion_generic_ai" ID="{0B8DDD87-4836-4E6F-A7D0-9BA311B68745}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="rev_outdoor_aircraft" ID="{3070D14E-37F3-4DB4-8C7E-262318A02693}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+												<Reference Name="UserAuxSend1">
+													<ObjectRef Name="disto_overspeed" ID="{5815E54F-778D-4C14-BF59-097980689171}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Sample_Aircraft_Piston_engine_outside_behind_combustion_start" ID="{6B89DF62-5E2D-4690-9735-8A685F9B2A54}" ShortID="375338458">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="aircraft_player_outside_piston_1500m_exhaust" ID="{B80386C1-15B8-4A13-9F2E-916939852F64}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="combustion_outside_generic" ID="{7FF9CAE6-1D75-4441-8E63-E1F32BD1EEC0}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="rev_outdoor_aircraft" ID="{3070D14E-37F3-4DB4-8C7E-262318A02693}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="disto_overspeed" ID="{5815E54F-778D-4C14-BF59-097980689171}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sample_Aircraft_Piston_engine_outside_behind_combustion_start" ID="{BE7F2E7E-01A4-43EF-8A91-58A1D3F4739A}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.198910348157045"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.04301254535657"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.600013047094942"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Sample_Aircraft_Piston_engine_outside_behind_combustion_start.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Sample_Aircraft_Piston_engine_outside_behind_combustion_start" ID="{BE7F2E7E-01A4-43EF-8A91-58A1D3F4739A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{DE8633CE-CC54-4E1E-A0C3-ADE3C89EAC9E}"/>
+											</PositioningInfo>
+										</BlendContainer>
+										<BlendContainer Name="shutdown_combustion" ID="{71CBFD8D-1BB0-49D5-83B5-8151B2C746F2}" ShortID="268807987">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+												<Property Name="Priority" Type="int16">
+													<ValueList>
+														<Value>75</Value>
+													</ValueList>
+												</Property>
+												<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
+												<Property Name="PriorityDistanceOffset" Type="int16">
+													<ValueList>
+														<Value>-75</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{F8D72D4D-FC60-4F69-B7EA-7E2A72AC2BB3}" ShortID="460016083">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="SIMVAR_GENERAL_ENG_COMBUSTION_SOUND_PERCENT" ID="{6248DE76-391F-4AD0-84AA-AC5683CBB4A3}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{289AAC7F-136F-43C5-91C1-DBD29ACA63BC}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-6</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Log3</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="aircraft_player_outside_piston_1500m_exhaust" ID="{B80386C1-15B8-4A13-9F2E-916939852F64}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="NoDCOffset_Conversion_Settings" ID="{2463764E-1C92-49C9-B7B9-69C9CD89583D}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="combustion_generic_ai" ID="{0B8DDD87-4836-4E6F-A7D0-9BA311B68745}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="rev_outdoor_aircraft" ID="{3070D14E-37F3-4DB4-8C7E-262318A02693}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+												<Reference Name="UserAuxSend1">
+													<ObjectRef Name="disto_overspeed" ID="{5815E54F-778D-4C14-BF59-097980689171}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Sample_Aircraft_Piston_engine_outside_behind_shutdown" ID="{CE3853F2-8DA9-4BA0-A8DB-62F1363320C4}" ShortID="117156733">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="aircraft_player_outside_piston_1500m_exhaust" ID="{B80386C1-15B8-4A13-9F2E-916939852F64}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="aircraft_wwisedata" ID="{6B8AA749-8E30-456B-80AA-F6AA85F22F53}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="disto_overspeed" ID="{5815E54F-778D-4C14-BF59-097980689171}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sample_Aircraft_Piston_engine_outside_behind_shutdown" ID="{D130BCBA-071E-4419-B52C-A35A1E005993}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.1"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="1.5"/>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.63289"/>
+																<Property Name="TrimEnd" Type="Real64" Value="4.50235"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Sample_Aircraft_Piston_engine_outside_behind_shutdown.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Sample_Aircraft_Piston_engine_outside_behind_shutdown" ID="{D130BCBA-071E-4419-B52C-A35A1E005993}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{64A7B2C8-0299-48F2-A938-7F719C18AC45}"/>
+											</PositioningInfo>
+										</BlendContainer>
+										<BlendContainer Name="combustion" ID="{B27D19E9-EC32-4060-9F47-69204BAA42C0}" ShortID="913409965">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="BlendBehavior" Type="int16" Value="1"/>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="OverrideAnalysis" Type="bool" Value="True"/>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+												<Property Name="Priority" Type="int16">
+													<ValueList>
+														<Value>75</Value>
+													</ValueList>
+												</Property>
+												<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
+												<Property Name="PriorityDistanceOffset" Type="int16">
+													<ValueList>
+														<Value>-75</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{A5A24957-72E7-4F29-95C8-90A249183534}" ShortID="239483495">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="SIMVAR_GENERAL_ENG_COMBUSTION_SOUND_PERCENT" ID="{6248DE76-391F-4AD0-84AA-AC5683CBB4A3}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{F9E2C856-7D5A-4EE0-B7BA-3B02B42FDD92}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-6</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Log3</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="aircraft_player_outside_piston_1500m_exhaust" ID="{B80386C1-15B8-4A13-9F2E-916939852F64}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="NoDCOffset_Conversion_Settings" ID="{2463764E-1C92-49C9-B7B9-69C9CD89583D}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="combustion_generic_ai" ID="{0B8DDD87-4836-4E6F-A7D0-9BA311B68745}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="rev_outdoor_aircraft" ID="{3070D14E-37F3-4DB4-8C7E-262318A02693}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+												<Reference Name="UserAuxSend1">
+													<ObjectRef Name="disto_overspeed" ID="{5815E54F-778D-4C14-BF59-097980689171}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Sample_Aircraft_Piston_engine_outside_behind_795" ID="{348E7684-E95A-4EBA-B9C1-CD0C03A7D049}" ShortID="122998291">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>554</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-5</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sample_Aircraft_Piston_engine_outside_behind_795" ID="{7B64C50D-CA5B-440C-9A42-F815794B5E41}">
+															<Language>SFX</Language>
+															<AudioFile>Sample_Aircraft_Piston_engine_outside_behind_795.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Sample_Aircraft_Piston_engine_outside_behind_795" ID="{7B64C50D-CA5B-440C-9A42-F815794B5E41}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Sample_Aircraft_Piston_engine_outside_behind_900" ID="{F63FE8BA-674B-418E-A327-3C8AB1B0727C}" ShortID="452588034">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>339</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sample_Aircraft_Piston_engine_outside_behind_900" ID="{4BD23A00-888A-4698-BC58-64999E90774F}">
+															<Language>SFX</Language>
+															<AudioFile>Sample_Aircraft_Piston_engine_outside_behind_900.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Sample_Aircraft_Piston_engine_outside_behind_900" ID="{4BD23A00-888A-4698-BC58-64999E90774F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Sample_Aircraft_Piston_engine_outside_behind_1095" ID="{F7D7A39D-6E99-41BF-BA80-96E663DA0553}" ShortID="896382532">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sample_Aircraft_Piston_engine_outside_behind_1095" ID="{DC0F3288-96DF-4F17-BF58-4170E20D4A2F}">
+															<Language>SFX</Language>
+															<AudioFile>Sample_Aircraft_Piston_engine_outside_behind_1095.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Sample_Aircraft_Piston_engine_outside_behind_1095" ID="{DC0F3288-96DF-4F17-BF58-4170E20D4A2F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Sample_Aircraft_Piston_engine_outside_behind_1260" ID="{2F3C97DB-643E-4C1F-A5A4-31480D13EF6D}" ShortID="199958728">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-243</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sample_Aircraft_Piston_engine_outside_behind_1260" ID="{A355887C-1D50-4FE5-8C67-212FB60C1449}">
+															<Language>SFX</Language>
+															<AudioFile>Sample_Aircraft_Piston_engine_outside_behind_1260.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Sample_Aircraft_Piston_engine_outside_behind_1260" ID="{A355887C-1D50-4FE5-8C67-212FB60C1449}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Sample_Aircraft_Piston_engine_outside_behind_1455" ID="{744D3D55-3A76-46BF-9169-73BE105881DC}" ShortID="868706078">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-492</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sample_Aircraft_Piston_engine_outside_behind_1455" ID="{978AD575-3438-4B0C-9639-DEF9CE537F0D}">
+															<Language>SFX</Language>
+															<AudioFile>Sample_Aircraft_Piston_engine_outside_behind_1455.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Sample_Aircraft_Piston_engine_outside_behind_1455" ID="{978AD575-3438-4B0C-9639-DEF9CE537F0D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Sample_Aircraft_Piston_engine_outside_behind_1680" ID="{ED047C77-DF2E-449B-965C-D5B725E3ED15}" ShortID="1042404278">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-741</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sample_Aircraft_Piston_engine_outside_behind_1680" ID="{D245E422-7428-4484-9556-25255C318A8A}">
+															<Language>SFX</Language>
+															<AudioFile>Sample_Aircraft_Piston_engine_outside_behind_1680.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Sample_Aircraft_Piston_engine_outside_behind_1680" ID="{D245E422-7428-4484-9556-25255C318A8A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Sample_Aircraft_Piston_engine_outside_behind_1860" ID="{1FB2397B-ADA6-44F7-AAAC-1CCBC784D626}" ShortID="999298437">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-917</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>2</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sample_Aircraft_Piston_engine_outside_behind_1860" ID="{9591AF62-CE13-4DCB-9B49-225688B371AD}">
+															<Language>SFX</Language>
+															<AudioFile>Sample_Aircraft_Piston_engine_outside_behind_1860.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Sample_Aircraft_Piston_engine_outside_behind_1860" ID="{9591AF62-CE13-4DCB-9B49-225688B371AD}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Sample_Aircraft_Piston_engine_outside_behind_2040" ID="{5B5D4004-1282-49AB-9677-E16B7F141F1F}" ShortID="849482177">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-1077</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sample_Aircraft_Piston_engine_outside_behind_2040" ID="{48C23679-F86F-4BA2-9AB3-E4CF76A632E9}">
+															<Language>SFX</Language>
+															<AudioFile>Sample_Aircraft_Piston_engine_outside_behind_2040.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Sample_Aircraft_Piston_engine_outside_behind_2040" ID="{48C23679-F86F-4BA2-9AB3-E4CF76A632E9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Sample_Aircraft_Piston_engine_outside_behind_2235" ID="{B1AC4016-3C86-4618-8339-6CC89E32EB10}" ShortID="133394184">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-1235</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sample_Aircraft_Piston_engine_outside_behind_2235" ID="{D25FF9F0-0474-4EF1-A13E-BDD0F3494B39}">
+															<Language>SFX</Language>
+															<AudioFile>Sample_Aircraft_Piston_engine_outside_behind_2235.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Sample_Aircraft_Piston_engine_outside_behind_2235" ID="{D25FF9F0-0474-4EF1-A13E-BDD0F3494B39}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Sample_Aircraft_Piston_engine_outside_behind_2370" ID="{9964C4E6-479B-4F9E-9692-0B0793C67FBB}" ShortID="453371936">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-1337</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sample_Aircraft_Piston_engine_outside_behind_2370" ID="{426634D8-83D4-48BA-8ED8-18B2B8A0A8BB}">
+															<Language>SFX</Language>
+															<AudioFile>Sample_Aircraft_Piston_engine_outside_behind_2370.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Sample_Aircraft_Piston_engine_outside_behind_2370" ID="{426634D8-83D4-48BA-8ED8-18B2B8A0A8BB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{5F896537-1431-4B8C-B986-6269BC42F480}"/>
+											</PositioningInfo>
+											<BlendTrackList>
+												<BlendTrack Name="cessna172_yvrac_rpm_blend" ID="{152C9BE8-A98E-48D2-9E2D-A830AEDBDB60}" ShortID="487512436">
+													<PropertyList>
+														<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="LayerCrossFadeControlInput">
+															<ObjectRef Name="SIMVAR_GENERAL_ENG_RPM" ID="{2A2495B6-0158-4F47-8261-D625910D546D}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
+														</Reference>
+													</ReferenceList>
+													<BlendTrackAssocList>
+														<BlendTrackAssoc>
+															<ItemRef Name="Sample_Aircraft_Piston_engine_outside_behind_795" ID="{348E7684-E95A-4EBA-B9C1-CD0C03A7D049}"/>
+															<CrossfadingInfo>
+																<LeftEdgePos>0</LeftEdgePos>
+																<LeftFadingMode>Automatic</LeftFadingMode>
+																<RightEdgePos>889.976415369162</RightEdgePos>
+																<RightFadingMode>Automatic</RightFadingMode>
+																<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
+															</CrossfadingInfo>
+														</BlendTrackAssoc>
+														<BlendTrackAssoc>
+															<ItemRef Name="Sample_Aircraft_Piston_engine_outside_behind_900" ID="{F63FE8BA-674B-418E-A327-3C8AB1B0727C}"/>
+															<CrossfadingInfo>
+																<LeftEdgePos>823.554256520649</LeftEdgePos>
+																<LeftFadingMode>Automatic</LeftFadingMode>
+																<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
+																<RightEdgePos>1075.54190055594</RightEdgePos>
+																<RightFadingMode>Automatic</RightFadingMode>
+																<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
+															</CrossfadingInfo>
+														</BlendTrackAssoc>
+														<BlendTrackAssoc>
+															<ItemRef Name="Sample_Aircraft_Piston_engine_outside_behind_1095" ID="{F7D7A39D-6E99-41BF-BA80-96E663DA0553}"/>
+															<CrossfadingInfo>
+																<LeftEdgePos>918.753201102415</LeftEdgePos>
+																<LeftFadingMode>Automatic</LeftFadingMode>
+																<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
+																<RightEdgePos>1245.07934257595</RightEdgePos>
+																<RightFadingMode>Automatic</RightFadingMode>
+																<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
+															</CrossfadingInfo>
+														</BlendTrackAssoc>
+														<BlendTrackAssoc>
+															<ItemRef Name="Sample_Aircraft_Piston_engine_outside_behind_1260" ID="{2F3C97DB-643E-4C1F-A5A4-31480D13EF6D}"/>
+															<CrossfadingInfo>
+																<LeftEdgePos>1109.19294126292</LeftEdgePos>
+																<LeftFadingMode>Automatic</LeftFadingMode>
+																<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
+																<RightEdgePos>1434.60192072863</RightEdgePos>
+																<RightFadingMode>Automatic</RightFadingMode>
+																<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
+															</CrossfadingInfo>
+														</BlendTrackAssoc>
+														<BlendTrackAssoc>
+															<ItemRef Name="Sample_Aircraft_Piston_engine_outside_behind_1455" ID="{744D3D55-3A76-46BF-9169-73BE105881DC}"/>
+															<CrossfadingInfo>
+																<LeftEdgePos>1277.10059048653</LeftEdgePos>
+																<LeftFadingMode>Automatic</LeftFadingMode>
+																<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
+																<RightEdgePos>1653.22211784318</RightEdgePos>
+																<RightFadingMode>Automatic</RightFadingMode>
+																<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
+															</CrossfadingInfo>
+														</BlendTrackAssoc>
+														<BlendTrackAssoc>
+															<ItemRef Name="Sample_Aircraft_Piston_engine_outside_behind_1680" ID="{ED047C77-DF2E-449B-965C-D5B725E3ED15}"/>
+															<CrossfadingInfo>
+																<LeftEdgePos>1471.90166943077</LeftEdgePos>
+																<LeftFadingMode>Automatic</LeftFadingMode>
+																<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
+																<RightEdgePos>1840.55361109091</RightEdgePos>
+																<RightFadingMode>Automatic</RightFadingMode>
+																<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
+															</CrossfadingInfo>
+														</BlendTrackAssoc>
+														<BlendTrackAssoc>
+															<ItemRef Name="Sample_Aircraft_Piston_engine_outside_behind_1860" ID="{1FB2397B-ADA6-44F7-AAAC-1CCBC784D626}"/>
+															<CrossfadingInfo>
+																<LeftEdgePos>1707.63677976978</LeftEdgePos>
+																<LeftFadingMode>Automatic</LeftFadingMode>
+																<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
+																<RightEdgePos>2019.92579764239</RightEdgePos>
+																<RightFadingMode>Automatic</RightFadingMode>
+																<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
+															</CrossfadingInfo>
+														</BlendTrackAssoc>
+														<BlendTrackAssoc>
+															<ItemRef Name="Sample_Aircraft_Piston_engine_outside_behind_2040" ID="{5B5D4004-1282-49AB-9677-E16B7F141F1F}"/>
+															<CrossfadingInfo>
+																<LeftEdgePos>1879.54275698815</LeftEdgePos>
+																<LeftFadingMode>Automatic</LeftFadingMode>
+																<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
+																<RightEdgePos>2213.23558389315</RightEdgePos>
+																<RightFadingMode>Automatic</RightFadingMode>
+																<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
+															</CrossfadingInfo>
+														</BlendTrackAssoc>
+														<BlendTrackAssoc>
+															<ItemRef Name="Sample_Aircraft_Piston_engine_outside_behind_2235" ID="{B1AC4016-3C86-4618-8339-6CC89E32EB10}"/>
+															<CrossfadingInfo>
+																<LeftEdgePos>2059.50815336114</LeftEdgePos>
+																<LeftFadingMode>Automatic</LeftFadingMode>
+																<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
+																<RightEdgePos>2363.72875660397</RightEdgePos>
+																<RightFadingMode>Automatic</RightFadingMode>
+																<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
+															</CrossfadingInfo>
+														</BlendTrackAssoc>
+														<BlendTrackAssoc>
+															<ItemRef Name="Sample_Aircraft_Piston_engine_outside_behind_2370" ID="{9964C4E6-479B-4F9E-9692-0B0793C67FBB}"/>
+															<CrossfadingInfo>
+																<LeftEdgePos>2256.27675053749</LeftEdgePos>
+																<LeftFadingMode>Automatic</LeftFadingMode>
+																<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
+																<RightEdgePos>10000</RightEdgePos>
+																<RightFadingMode>Automatic</RightFadingMode>
+															</CrossfadingInfo>
+														</BlendTrackAssoc>
+													</BlendTrackAssocList>
+												</BlendTrack>
+											</BlendTrackList>
+										</BlendContainer>
+										<BlendContainer Name="propeller" ID="{71F31EB7-FDA8-4B0D-BAC7-B98C8B1DAD7C}" ShortID="704649301">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="BlendBehavior" Type="int16" Value="1"/>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="Highpass" Type="int16">
+													<RTPCList>
+														<RTPC Name="" ID="{5D50E3E2-2566-4C05-97C7-2E222862F7BB}" ShortID="187381229">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="SIMVAR_GENERAL_ENG_COMBUSTION_SOUND_PERCENT" ID="{6248DE76-391F-4AD0-84AA-AC5683CBB4A3}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{59CA8E87-9FC9-44C5-8DA2-1FBA551AF5E8}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>28</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.6</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Exp3</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="OverrideAnalysis" Type="bool" Value="True"/>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+												<Property Name="Priority" Type="int16">
+													<ValueList>
+														<Value>75</Value>
+													</ValueList>
+												</Property>
+												<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
+												<Property Name="PriorityDistanceOffset" Type="int16">
+													<ValueList>
+														<Value>-75</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{BDE19647-5732-4ACB-AE7E-BB1019753782}" ShortID="324093270">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="SIMVAR_GENERAL_ENG_COMBUSTION_SOUND_PERCENT" ID="{6248DE76-391F-4AD0-84AA-AC5683CBB4A3}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{04390B68-94FC-4B72-8632-D68F8DEE7906}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-3</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="aircraft_player_outside_piston_1500m_propeller_01" ID="{0D903A56-C1B5-4CC1-9230-12DF1DC2D0AB}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="NoDCOffset_Conversion_Settings" ID="{2463764E-1C92-49C9-B7B9-69C9CD89583D}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="propeller_ai" ID="{26EA3E07-9FD7-404A-B687-524D51E62BD1}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="rev_outdoor_aircraft" ID="{3070D14E-37F3-4DB4-8C7E-262318A02693}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+												<Reference Name="UserAuxSend1">
+													<ObjectRef Name="disto_overspeed" ID="{5815E54F-778D-4C14-BF59-097980689171}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Sample_Aircraft_Piston_engine_outside_front_795" ID="{1032DC72-3126-40F5-8B33-0B0B18FB5121}" ShortID="969244837">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>554</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-6</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sample_Aircraft_Piston_engine_outside_front_795" ID="{F5D19715-42B6-4834-A932-91FA92705A97}">
+															<Language>SFX</Language>
+															<AudioFile>Sample_Aircraft_Piston_engine_outside_front_795.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Sample_Aircraft_Piston_engine_outside_front_795" ID="{F5D19715-42B6-4834-A932-91FA92705A97}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Sample_Aircraft_Piston_engine_outside_front_900" ID="{E44BB16F-DCA4-4723-A381-8AC12F0E5B57}" ShortID="652107385">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>339</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-2</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sample_Aircraft_Piston_engine_outside_front_900" ID="{81B955B5-D006-462A-A5B4-C92BC893E4CF}">
+															<Language>SFX</Language>
+															<AudioFile>Sample_Aircraft_Piston_engine_outside_front_900.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Sample_Aircraft_Piston_engine_outside_front_900" ID="{81B955B5-D006-462A-A5B4-C92BC893E4CF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Sample_Aircraft_Piston_engine_outside_front_1095" ID="{0A18910A-58DB-4A07-A0FD-08077B0996D7}" ShortID="251286519">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sample_Aircraft_Piston_engine_outside_front_1095" ID="{645DEFA5-B365-429A-ACA1-DA7198725629}">
+															<Language>SFX</Language>
+															<AudioFile>Sample_Aircraft_Piston_engine_outside_front_1095.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Sample_Aircraft_Piston_engine_outside_front_1095" ID="{645DEFA5-B365-429A-ACA1-DA7198725629}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Sample_Aircraft_Piston_engine_outside_front_1260" ID="{31872A1D-CB77-452D-8C08-44E8879DC85B}" ShortID="936195147">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-243</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sample_Aircraft_Piston_engine_outside_front_1260" ID="{D08159E5-A8CD-4E1E-A26C-F3853D562567}">
+															<Language>SFX</Language>
+															<AudioFile>Sample_Aircraft_Piston_engine_outside_front_1260.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Sample_Aircraft_Piston_engine_outside_front_1260" ID="{D08159E5-A8CD-4E1E-A26C-F3853D562567}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Sample_Aircraft_Piston_engine_outside_front_1455" ID="{EC5F8BCD-33E0-4BBD-B14A-F2C614786485}" ShortID="1057328468">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-492</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sample_Aircraft_Piston_engine_outside_front_1455" ID="{4E4159E1-A914-4643-838C-8D442ABD935E}">
+															<Language>SFX</Language>
+															<AudioFile>Sample_Aircraft_Piston_engine_outside_front_1455.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Sample_Aircraft_Piston_engine_outside_front_1455" ID="{4E4159E1-A914-4643-838C-8D442ABD935E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Sample_Aircraft_Piston_engine_outside_front_1680" ID="{8EE419F1-96AA-4409-A27D-11CB47E405E8}" ShortID="942237365">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-741</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sample_Aircraft_Piston_engine_outside_front_1680" ID="{30632C3B-8207-488C-828A-42AEAA5B1812}">
+															<Language>SFX</Language>
+															<AudioFile>Sample_Aircraft_Piston_engine_outside_front_1680.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Sample_Aircraft_Piston_engine_outside_front_1680" ID="{30632C3B-8207-488C-828A-42AEAA5B1812}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Sample_Aircraft_Piston_engine_outside_front_1860" ID="{E9E667CF-B37E-4768-AB25-89E0B903B470}" ShortID="133098298">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-917</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sample_Aircraft_Piston_engine_outside_front_1860" ID="{74D5EC04-D262-4A76-9D62-3467021C9062}">
+															<Language>SFX</Language>
+															<AudioFile>Sample_Aircraft_Piston_engine_outside_front_1860.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Sample_Aircraft_Piston_engine_outside_front_1860" ID="{74D5EC04-D262-4A76-9D62-3467021C9062}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Sample_Aircraft_Piston_engine_outside_front_2040" ID="{FB71A31C-AC0C-4E11-A96A-CE97755AABB6}" ShortID="870482047">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-1077</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sample_Aircraft_Piston_engine_outside_front_2040" ID="{A330E190-4B1A-4B74-A61B-ADE1A5B0983A}">
+															<Language>SFX</Language>
+															<AudioFile>Sample_Aircraft_Piston_engine_outside_front_2040.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Sample_Aircraft_Piston_engine_outside_front_2040" ID="{A330E190-4B1A-4B74-A61B-ADE1A5B0983A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Sample_Aircraft_Piston_engine_outside_front_2235" ID="{D93777FA-FD78-4E30-B080-3B5BC9CBD940}" ShortID="788992089">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-1235</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sample_Aircraft_Piston_engine_outside_front_2235" ID="{FE42B0B2-CAE6-4497-B7DA-ED69ED820078}">
+															<Language>SFX</Language>
+															<AudioFile>Sample_Aircraft_Piston_engine_outside_front_2235.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Sample_Aircraft_Piston_engine_outside_front_2235" ID="{FE42B0B2-CAE6-4497-B7DA-ED69ED820078}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Sample_Aircraft_Piston_engine_outside_front_2370" ID="{64C021C8-462D-43A7-9476-0F73C17B5765}" ShortID="824497381">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-1337</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sample_Aircraft_Piston_engine_outside_front_2370" ID="{CB89384B-DA91-43A2-B39A-B232EB00C480}">
+															<Language>SFX</Language>
+															<AudioFile>Sample_Aircraft_Piston_engine_outside_front_2370.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Sample_Aircraft_Piston_engine_outside_front_2370" ID="{CB89384B-DA91-43A2-B39A-B232EB00C480}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{2FC70CD8-D720-4585-B467-FBDBCA6195E5}"/>
+											</PositioningInfo>
+											<BlendTrackList>
+												<BlendTrack Name="cessna172_yvrac_rpm_blend" ID="{6E81CF13-9761-496A-B12C-915695C89B53}" ShortID="749661716">
+													<PropertyList>
+														<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="LayerCrossFadeControlInput">
+															<ObjectRef Name="SIMVAR_PROP_RPM" ID="{FF3BC515-5239-40D1-A27C-8E80E0D734CC}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
+														</Reference>
+													</ReferenceList>
+													<BlendTrackAssocList>
+														<BlendTrackAssoc>
+															<ItemRef Name="Sample_Aircraft_Piston_engine_outside_front_795" ID="{1032DC72-3126-40F5-8B33-0B0B18FB5121}"/>
+															<CrossfadingInfo>
+																<LeftEdgePos>0</LeftEdgePos>
+																<LeftFadingMode>Automatic</LeftFadingMode>
+																<RightEdgePos>880.146289752122</RightEdgePos>
+																<RightFadingMode>Automatic</RightFadingMode>
+																<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
+															</CrossfadingInfo>
+														</BlendTrackAssoc>
+														<BlendTrackAssoc>
+															<ItemRef Name="Sample_Aircraft_Piston_engine_outside_front_900" ID="{E44BB16F-DCA4-4723-A381-8AC12F0E5B57}"/>
+															<CrossfadingInfo>
+																<LeftEdgePos>800.909713382932</LeftEdgePos>
+																<LeftFadingMode>Automatic</LeftFadingMode>
+																<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
+																<RightEdgePos>1069.55741352603</RightEdgePos>
+																<RightFadingMode>Automatic</RightFadingMode>
+																<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
+															</CrossfadingInfo>
+														</BlendTrackAssoc>
+														<BlendTrackAssoc>
+															<ItemRef Name="Sample_Aircraft_Piston_engine_outside_front_1095" ID="{0A18910A-58DB-4A07-A0FD-08077B0996D7}"/>
+															<CrossfadingInfo>
+																<LeftEdgePos>923.215276452514</LeftEdgePos>
+																<LeftFadingMode>Automatic</LeftFadingMode>
+																<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
+																<RightEdgePos>1238.66375220865</RightEdgePos>
+																<RightFadingMode>Automatic</RightFadingMode>
+																<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
+															</CrossfadingInfo>
+														</BlendTrackAssoc>
+														<BlendTrackAssoc>
+															<ItemRef Name="Sample_Aircraft_Piston_engine_outside_front_1260" ID="{31872A1D-CB77-452D-8C08-44E8879DC85B}"/>
+															<CrossfadingInfo>
+																<LeftEdgePos>1110.4239510235</LeftEdgePos>
+																<LeftFadingMode>Automatic</LeftFadingMode>
+																<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
+																<RightEdgePos>1441.17864223297</RightEdgePos>
+																<RightFadingMode>Automatic</RightFadingMode>
+																<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
+															</CrossfadingInfo>
+														</BlendTrackAssoc>
+														<BlendTrackAssoc>
+															<ItemRef Name="Sample_Aircraft_Piston_engine_outside_front_1455" ID="{EC5F8BCD-33E0-4BBD-B14A-F2C614786485}"/>
+															<CrossfadingInfo>
+																<LeftEdgePos>1280.04877598847</LeftEdgePos>
+																<LeftFadingMode>Automatic</LeftFadingMode>
+																<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
+																<RightEdgePos>1666.41990863581</RightEdgePos>
+																<RightFadingMode>Automatic</RightFadingMode>
+																<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
+															</CrossfadingInfo>
+														</BlendTrackAssoc>
+														<BlendTrackAssoc>
+															<ItemRef Name="Sample_Aircraft_Piston_engine_outside_front_1680" ID="{8EE419F1-96AA-4409-A27D-11CB47E405E8}"/>
+															<CrossfadingInfo>
+																<LeftEdgePos>1469.76145778154</LeftEdgePos>
+																<LeftFadingMode>Automatic</LeftFadingMode>
+																<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
+																<RightEdgePos>1843.04822959256</RightEdgePos>
+																<RightFadingMode>Automatic</RightFadingMode>
+																<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
+															</CrossfadingInfo>
+														</BlendTrackAssoc>
+														<BlendTrackAssoc>
+															<ItemRef Name="Sample_Aircraft_Piston_engine_outside_front_1860" ID="{E9E667CF-B37E-4768-AB25-89E0B903B470}"/>
+															<CrossfadingInfo>
+																<LeftEdgePos>1697.88508926334</LeftEdgePos>
+																<LeftFadingMode>Automatic</LeftFadingMode>
+																<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
+																<RightEdgePos>2020.34469777416</RightEdgePos>
+																<RightFadingMode>Automatic</RightFadingMode>
+																<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
+															</CrossfadingInfo>
+														</BlendTrackAssoc>
+														<BlendTrackAssoc>
+															<ItemRef Name="Sample_Aircraft_Piston_engine_outside_front_2040" ID="{FB71A31C-AC0C-4E11-A96A-CE97755AABB6}"/>
+															<CrossfadingInfo>
+																<LeftEdgePos>1880.95690714654</LeftEdgePos>
+																<LeftFadingMode>Automatic</LeftFadingMode>
+																<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
+																<RightEdgePos>2222.18645917209</RightEdgePos>
+																<RightFadingMode>Automatic</RightFadingMode>
+																<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
+															</CrossfadingInfo>
+														</BlendTrackAssoc>
+														<BlendTrackAssoc>
+															<ItemRef Name="Sample_Aircraft_Piston_engine_outside_front_2235" ID="{D93777FA-FD78-4E30-B080-3B5BC9CBD940}"/>
+															<CrossfadingInfo>
+																<LeftEdgePos>2055.84553003209</LeftEdgePos>
+																<LeftFadingMode>Automatic</LeftFadingMode>
+																<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
+																<RightEdgePos>6000</RightEdgePos>
+																<RightFadingMode>Automatic</RightFadingMode>
+																<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
+															</CrossfadingInfo>
+														</BlendTrackAssoc>
+													</BlendTrackAssocList>
+												</BlendTrack>
+											</BlendTrackList>
+										</BlendContainer>
+										<BlendContainer Name="shutdown_propeller" ID="{8D197E26-93D3-4750-A334-1DFAB699B9BA}" ShortID="501065996">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="Highpass" Type="int16">
+													<RTPCList>
+														<RTPC Name="" ID="{81F99781-1FE0-4B3A-AA43-035752393679}" ShortID="526375023">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="SIMVAR_GENERAL_ENG_COMBUSTION_SOUND_PERCENT" ID="{6248DE76-391F-4AD0-84AA-AC5683CBB4A3}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{950B20EE-8ED0-4B72-B960-3360F05C47AA}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>28</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.6</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Exp3</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+												<Property Name="Priority" Type="int16">
+													<ValueList>
+														<Value>75</Value>
+													</ValueList>
+												</Property>
+												<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
+												<Property Name="PriorityDistanceOffset" Type="int16">
+													<ValueList>
+														<Value>-75</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{A1D2B2A7-304E-4C7E-86C7-672BECC6E51C}" ShortID="23360789">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="SIMVAR_GENERAL_ENG_COMBUSTION_SOUND_PERCENT" ID="{6248DE76-391F-4AD0-84AA-AC5683CBB4A3}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{C085D336-A792-4D40-AF5E-5FC23384F426}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-3</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="aircraft_player_outside_piston_1500m_propeller_01" ID="{0D903A56-C1B5-4CC1-9230-12DF1DC2D0AB}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="NoDCOffset_Conversion_Settings" ID="{2463764E-1C92-49C9-B7B9-69C9CD89583D}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="propeller_ai" ID="{26EA3E07-9FD7-404A-B687-524D51E62BD1}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="rev_outdoor_aircraft" ID="{3070D14E-37F3-4DB4-8C7E-262318A02693}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+												<Reference Name="UserAuxSend1">
+													<ObjectRef Name="disto_overspeed" ID="{5815E54F-778D-4C14-BF59-097980689171}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Sample_Aircraft_Piston_engine_outside_front_shutdown" ID="{36F6BD42-41D9-42D8-85E3-52C1D670B294}" ShortID="128186526">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="aircraft_player_outside_piston_1500m_propeller_01" ID="{0D903A56-C1B5-4CC1-9230-12DF1DC2D0AB}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="propeller_outside_generic" ID="{2A84999E-F49C-4CA6-9DA5-58EEE17A3559}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="disto_overspeed" ID="{5815E54F-778D-4C14-BF59-097980689171}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sample_Aircraft_Piston_engine_outside_front_shutdown" ID="{B66E1324-50F7-4399-94D4-D3050967D412}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.1"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="1.5"/>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.632887591084029"/>
+																<Property Name="TrimEnd" Type="Real64" Value="4.50235004672534"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Sample_Aircraft_Piston_engine_outside_front_shutdown.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Sample_Aircraft_Piston_engine_outside_front_shutdown" ID="{B66E1324-50F7-4399-94D4-D3050967D412}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{204EA4B2-30B2-4A4E-89A1-743ACB3705D3}"/>
+											</PositioningInfo>
+										</BlendContainer>
+										<BlendContainer Name="starter" ID="{4D60C854-34D9-4B43-A351-25B7F1D98C3F}" ShortID="976920391">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+												<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+												<Property Name="Priority" Type="int16">
+													<ValueList>
+														<Value>75</Value>
+													</ValueList>
+												</Property>
+												<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
+												<Property Name="PriorityDistanceOffset" Type="int16">
+													<ValueList>
+														<Value>-75</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-9</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="NoDCOffset_Conversion_Settings" ID="{2463764E-1C92-49C9-B7B9-69C9CD89583D}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="combustion_generic_ai" ID="{0B8DDD87-4836-4E6F-A7D0-9BA311B68745}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="rev_outdoor_aircraft" ID="{3070D14E-37F3-4DB4-8C7E-262318A02693}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+												<Reference Name="UserAuxSend1">
+													<ObjectRef Name="disto_overspeed" ID="{5815E54F-778D-4C14-BF59-097980689171}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Sample_Aircraft_Piston_engine_outside_behind_Starter" ID="{5C982D93-373B-4414-8BAC-ECCC0AC515E9}" ShortID="587798201">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="CenterPercentage" Type="int32">
+															<ValueList>
+																<Value>100</Value>
+															</ValueList>
+														</Property>
+														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="aircraft_player_outside_piston_1500m_exhaust" ID="{B80386C1-15B8-4A13-9F2E-916939852F64}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="combustion_outside_generic" ID="{7FF9CAE6-1D75-4441-8E63-E1F32BD1EEC0}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sample_Aircraft_Piston_engine_outside_behind_Starter" ID="{5A9766E1-A3F2-415E-9B36-0AD9EC934AE9}">
+															<PropertyList>
+																<Property Name="CrossfadeDuration" Type="Real64" Value="100"/>
+																<Property Name="LoopBegin" Type="Real64" Value="1.00000107735402"/>
+																<Property Name="LoopEnd" Type="Real64" Value="2.40000323206206"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Sample_Aircraft_Piston_engine_outside_behind_Starter.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Sample_Aircraft_Piston_engine_outside_behind_Starter" ID="{5A9766E1-A3F2-415E-9B36-0AD9EC934AE9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Sample_Aircraft_Piston_engine_outside_front_Starter" ID="{3E64440C-6043-4944-A727-855AB568FFEE}" ShortID="644705776">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="CenterPercentage" Type="int32">
+															<ValueList>
+																<Value>100</Value>
+															</ValueList>
+														</Property>
+														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="aircraft_player_outside_piston_1500m_propeller_01" ID="{0D903A56-C1B5-4CC1-9230-12DF1DC2D0AB}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="combustion_outside_generic" ID="{7FF9CAE6-1D75-4441-8E63-E1F32BD1EEC0}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sample_Aircraft_Piston_engine_outside_front_Starter" ID="{034E257B-1146-4DC8-B4CE-6142DCC20459}">
+															<PropertyList>
+																<Property Name="CrossfadeDuration" Type="Real64" Value="100"/>
+																<Property Name="LoopBegin" Type="Real64" Value="1.00000323206206"/>
+																<Property Name="LoopEnd" Type="Real64" Value="2.40000206212293"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Sample_Aircraft_Piston_engine_outside_front_Starter.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Sample_Aircraft_Piston_engine_outside_front_Starter" ID="{034E257B-1146-4DC8-B4CE-6142DCC20459}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</BlendContainer>
+									</ChildrenList>
+								</ActorMixer>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="ground" ID="{6CB01747-13F2-48C2-A8EB-7694276DF716}" ShortID="346447964">
+							<ChildrenList>
+								<RandomSequenceContainer Name="ground_touchdown_concrete" ID="{7130F0D5-6D0D-4070-8CC8-149BDD0EF7C1}" ShortID="623019859">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+										<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>0.01</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>30</Value>
+											</ValueList>
+										</Property>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-200</Value>
+											</ValueList>
+											<RTPCList>
+												<RTPC Name="" ID="{BA2D8BAE-4CF1-4C0C-A7FF-07EA081460E3}" ShortID="447368768">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="SIMVAR_GROUND_VELOCITY" ID="{8E7BB6E5-0182-456B-BE83-12F6B4244555}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{DAAFD15F-9B91-4BDE-A279-D57A0E367887}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-458</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Log1</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>50</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>200</XPos>
+																<YPos>300</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>600</XPos>
+																<YPos>500</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="7"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+											<RTPCList>
+												<RTPC Name="" ID="{3FA0A80A-895A-45BC-8552-FF598B4083F9}" ShortID="874641669">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="SIMVAR_GROUND_VELOCITY" ID="{8E7BB6E5-0182-456B-BE83-12F6B4244555}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{EA9D5E3C-8AD0-4349-82FD-4E66FC791496}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-6</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>27.7635</XPos>
+																<YPos>-4.92632</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Log3</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>100.25707</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>600</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="aircraft_player_outside_piston_1500m_grounds" ID="{A12CF400-AFD7-441E-8113-672A7A0B7E7B}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="grounds_ai" ID="{4EBB3EA0-EF76-49B2-813D-C9F01275E479}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="rev_outdoor_aircraft" ID="{3070D14E-37F3-4DB4-8C7E-262318A02693}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Sample_Aircraft_Piston_touchdown_squeak_04" ID="{A11E8CC0-B1E5-4286-83AB-824E8AAF9AE3}" ShortID="672588222">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="aircraft_player_inside_3m_spread100" ID="{023C370B-520E-4E03-AC0C-96158D8C267D}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="grounds_inside" ID="{412E04A9-C11E-4AD3-9266-46F4C1A1384B}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="rev_outdoor_aircraft" ID="{3070D14E-37F3-4DB4-8C7E-262318A02693}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Sample_Aircraft_Piston_touchdown_squeak_04" ID="{7843120E-70E4-4629-84AA-EA1F0BC4A767}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.00105942028985507"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.069656884057971"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Sample_Aircraft_Piston_touchdown_squeak_04.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{1B81D9DC-AA03-42B8-B14B-939174CB68C7}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="Sample_Aircraft_Piston_touchdown_squeak_04" ID="{7843120E-70E4-4629-84AA-EA1F0BC4A767}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Sample_Aircraft_Piston_touchdown_squeak_05" ID="{8B19354E-DCE3-41B7-A8EA-A85F0882D1BC}" ShortID="121563824">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="aircraft_player_inside_3m_spread100" ID="{023C370B-520E-4E03-AC0C-96158D8C267D}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="grounds_inside" ID="{412E04A9-C11E-4AD3-9266-46F4C1A1384B}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="rev_outdoor_aircraft" ID="{3070D14E-37F3-4DB4-8C7E-262318A02693}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Sample_Aircraft_Piston_touchdown_squeak_05" ID="{554437E4-AA45-460F-BE89-85CFBD3244D3}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.00585709541062802"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.105427717391304"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Sample_Aircraft_Piston_touchdown_squeak_05.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{13D9D2EC-50C2-4795-A81E-020764F32F0A}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="Sample_Aircraft_Piston_touchdown_squeak_05" ID="{554437E4-AA45-460F-BE89-85CFBD3244D3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Sample_Aircraft_Piston_touchdown_squeak_01" ID="{35432809-165B-4DC0-86A0-15AB637BD057}" ShortID="700549324">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="aircraft_player_inside_3m_spread100" ID="{023C370B-520E-4E03-AC0C-96158D8C267D}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="grounds_inside" ID="{412E04A9-C11E-4AD3-9266-46F4C1A1384B}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="rev_outdoor_aircraft" ID="{3070D14E-37F3-4DB4-8C7E-262318A02693}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Sample_Aircraft_Piston_touchdown_squeak_01" ID="{4FEBC9DA-402B-421D-9DC9-4E75CBBD6435}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.00505471014492753"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0884574275362319"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Sample_Aircraft_Piston_touchdown_squeak_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{30A18AB2-39F8-4FAA-9A23-9739032082FC}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="Sample_Aircraft_Piston_touchdown_squeak_01" ID="{4FEBC9DA-402B-421D-9DC9-4E75CBBD6435}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Sample_Aircraft_Piston_touchdown_squeak_02" ID="{2B9EB628-9F62-46AA-ABA2-C9023CE60795}" ShortID="233460523">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="aircraft_player_inside_3m_spread100" ID="{023C370B-520E-4E03-AC0C-96158D8C267D}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="grounds_inside" ID="{412E04A9-C11E-4AD3-9266-46F4C1A1384B}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="rev_outdoor_aircraft" ID="{3070D14E-37F3-4DB4-8C7E-262318A02693}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Sample_Aircraft_Piston_touchdown_squeak_02" ID="{336B5B69-0D94-49C8-8D1E-F673DFCFDA12}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.00166958031400966"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.059627868357488"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Sample_Aircraft_Piston_touchdown_squeak_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{6C433961-91EB-4E7F-9DE6-FA1B8955F01A}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="Sample_Aircraft_Piston_touchdown_squeak_02" ID="{336B5B69-0D94-49C8-8D1E-F673DFCFDA12}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Sample_Aircraft_Piston_touchdown_squeak_03" ID="{E2C6EA16-3154-40C7-81D4-7A406449A70C}" ShortID="929345388">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="aircraft_player_inside_3m_spread100" ID="{023C370B-520E-4E03-AC0C-96158D8C267D}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="grounds_inside" ID="{412E04A9-C11E-4AD3-9266-46F4C1A1384B}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="rev_outdoor_aircraft" ID="{3070D14E-37F3-4DB4-8C7E-262318A02693}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Sample_Aircraft_Piston_touchdown_squeak_03" ID="{8443A448-DA08-4A93-80B5-1ACD7C496977}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.00326132246376811"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0547902173913044"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Sample_Aircraft_Piston_touchdown_squeak_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{2714E93B-F0AF-4E7B-B702-D69B07C03E2A}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="Sample_Aircraft_Piston_touchdown_squeak_03" ID="{8443A448-DA08-4A93-80B5-1ACD7C496977}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

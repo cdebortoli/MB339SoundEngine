@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="UserProjectSettings" SchemaVersion="97">
+	<UserProjectSettingsInfo>
+		<UserProjectSettings Name="" ID="{5CCFAAF4-0FE3-4666-AF3E-11B8AD814BED}">
+			<PropertyList>
+				<Property Name="Event Action List\{03EFED78-4B05-4254-B987-B87DD5CB650B}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{051BCD45-7AF8-4710-8C66-BA0E0D6BCA8A}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{060377D8-9AEF-419C-9FA3-F3757F3B2E77}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{07018552-FE36-4277-A6D7-69E3BBAAFB9B}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{08EB0B6F-738E-451D-865F-70A182A35DC8}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{0A8026B4-6F13-4CC9-8845-A892CF7DF266}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{0AF978D3-BF31-40F7-888F-D4E3F2EEF468}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{0C66D939-00DE-47CF-9061-6E6C72600D69}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{0E9DF3F4-D705-43FC-9765-809BFC0F3DEF}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{10D9CF0F-643F-411E-87B8-F69871FF2049}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{11127253-E815-4BCE-98E9-A55703F8FBD9}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{117F86D9-B7C7-4A4B-9CC3-130C9B7C5FBF}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{132A556D-3077-4FA2-A398-5C51EBF222CB}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{137FC1DF-AFFC-4701-A3C3-0627A3BDB079}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{14ACBE9D-DBD5-4E04-97B7-07C879B029E0}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{150E6AD9-9BB6-4890-913B-78C31CE2E04B}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{159B261E-8AD0-44CF-AFC6-6A7DB4082EFB}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{15FDA996-77A2-4628-A27C-22FF244855B8}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{170B02A4-3017-4FCC-AD8E-735FD9F0043F}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{186C7A9E-FA0C-490D-A6BD-6B0FCC84479B}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{1B7020C1-C68D-466C-9449-19477ADF413D}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{1BB228F5-86BA-4AF0-B198-B1C1528BD1A4}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{1C37AF2D-0550-4233-A3FB-9F0B029214C9}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{1DD8A68D-441F-42F9-BBCE-D8DF374801EC}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{1E232023-F14F-46B6-8A36-C3C05AF90969}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{1E2EE90B-9719-4CBD-B242-E838D4B9DFAA}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{2104DB83-6002-448E-92D7-7382E108EC93}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{21D7A96B-BF6B-4280-8EE8-7725CA4E2CF5}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{24105DD9-76E2-4BA7-A85E-D48C0EB7B487}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{251F49F2-2DA0-4B0F-9135-F55F627688CB}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{256D0E3A-72EF-40E8-8D82-FA7CF66791AC}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{282A6BD5-60ED-4882-B45B-85D00BADBD41}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{292EB6B2-7581-4662-A370-17DF6E553F0C}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{29893478-5B9C-4428-9527-D0A3B8AC9E9B}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{2AABEBD8-A8D3-48B8-9694-51BB808FF8FE}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{2F72111A-874F-4228-864F-76DD34CD1352}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{3072FFEA-E55A-4D02-94F2-10DDE2988FE9}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{354A9CE2-69AC-4998-ADCD-107804A27360}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{35886FF0-6FE5-4D5B-BDE7-1B9B1C96DE7E}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{38EE7082-9CEE-4515-892E-7C36271F7EF2}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{3AEB5854-6848-468A-B3D7-7788444F0388}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{3C7214BF-3D61-43FD-9F86-6F8C79B61A6C}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{3D5E34B9-68CB-4219-ACB6-D2D067256044}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{3D66E57C-060C-4693-B75C-6A8D6686D9FC}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{3DAB60D7-8D21-4AEF-92DE-BE4789C7050E}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{3E92F933-0B6C-4408-966A-864D7B2683D9}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{3EAC58FE-AA99-4AB5-9141-E5C567EE76A0}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{408DB707-4C4D-437D-84D6-FB3FEFC43835}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{411E4239-B003-4FDE-B8F8-DEA54A541F45}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{43254333-CF18-4F77-A726-455F4ECFC748}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{4C144462-1825-453E-853F-56C09B9B9297}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{4DFCD64B-6A91-49A4-BDDB-CF0B0DE18B51}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{4E4AC90E-C72F-4140-B164-B2F0DFEC1579}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{53759F92-4292-480E-9934-C6C73DB715BA}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{54BC0603-97F4-435D-ADC5-4018C150F215}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{56ABC4ED-4D98-4E81-A585-CAE650E2229D}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{5719C5A2-B8B9-481D-B274-31D6F35A942C}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{5A84E517-6A40-4B0D-AF77-B27461553C5B}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{5B45B0A7-5675-4163-83D9-A121B7E9931D}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{5F0061F0-A931-4187-9A87-020BF746C932}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{5F33CD85-F2D0-4F00-BB50-578DED1DF8D7}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{5F685E3B-7527-42AD-925B-6EDED36EB21E}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{5FE73E64-9659-41DF-B781-156A9956FE28}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{61C36143-8009-48D6-A32F-E21F0A8F5EB5}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{6759EB45-4C98-411F-83AF-381919278A11}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{706B2B17-82A7-4916-86BD-52C40CBF1A9E}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{70DD2E78-A764-402A-963C-98B1410ED3B2}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{72344FF4-23AB-4936-A12A-67889BE56586}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{7370635B-0F2E-48F0-A21F-EDDF413AD9D3}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{742AF123-FE24-4E02-9C6F-4B54B918F840}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{745976A1-DC03-42B8-A1F9-A0736E91F314}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{7B8A5192-40C2-41AC-B153-D15D8124F856}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{8362C541-8203-415F-A0A7-F9AD9C59AD92}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{86127120-26EB-4919-A404-4D1D6AF3921D}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{8834001B-E07C-40CF-9E2B-D74C2B5DC922}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{8860F072-E49C-401D-A1B5-ECF09CF573FC}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{8B14EDAD-19F8-46D0-9CF0-5D67F4DDF685}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{8C33BDFE-20AC-47AF-A097-A98D3E58DFD0}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{8E49713B-ED72-4AC2-AC1B-86E89A5FCB54}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{966FFF36-EA98-424F-A3BD-8262F4D2ECB6}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{968F13AD-06F1-40A9-8A8E-35ECF16F2FD6}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{97DE8F1F-2F87-4845-AF29-59C34D0DD960}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{99168C90-3079-4E97-945D-EDAF3F0D11E1}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{9B0CF750-0893-4A8B-8BE9-19EA5FA19597}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{9B43FEAD-A197-412E-B58E-7B1415CF6C92}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{9C81EAB3-DF34-4B9B-963B-8C49955E040F}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{9D8F14E2-952E-4257-A022-B1EFAB6E1D65}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{9DC6E382-4812-46B7-A651-92B0DFD13B8E}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{A4024E75-CDE0-416B-B8AC-B1AC7E31DD1C}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{A4F1DF05-2304-4023-A74C-E0E3AF7B5350}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{A88E0F5A-668F-4175-B3FA-EEC783919599}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{A92AE01B-FBAF-44FB-A03F-AFCB623FBB4B}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{B09CE27C-93FA-4812-9AAB-AF30740C7AC3}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{B1E00217-5C3E-4A78-A534-25943550BEB5}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{B2BF9378-6AF3-4A0F-8547-8FFE747FDA18}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{B5366DB9-167C-4A12-8C5D-0DD29D13D8C5}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{B90F35A8-74FC-4A8D-BDC3-AD89C2166375}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{BCB800F2-97A7-47E9-AF73-6719B53161B8}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{BE61A419-76F9-4CB6-AF85-5C1606C9BA1E}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{C121440A-4AC5-454F-8234-9965E8247980}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{C17E1304-9E8B-4F04-83D2-A56DD5CF5609}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{C4BE8B8D-61EF-4FC4-99E1-78BEDBBB2A3A}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{C4F1F6CF-872D-4134-8A5B-AF2D24CB5AC9}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{C781CAB1-2106-4734-A17E-A64900336ABA}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{CA21584C-B741-4E33-9BCA-D551DC3C1E55}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{CA94E0C3-8CC6-43E1-B074-9668E11F1458}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{CBD53AE4-C318-4092-9572-5FC5B5D48D12}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{CD7BF2BA-C7E7-4836-9ED7-713B71CCA06E}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{CDB078A4-07BE-446B-AFBC-009282152349}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{CEA96CFD-B3E0-474B-92D8-9C4F34FCCAC4}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{D2D9F33B-9739-4393-A9E6-1EA2A176FF4B}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{D36B3539-B006-40F2-8935-BD64F4A3050C}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{D5135FE4-1605-4C94-AF19-57D54124405B}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{D52E77EE-2311-4E3B-91EF-464D2A370858}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{D7685448-0822-41DD-95F4-A3F24BE1F508}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{D86137FB-9462-472F-854A-69AE1CB152DC}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{D950F039-2611-49C3-BBDC-9A920A799C21}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{D9F1104F-D384-45BB-96FE-3B90FA0ADECF}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{DD9A153E-71B9-4739-BD14-5D06A872EAED}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{DE3524B8-E1EB-47CE-A01C-4B0AD7E5B4E7}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{DF2868C8-8F0E-48C7-B12C-98DB1E5C4915}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{DF3F8357-45FC-4DFD-803C-2CD87B87232E}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{E0876A61-A3E6-4DE5-8486-A6F8ADF5B89E}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{E3676F16-C85A-4FC2-85DE-357844261467}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{E675BE15-CF9A-429B-9D6A-9A7F22E38DFA}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{E807A526-B71B-473B-A0C8-FE4A4C9F20C0}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{EBA94B5F-1CCC-4DB9-B21D-F155707B4A62}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{EC071D86-DCCB-432B-92AB-55106DEFDF11}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{EE53A33D-4990-4322-8E20-40AB69FDECC4}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{EF120DFB-763E-473C-A8A2-4373D09D0B51}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{F93E6176-B1BE-4075-8A4C-D46BD2E506CD}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{FCE43B00-2FC9-4735-B9CE-7425384C2A2E}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{FE86E842-B261-42C8-9A25-7E1047CE65E6}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
+				<Property Name="ExternalSourcesInputPath" Type="string">
+					<ValueList>
+						<Value Platform="Windows"></Value>
+					</ValueList>
+				</Property>
+				<Property Name="ExternalSourcesOutputPath" Type="string">
+					<ValueList>
+						<Value Platform="Windows">GeneratedSoundBanks\Windows\</Value>
+					</ValueList>
+				</Property>
+				<Property Name="Game Profiler\Voice Monitor\LastBus" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
+				<Property Name="General\LatestLanguage" Type="int32" Value="684519430"/>
+				<Property Name="General\LatestPlatform" Type="string" Value="Windows"/>
+				<Property Name="General\SourceControlPluginID" Type="string" Value="{C403A906-0C19-4ED5-808E-748707065301}"/>
+				<Property Name="GenerateSoundBanks\x64_SelectedLanguages" Type="string" Value=""/>
+				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value=""/>
+				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value=""/>
+				<Property Name="HardwareController\CurrentSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
+				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
+				<Property Name="MeterView\LastObject2" Type="string" Value="{6B8AA749-8E30-456B-80AA-F6AA85F22F53}"/>
+				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
+				<Property Name="MeterView\MeterMode1Viewpoint0" Type="int32" Value="1"/>
+				<Property Name="MeterView\MeterMode1Viewpoint1" Type="int32" Value="2"/>
+				<Property Name="MeterView\MeterMode1Viewpoint2" Type="int32" Value="3"/>
+				<Property Name="MeterView\MeterMode1Viewpoint3" Type="int32" Value="0"/>
+				<Property Name="MeterView\MeterMode2" Type="int32" Value="1"/>
+				<Property Name="MeterView\MeterMode2Viewpoint0" Type="int32" Value="1"/>
+				<Property Name="MeterView\MeterMode2Viewpoint1" Type="int32" Value="2"/>
+				<Property Name="MeterView\MeterMode2Viewpoint2" Type="int32" Value="3"/>
+				<Property Name="MeterView\MeterMode2Viewpoint3" Type="int32" Value="0"/>
+				<Property Name="Mixing Desk\LastSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
+				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFilterVersion" Type="int32" Value="1"/>
+				<Property Name="MonitoringManager\GameObjectFilter\x64_GameObjectFilters" Type="string" Value=""/>
+				<Property Name="ProjectExplorer\FirstVisible_10_1" Type="string" Value="{4C96B38B-3DB4-40C7-91C9-665510E38993}"/>
+				<Property Name="ProjectExplorer\FirstVisible_11_1" Type="string" Value="{23EC2DE3-3ED8-4B82-AC99-92E25F2E4C6B}"/>
+				<Property Name="ProjectExplorer\FirstVisible_1_1" Type="string" Value="{2B9F3865-FD3C-43F4-B034-627E806A30D8}"/>
+				<Property Name="ProjectExplorer\FirstVisible_3_1" Type="string" Value="{8C33BDFE-20AC-47AF-A097-A98D3E58DFD0}"/>
+				<Property Name="ProjectExplorer\FirstVisible_4_1" Type="string" Value="{A5135562-F7AC-49D5-A546-28E173F448C7}"/>
+				<Property Name="ProjectExplorer\FirstVisible_6_1" Type="string" Value="{C98E673F-A24C-48A8-960F-10565FFE70A0}"/>
+				<Property Name="ProjectExplorer\FirstVisible_8_1" Type="string" Value="{41093F77-829F-4D88-8601-E8B25F3D4781}"/>
+				<Property Name="ProjectExplorer\x64_Expanded_10_1" Type="string" Value=""/>
+				<Property Name="ProjectExplorer\x64_Expanded_11_1" Type="string" Value="kGO6f/FM+kSdpfxl9m6PwA=="/>
+				<Property Name="ProjectExplorer\x64_Expanded_12_1" Type="string" Value=""/>
+				<Property Name="ProjectExplorer\x64_Expanded_13_1" Type="string" Value=""/>
+				<Property Name="ProjectExplorer\x64_Expanded_14_1" Type="string" Value="9S0pYN9z1Ey3VWHI0CuQvQ=="/>
+				<Property Name="ProjectExplorer\x64_Expanded_15_1" Type="string" Value=""/>
+				<Property Name="ProjectExplorer\x64_Expanded_16_1" Type="string" Value=""/>
+				<Property Name="ProjectExplorer\x64_Expanded_17_1" Type="string" Value=""/>
+				<Property Name="ProjectExplorer\x64_Expanded_18_1" Type="string" Value=""/>
+				<Property Name="ProjectExplorer\x64_Expanded_19_1" Type="string" Value=""/>
+				<Property Name="ProjectExplorer\x64_Expanded_1_1" Type="string" Value="o/YIQYKttUCMoEGDp2XKYNikFBWmHSpBoX51ygwhSfMREeAA/Rw9Qbz0/tNRaou2MGQ6tXC1EkSL2vNXfWNPpEAcNNgxr1tNnWXmDXCfRglCNcdCA214T4Pi07f2zD6s"/>
+				<Property Name="ProjectExplorer\x64_Expanded_20_1" Type="string" Value=""/>
+				<Property Name="ProjectExplorer\x64_Expanded_21_1" Type="string" Value=""/>
+				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="Kw0Y63BURkC6ZOEY76Bz/AB99PRgf9xAjDg5Un17TQbquIa5RmT8QJEk1ykCFB9BA+NdkZnCNUKAWcERjRjy70A2yVxFRalCpnLChYV46Nlg2F8c+Gq3Q6ZvdGiCSUcy6hnbPWa0bkSTFesEtLP2tnx3Tnn/AfFEiIS2/PEV+zhxiPTm22B3RZE+eimIJOpjycgS1L2UjUWvdEy/kn7SSCqxghVNEcFFhJQNxGmCWwTLWfgQDvbGRpUvYa9y7Rit0nzVSssr70aK6I0r0ZqE9AwAT6I8BghHr4bxYAMFxgYbp+us0mgOSJZ+W08YV++KhCWb5wVdZUiwQKkXCob5H9U3cBGSlHpIiOCm7wOwiswhrLFkrQggSaUEZMdXgoOCNTdVaQpnLEmrpOC6/aSF4VxohB5NsAtKgFKSGrVGheUsHDbXWHU0Tr+UeLzWOkRTvdiqhcXMWE6idNMscMHneQ=="/>
+				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="FDRyByeJLUCRSfkLg+dNzG1AkRrI8lVAlu35mZPMmcAofKmRhCONQIEjPNAdBXZqrXMtHMYaF0G3smhFnRwhuEUfXjzTL4ZBlXCEn8Z6wpT50jRLSFyxQYBHmjpRQqyM4Jf7g9635kGLxNM+cJH7DoJBGfjG1PlBjQCmAN3cUJnMCOCFAkpGRJhQsFdEtTy5ATbfJ+nFXUSQwDKKI89xCKNYJVexd3BEgKmVmqOIwUT2vRrpNGgARYkPDXJ2XBe5UWp1vCtfkEana5PcmNzf6nOz+Q3D9R9JjZ5TQ/S3wDkUaNjrj5QrSohZL1IHQentEhMoS6dm20qnihj4FU60XVZcOZJdlLFLiNh0qBuhxkqsWJYZ4w++S4B1rt3ZyFVRioMhlwrRn0yKnE+qUQbogBLA3Gueu8ZMp1kBb8ut5jemScAzbgZLTbgYt0gFDKIDtNSA8QzOTE2frUTxby7SCkOhBSDx6qZNvSti5QzQHxs="/>
+				<Property Name="ProjectExplorer\x64_Expanded_4_1" Type="string" Value="JAVm8fKBukCdkJ6eLZOIhsHGujJ0dsNHtvHiWjCOkQk="/>
+				<Property Name="ProjectExplorer\x64_Expanded_5_1" Type="string" Value=""/>
+				<Property Name="ProjectExplorer\x64_Expanded_6_1" Type="string" Value="NdEH3blYW0KrqV2KXmzoavJIxVDWBBpNk0awXZgs8js="/>
+				<Property Name="ProjectExplorer\x64_Expanded_7_1" Type="string" Value="1yyIlPHGRkCCphGRcn7S1wziKuV2yPtAt58lm86uP7GjlwIWm1NtQbsnMJ2hWuNEnYvAhWQWdEGISkAhvotA7VPYJgqbGptElbeselpcTxoqFKGshlUSRa3CGjs0DpAvCEdWpezl+Ui1s7Idh3ValuKQKzHbbghKrcNk5jXXoR/Se8IPHYApTb2ZxgrxWhOlBsOITZqmK06RsfCbDD9BywQkPCm6TsNPpMd2Czr+ceyIbw/aSh71T4wwPu7pW4PV"/>
+				<Property Name="ProjectExplorer\x64_Expanded_8_1" Type="string" Value="W3P3z4XecUOPYYSlbeV6iyii9g68VlhHi6kADzgsMHgSgdfiE+d0R5ogey4MBBZj0yslV5wP9UmGyq9QqeatKHKSkpq92sNMphwNIm0s15tE6uJbryVhTqg4VFXFFzhvV5sM4sgsmk+IqUWo11+WTw=="/>
+				<Property Name="RTPC\GameParameterSimValue\{008E5714-2C0D-4FF6-B4D1-3B5702897DEA}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{0092592B-9E4B-4822-84E0-1F68FBAD049A}" Type="Real64" Value="-500"/>
+				<Property Name="RTPC\GameParameterSimValue\{014CF58C-B34F-443D-8C94-7A18C9B9F512}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{023F1420-21EF-4B55-BCF7-7BE9CC7A7B91}" Type="Real64" Value="-394.889103182256"/>
+				<Property Name="RTPC\GameParameterSimValue\{03CA6A30-7945-4784-9A5B-8CFE530CEF39}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{05BB02CD-EBB3-47D1-9A4B-320AA5FE6C21}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{05D0676E-859F-48D6-A4F2-0F63C8E6827C}" Type="Real64" Value="1"/>
+				<Property Name="RTPC\GameParameterSimValue\{07ECAD71-A158-4EAF-ABCC-B9D63738BCAD}" Type="Real64" Value="1.23341096413821"/>
+				<Property Name="RTPC\GameParameterSimValue\{0807F4A3-2A93-426D-A809-8E622AD6CB1F}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{09E2B445-C4A3-447F-B3CA-818A1D925EF7}" Type="Real64" Value="6"/>
+				<Property Name="RTPC\GameParameterSimValue\{0A2DA76C-1784-4AEF-926F-C9C2142A7C33}" Type="Real64" Value="362.754607177498"/>
+				<Property Name="RTPC\GameParameterSimValue\{0B95C1DF-BAB9-4938-A7E6-1C642B02A2A6}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{0DD12149-CB37-4EEC-9EA2-5873DC6D1AC3}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{0DEB0DA4-96F4-4212-9BCD-7F67DD9C0CCB}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{111245E8-BDC1-491B-9DF2-959D675097DF}" Type="Real64" Value="50"/>
+				<Property Name="RTPC\GameParameterSimValue\{1328458C-9B8E-40F5-B0AD-99C8750E5826}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{1329EBEF-A193-472E-A38C-64668B494879}" Type="Real64" Value="50"/>
+				<Property Name="RTPC\GameParameterSimValue\{13DAA0C7-9932-4B5C-9D6D-9075D21BDC49}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{14F1853C-1D12-4F07-B583-A7274D2A0E83}" Type="Real64" Value="1"/>
+				<Property Name="RTPC\GameParameterSimValue\{1683510A-37B8-4F65-B5AD-041D5805A55B}" Type="Real64" Value="1"/>
+				<Property Name="RTPC\GameParameterSimValue\{172BD2BB-5DD1-4B2D-8EE4-FC278557ACAA}" Type="Real64" Value="-48"/>
+				<Property Name="RTPC\GameParameterSimValue\{1803FC14-F564-4C56-AE69-D8BF05B2FF0E}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{2035F1B4-3A83-4CC3-A3EF-8196DE53D54D}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{22FF3DC9-00B9-40AA-AD03-61913E494D23}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{23BAD005-E61B-45C7-9ADA-EB168F71B891}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{23F33E5A-B0EE-4CD5-AE2C-178797545D5C}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{252B0A8A-5E8D-4AAD-8CB3-BBFFB8A0C490}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{26D06703-6C22-441C-BB39-27D82BBE42C6}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{26D54D22-BCE5-49C0-A3BB-DBFE3A5D501B}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{26E0B68B-41BB-492A-AAB7-5D10155209E1}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{2A2495B6-0158-4F47-8261-D625910D546D}" Type="Real64" Value="667.816711590297"/>
+				<Property Name="RTPC\GameParameterSimValue\{2A5030C5-9B7F-4E6B-8124-2D33929B9569}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{2F2DFE37-4F9E-4D94-83D8-53CCA39781AD}" Type="Real64" Value="75"/>
+				<Property Name="RTPC\GameParameterSimValue\{31BA5FC5-650D-4F7C-B486-503A942BC5EA}" Type="Real64" Value="1"/>
+				<Property Name="RTPC\GameParameterSimValue\{32AED0E8-BE27-4A4D-A048-ADC26D7265A5}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{34AD7DB9-F093-4339-A2C3-B032D91713D2}" Type="Real64" Value="0.337837837837839"/>
+				<Property Name="RTPC\GameParameterSimValue\{35E6CEB4-CCF0-42F7-9519-DC3FD300F09D}" Type="Real64" Value="1"/>
+				<Property Name="RTPC\GameParameterSimValue\{36541508-0B2A-4B82-AF53-2C00E6548684}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{37F7A22D-4A05-4F22-9866-23EADD3705DC}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{3C43777C-CC9A-4D3B-A829-8DF25F4D9059}" Type="Real64" Value="1"/>
+				<Property Name="RTPC\GameParameterSimValue\{3CBC52B8-1220-46BC-9646-5C16DE69108D}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{4108DF02-28BC-4606-85F3-5388C53B78C8}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{41463B58-9F9D-4FDF-B198-1B856CAA76F0}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{4149B9E7-AB3F-4DB8-AF6F-47F27D924B7E}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{41B00B57-897A-4477-A19B-88C4DE7B46F4}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{428B07F9-B8CE-4ECF-A188-06E71DAB0732}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{46923156-0462-4964-B923-E32A53CACF7E}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{47E41023-CE75-4FA8-89A1-716D6651932D}" Type="Real64" Value="50"/>
+				<Property Name="RTPC\GameParameterSimValue\{4B470CB9-0164-481C-A974-54025F8EEEF7}" Type="Real64" Value="-32"/>
+				<Property Name="RTPC\GameParameterSimValue\{4BFC5DFB-E8DE-43BB-9404-354C930A3FB7}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{4C2F9436-6A3B-44DC-A8CB-BEAD6D5C2D69}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{4DA2CC33-20F8-41CC-957E-A7DB0E2B20FB}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{4DDA2A05-F560-4ED6-B6AC-53D94548C75C}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{4E25D4AF-E47C-4016-90D4-06A637759DC8}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{4F6FA1FF-3326-42A7-B6D6-25C80EFBC5D6}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{4F9B19BA-00BF-4426-951F-6E7F3BE8DCAA}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{5125A94D-FF87-44F4-87E1-8EB8E0F4F036}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{536FA72C-8C7E-4C8B-AE03-EF34FDADC314}" Type="Real64" Value="6"/>
+				<Property Name="RTPC\GameParameterSimValue\{55CFC0B1-B68E-46B8-8121-18B4F1AA6E4F}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{56AB8F76-7A4D-4890-824D-DDDE6894BDAF}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{56ADE2AF-F7A0-47EC-B209-9F7EB7511300}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{590DE35B-A8AD-4337-B39A-B32335216856}" Type="Real64" Value="1"/>
+				<Property Name="RTPC\GameParameterSimValue\{59790042-CFDF-4ED7-A9E9-D4A395EC7063}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{5C31977B-7004-4487-AA07-F14D267E00F0}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{5EFD20BA-C814-4560-92CE-4590226EBAD5}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{602FA019-8835-494C-98F6-44826915505C}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{6248DE76-391F-4AD0-84AA-AC5683CBB4A3}" Type="Real64" Value="1"/>
+				<Property Name="RTPC\GameParameterSimValue\{635265A1-4699-42D7-8E43-42E8870A38CA}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{643FD01C-910B-4BC6-8F15-DFF91DC319AB}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{66B993A9-D720-42D0-BC9A-FA72965B2E31}" Type="Real64" Value="1"/>
+				<Property Name="RTPC\GameParameterSimValue\{6851F265-6895-4E9A-B841-0DBD1966CCF9}" Type="Real64" Value="50"/>
+				<Property Name="RTPC\GameParameterSimValue\{6963CEEC-86B0-4FF1-B004-2C32DCB45386}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{69F18A89-0ED1-4453-B335-332E1AD1D8C5}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{6A2FF508-4CCA-4E2F-A6C3-4E9A62E3C824}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{6A3A4F4A-1828-4A9B-AEC9-4FE36E7D6F06}" Type="Real64" Value="1"/>
+				<Property Name="RTPC\GameParameterSimValue\{6A96F2B7-4E69-4D2C-83CD-07F89DB80F92}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{6D046FE9-8877-4483-B6F3-4B62E35069E3}" Type="Real64" Value="1"/>
+				<Property Name="RTPC\GameParameterSimValue\{6DDCCCF1-D916-43FA-86C7-19B992DDB470}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{70700987-3D06-4E65-A5CD-3FE7BBA6D783}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{70814150-A69A-42B8-9CB2-EA379C31F23E}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{71B4EBE6-0320-4EF9-9163-C668AB71046A}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{725BFF84-7802-4228-829E-0F43E2AB5928}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{727A84D7-E621-439B-BAD0-69AA51B2AAF7}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{72B08CA1-7049-4516-922F-19EA70360E0D}" Type="Real64" Value="1"/>
+				<Property Name="RTPC\GameParameterSimValue\{76D46208-2C1C-455B-95C8-0DA2D9B84526}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{77781D28-E066-4256-82D8-BF80FD82A587}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{7908D602-FD8B-404A-B644-22EAB86A3A13}" Type="Real64" Value="1"/>
+				<Property Name="RTPC\GameParameterSimValue\{7EB2D8C2-7FA5-4F25-96B2-948CEB112EAB}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{7F0BFC79-78FF-40B8-8CDE-0888C4A540B0}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{80D5FA58-121E-4DBE-B40D-B0C428D874B1}" Type="Real64" Value="-48"/>
+				<Property Name="RTPC\GameParameterSimValue\{83A08DAC-1CD3-4F09-A095-46AF0BA87F35}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{8443ACC6-D722-4B5A-A546-1E9DEACEB8FD}" Type="Real64" Value="0.669298082739857"/>
+				<Property Name="RTPC\GameParameterSimValue\{87870A52-BD06-4A6C-8052-2E8B1B4050AB}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{8A1FF5B3-8CD5-4E2A-8715-A35C0A311B6C}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{8A8CBF06-0F14-4953-A5B8-AEB468C22D92}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{8D5BC668-290A-40CB-A7CE-0E7CB037DA98}" Type="Real64" Value="-32"/>
+				<Property Name="RTPC\GameParameterSimValue\{8E7BB6E5-0182-456B-BE83-12F6B4244555}" Type="Real64" Value="322.275795564127"/>
+				<Property Name="RTPC\GameParameterSimValue\{914884E1-9DFC-4243-AE99-A15FAF8041EB}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{92092D1E-7C3C-47DF-9610-D6B82ED36F3C}" Type="Real64" Value="50"/>
+				<Property Name="RTPC\GameParameterSimValue\{955E665C-12BB-4C61-B8E1-4A1AE024D6E4}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{9625EFA9-085D-4324-8FB9-F8A2375E4496}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{96C06EE5-E9DC-452C-B419-F98324A2E48D}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{96C5EE80-7922-407D-9C2C-DA4653A5E265}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{96E37C48-CBD8-475F-AA8C-268A5B2C64BA}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{97119893-2912-4259-A0FB-B324273D4B99}" Type="Real64" Value="-48"/>
+				<Property Name="RTPC\GameParameterSimValue\{9740D067-0D5F-4246-8741-6E9F56FEE38A}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{9970D6C2-20EF-4E4B-A40D-0181AB8EA25B}" Type="Real64" Value="39.5756991321119"/>
+				<Property Name="RTPC\GameParameterSimValue\{A0B29462-8752-4A89-9E72-A3EE763282B1}" Type="Real64" Value="50"/>
+				<Property Name="RTPC\GameParameterSimValue\{A2AE79DC-CA3A-46BA-9652-9986C322A87B}" Type="Real64" Value="50"/>
+				<Property Name="RTPC\GameParameterSimValue\{A2BCD987-B402-4C5D-83A9-872B1F2F25F2}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{A34890AB-B9D5-4526-A64D-5290C43EF2DC}" Type="Real64" Value="50"/>
+				<Property Name="RTPC\GameParameterSimValue\{A39E1B9E-F5F9-41A7-B25B-CE7D99CC879E}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{A5135562-F7AC-49D5-A546-28E173F448C7}" Type="Real64" Value="50"/>
+				<Property Name="RTPC\GameParameterSimValue\{A608E607-A5A6-4D83-9B4D-67BE371E2EC4}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{A6733A3D-98B9-4778-9A19-2A2D51DF4743}" Type="Real64" Value="1"/>
+				<Property Name="RTPC\GameParameterSimValue\{A88C2321-8294-4C4A-BD1C-76BBE8E36F53}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{AB1A0816-0E9D-4DE0-A970-5E9C6E53FBFA}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{AF06CABE-2287-4DAB-85BF-088A643E2890}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{B1125AFE-328F-4070-A340-A2472F6CDEAA}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{B1765AFB-B748-49D2-BE0C-B1EB71759A1E}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{B258CD98-691E-49A9-A009-30032AB9A058}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{B27A88C0-52F7-4ACD-929A-DB75EB384ED4}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{B45CEDD4-A5CB-4BE7-9BE2-980000DFBDBD}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{B4D9A1C0-5042-441C-AAA4-5E8CC7EB4407}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{B6839AC9-E419-435D-8213-6AF5526276DA}" Type="Real64" Value="-48"/>
+				<Property Name="RTPC\GameParameterSimValue\{B8C946C8-805D-4CBC-817E-0803C07FEAF9}" Type="Real64" Value="-48"/>
+				<Property Name="RTPC\GameParameterSimValue\{BD137C6C-18EC-4BC4-93B6-0F9D337A691F}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{BD96F3DA-35D9-44A4-B379-B5067A6EB662}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{BF1A6B54-FD89-448B-BA16-14985DCFE7DD}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{C0F768CB-9FBC-42F1-B117-19FC354D62DD}" Type="Real64" Value="1"/>
+				<Property Name="RTPC\GameParameterSimValue\{C1E91AF3-E8C4-4614-80A5-AD93E2645BB7}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{C228FE79-8BC8-4DF0-9BCB-D254ACC34004}" Type="Real64" Value="50"/>
+				<Property Name="RTPC\GameParameterSimValue\{C22988EF-87C5-4EFD-B34A-948948919E85}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{C2F834A9-FB64-4B72-AD37-C2E466DA03BD}" Type="Real64" Value="1"/>
+				<Property Name="RTPC\GameParameterSimValue\{C55DBCCA-5549-4CFF-99B1-EA598623ABAA}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{C5736518-8CBC-49FD-9C7B-2ED9321B2BE2}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{C9895E47-685A-42A5-9F33-7DA1C352AF34}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{CAB269D4-9022-4931-8091-96B0E0A66529}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{CD22A77A-D8B0-474E-B0BB-FFB075F7874C}" Type="Real64" Value="50"/>
+				<Property Name="RTPC\GameParameterSimValue\{D082CA09-C2AF-43A7-8861-72E5840AB13E}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{D4BD7759-34B8-4E14-9B9E-5A4BD61ECF9B}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{D623E4B8-F61C-448A-85B9-42B3023F177A}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{DE0D6AA3-5C68-46FF-B359-165958676836}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{E2234FF4-B95D-437F-82BA-3CFAC60D9BF1}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{E2330CCF-E6F1-4413-9FC3-6311B1DD761F}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{E2836E61-0154-44F6-9687-15E54CFAC8AF}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{E298D92B-6728-4D61-9B10-5770EB758F8F}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{E35300E4-11F6-43E0-AD45-7277D889AF05}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{E3B7811A-7B2F-490F-B44F-5FE51B468041}" Type="Real64" Value="75"/>
+				<Property Name="RTPC\GameParameterSimValue\{E6BB370E-B2E1-4797-8680-D86185F59230}" Type="Real64" Value="1"/>
+				<Property Name="RTPC\GameParameterSimValue\{E6FA8C49-ECD2-4FDE-8FEE-C2BA2043C924}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{E705B40B-07A9-4CF5-8C11-4BA251C03C3A}" Type="Real64" Value="1"/>
+				<Property Name="RTPC\GameParameterSimValue\{E91CCB73-8D55-4A3C-A79F-92675F41D685}" Type="Real64" Value="50"/>
+				<Property Name="RTPC\GameParameterSimValue\{E93F8CDB-06D1-4737-ACAF-7CD44BBED783}" Type="Real64" Value="75"/>
+				<Property Name="RTPC\GameParameterSimValue\{E9D60F9B-BEB7-4D1C-825F-5D220C36C022}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{EA4A770A-6F11-457E-93AB-C14A83A2E562}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{EAC51FB2-C8C2-449C-AD58-C374ABAEE7D8}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{EB984494-1D83-4C0B-9031-C02368B64601}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{EBE8473A-351C-415B-9F8C-5FAA7C7B5797}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{EDA87B19-73AA-40A0-9F19-2073606DB710}" Type="Real64" Value="6"/>
+				<Property Name="RTPC\GameParameterSimValue\{EE2A533F-2D24-4986-8427-F29098C965AD}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{EF1B8C24-E1F2-49AC-9E6D-DCC302992296}" Type="Real64" Value="-26.3837994214079"/>
+				<Property Name="RTPC\GameParameterSimValue\{F1487974-F8FA-467E-8578-91CC8005D4E8}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{F1C992D0-B491-4E82-A7F1-96A7E94F0520}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{F33D13AD-53EE-4DD7-83BB-EDB0B715B1DA}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{F39D16FD-BC16-44E1-A1CF-6CAE1BA5167A}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{F4BC5F7E-F37A-416D-BB02-4B0FCDF8F15B}" Type="Real64" Value="1"/>
+				<Property Name="RTPC\GameParameterSimValue\{F4E40E6D-4D7A-41F3-8B49-14BB33EDE893}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{F4F99CFF-7335-4EE1-8D44-386B64FDF2F2}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{F574840F-EAC3-4B3C-9972-5A023D946FCC}" Type="Real64" Value="5000"/>
+				<Property Name="RTPC\GameParameterSimValue\{F61027E8-8BE7-4338-933E-5B7291BE5F27}" Type="Real64" Value="-11.3207547169811"/>
+				<Property Name="RTPC\GameParameterSimValue\{F707DB9E-035F-4D86-A6BE-1845BF48FCF0}" Type="Real64" Value="50"/>
+				<Property Name="RTPC\GameParameterSimValue\{F72E0659-4346-4E1C-A1B1-DAB46A05101E}" Type="Real64" Value="50"/>
+				<Property Name="RTPC\GameParameterSimValue\{F8ED1B7C-8370-46C1-9E5B-5A0D80C3B930}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{FCBF4796-B89C-4C9A-AA3B-68D0415B5B40}" Type="Real64" Value="-94.9308755760369"/>
+				<Property Name="RTPC\GameParameterSimValue\{FDA3008B-3305-422D-8086-80DED4C0589A}" Type="Real64" Value="94.6990116801438"/>
+				<Property Name="RTPC\GameParameterSimValue\{FE5D6A28-D5C3-4979-9218-A00A4BAA7A7C}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{FF3BC515-5239-40D1-A27C-8E80E0D734CC}" Type="Real64" Value="0"/>
+				<Property Name="RTPC\GameParameterSimValue\{FFA721C4-39E6-4037-B18B-8CFA476B72F6}" Type="Real64" Value="0"/>
+				<Property Name="SoundBank Manager\x64_Expand States" Type="string" Value=""/>
+				<Property Name="SoundBankHeaderFilePath" Type="string" Value="GeneratedSoundBanks\"/>
+				<Property Name="SoundBankPaths" Type="string">
+					<ValueList>
+						<Value Platform="Windows">GeneratedSoundBanks\Windows\</Value>
+					</ValueList>
+				</Property>
+				<Property Name="SoundBankPostGenerateCustomCmdDescription" Type="string">
+					<ValueList>
+						<Value Platform="Windows">Copy Streamed Files</Value>
+					</ValueList>
+				</Property>
+				<Property Name="SoundBankPostGenerateCustomCmdLines" Type="string">
+					<ValueList>
+						<Value Platform="Windows">"$(CopyStreamedFilesExePath)" -info "$(InfoFilePath)" -outputpath "$(SoundBankPath)" -banks "$(SoundBankListAsTextFile)" -languages "$(LanguageList)"</Value>
+					</ValueList>
+				</Property>
+				<Property Name="SoundBankPreGenerateCustomCmdDescription" Type="string">
+					<ValueList>
+						<Value Platform="Windows"></Value>
+					</ValueList>
+				</Property>
+				<Property Name="SoundBankPreGenerateCustomCmdLines" Type="string">
+					<ValueList>
+						<Value Platform="Windows"></Value>
+					</ValueList>
+				</Property>
+			</PropertyList>
+		</UserProjectSettings>
+	</UserProjectSettingsInfo>
+</WwiseDocument>

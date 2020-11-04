@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{50C548F2-04D6-4D1A-9346-B05D982CF23B}" SchemaVersion="97">
+	<SoundBanks>
+		<WorkUnit Name="IndiaFoxtEcho_Soundbank" ID="{50C548F2-04D6-4D1A-9346-B05D982CF23B}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="IndiaFoxtEcho_MB339PAN" ID="{4E85B6B5-26D3-4053-8E88-897C602615D0}">
+					<ObjectInclusionList>
+						<ObjectRef Name="rev_inside_generic_small" ID="{0C6714C5-4A6E-4273-BA96-1949B1196F32}" WorkUnitID="{3CD5ED68-08EA-41E5-8D55-D23074903629}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="IndiaFoxtEcho_MB339PAN" ID="{6BDCC012-BB9E-4CC6-A759-016FCBADE637}" WorkUnitID="{6BDCC012-BB9E-4CC6-A759-016FCBADE637}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

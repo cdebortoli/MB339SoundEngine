@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5C7516AE-FA02-42AA-964F-52D1C955DA75}" SchemaVersion="97">
+	<SoundBanks>
+		<WorkUnit Name="da62_sdk_aircraft" ID="{5C7516AE-FA02-42AA-964F-52D1C955DA75}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="DA62_SDK_AIRCRAFT" ID="{E7CC45C3-E4D6-441E-A908-0C38808104C3}">
+					<ObjectInclusionList>
+						<ObjectRef Name="DA62_SDK_AIRCRAFT" ID="{572558A3-77B1-4470-80A9-959AA388C144}" WorkUnitID="{572558A3-77B1-4470-80A9-959AA388C144}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="DA62_SDK_AIRCRAFT_AI" ID="{EA70F849-50FF-4C4F-85D6-354D0F46D52C}">
+					<ObjectInclusionList>
+						<ObjectRef Name="DA62_SDK_AIRCRAFT_AI" ID="{465F3565-B325-4180-BA2D-9CD561E02A84}" WorkUnitID="{465F3565-B325-4180-BA2D-9CD561E02A84}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

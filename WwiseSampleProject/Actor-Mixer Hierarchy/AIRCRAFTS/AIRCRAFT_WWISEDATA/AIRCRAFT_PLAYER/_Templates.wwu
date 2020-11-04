@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4AD57CD2-2BCB-46EF-8AE8-8D2BD19A84F4}" SchemaVersion="97">
+	<AudioObjects>
+		<WorkUnit Name="_Templates" ID="{4AD57CD2-2BCB-46EF-8AE8-8D2BD19A84F4}" PersistMode="Standalone">
+			<ChildrenList>
+				<WorkUnit Name="_Template_Piston" ID="{8171D6B3-13C4-4FD0-B750-4EF1179213C2}" PersistMode="Reference"/>
+				<WorkUnit Name="_Template_Turboprop" ID="{7810E7A0-5C52-4294-ACEE-60253536EE83}" PersistMode="Reference"/>
+				<WorkUnit Name="_Template_Jet" ID="{6DB7F1E6-E470-461B-9916-6EAECA0731C8}" PersistMode="Reference"/>
+				<WorkUnit Name="_Template_Airliner" ID="{FCD8C8C5-B721-416F-BF26-70EB2C382D46}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
