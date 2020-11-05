@@ -566,20 +566,6 @@
 							<ChildrenList>
 								<Folder Name="light" ID="{3C5E1F45-2FD3-4186-9570-849FC67AC294}" ShortID="57119263">
 									<ChildrenList>
-										<Event Name="Play_IndiaFoxtEcho_MB339PAN_safety_elt_switch" ID="{21D7A96B-BF6B-4280-8EE8-7725CA4E2CF5}">
-											<ChildrenList>
-												<Action Name="" ID="{F9CB1459-DA34-4693-94C2-F05CA04ACF82}" ShortID="130805251">
-													<PropertyList>
-														<Property Name="ActionType" Type="int16" Value="1"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="MB339_light_switch_on" ID="{0E232685-256D-41DC-A62D-53EC3407C106}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-											</ChildrenList>
-										</Event>
 										<Event Name="Play_IndiaFoxtEcho_MB339PAN_landing_light_switch_on" ID="{E675BE15-CF9A-429B-9D6A-9A7F22E38DFA}">
 											<ChildrenList>
 												<Action Name="" ID="{51119FC0-BBA4-42C9-85E1-90C7E9939913}" ShortID="777410815">
@@ -588,7 +574,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="MB339_light_switch_on" ID="{0E232685-256D-41DC-A62D-53EC3407C106}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+															<ObjectRef Name="MB339_fuel_cutoff_crossfeed_switch" ID="{F2A3480E-9236-4B6C-AA72-A9B1AE11B15B}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -602,7 +588,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="MB339_light_switch_off" ID="{D5AAB37E-DA46-4651-98DB-7C872981E6CA}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+															<ObjectRef Name="MB339_fuel_cutoff_crossfeed_switch" ID="{F2A3480E-9236-4B6C-AA72-A9B1AE11B15B}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -636,7 +622,7 @@
 												</Action>
 											</ChildrenList>
 										</Event>
-										<Event Name="Play_IndiaFoxtEcho_MB339PAN_strobe_light_switch_on" ID="{966FFF36-EA98-424F-A3BD-8262F4D2ECB6}">
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_beacon_light_switch_on" ID="{966FFF36-EA98-424F-A3BD-8262F4D2ECB6}">
 											<ChildrenList>
 												<Action Name="" ID="{0DEBFA29-AFA0-4CB3-8029-4C01C445437A}" ShortID="664458048">
 													<PropertyList>
@@ -650,7 +636,7 @@
 												</Action>
 											</ChildrenList>
 										</Event>
-										<Event Name="Play_IndiaFoxtEcho_MB339PAN_strobe_light_switch_off" ID="{1DD8A68D-441F-42F9-BBCE-D8DF374801EC}">
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_beacon_light_switch_off" ID="{1DD8A68D-441F-42F9-BBCE-D8DF374801EC}">
 											<ChildrenList>
 												<Action Name="" ID="{447EBDAC-0AB9-4FE2-9882-B6AE3096C03E}" ShortID="869331925">
 													<PropertyList>
@@ -664,49 +650,7 @@
 												</Action>
 											</ChildrenList>
 										</Event>
-										<Event Name="Play_IndiaFoxtEcho_MB339PAN_potentiometer_light_switch_on" ID="{4C144462-1825-453E-853F-56C09B9B9297}">
-											<ChildrenList>
-												<Action Name="" ID="{C67D082E-1F30-4C32-B733-C4927191D3FE}" ShortID="796505754">
-													<PropertyList>
-														<Property Name="ActionType" Type="int16" Value="1"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="MB339_light_switch_on" ID="{0E232685-256D-41DC-A62D-53EC3407C106}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-											</ChildrenList>
-										</Event>
-										<Event Name="Play_IndiaFoxtEcho_MB339PAN_potentiometer_light_switch_off" ID="{0A8026B4-6F13-4CC9-8845-A892CF7DF266}">
-											<ChildrenList>
-												<Action Name="" ID="{6770472B-8D5D-4BCF-AF2A-A84788A976FC}" ShortID="815042454">
-													<PropertyList>
-														<Property Name="ActionType" Type="int16" Value="1"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="MB339_light_switch_off" ID="{D5AAB37E-DA46-4651-98DB-7C872981E6CA}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-											</ChildrenList>
-										</Event>
-										<Event Name="Play_IndiaFoxtEcho_MB339PAN_cabin_light_switch_on" ID="{43254333-CF18-4F77-A726-455F4ECFC748}">
-											<ChildrenList>
-												<Action Name="" ID="{4C94E9F6-1AE4-4163-97AF-8B0E0DC480A1}" ShortID="702570369">
-													<PropertyList>
-														<Property Name="ActionType" Type="int16" Value="1"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="MB339_light_switch_on" ID="{0E232685-256D-41DC-A62D-53EC3407C106}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-											</ChildrenList>
-										</Event>
-										<Event Name="Play_IndiaFoxtEcho_MB339PAN_cabin_light_switch_off" ID="{408DB707-4C4D-437D-84D6-FB3FEFC43835}">
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_flood_light_select" ID="{408DB707-4C4D-437D-84D6-FB3FEFC43835}">
 											<ChildrenList>
 												<Action Name="" ID="{74192A3E-ED5F-45EA-A5AC-C99DD7467C99}" ShortID="1030242637">
 													<PropertyList>
@@ -714,7 +658,77 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="MB339_light_switch_off" ID="{D5AAB37E-DA46-4651-98DB-7C872981E6CA}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+															<ObjectRef Name="MB339_outer_knob" ID="{60F6341C-81E2-477A-905C-9504F7284450}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_taxi_light_switch_off" ID="{43384021-ECB0-4737-9832-C36771004135}">
+											<ChildrenList>
+												<Action Name="" ID="{407F10AF-3FEC-4F2A-A914-1AAACFF32DEC}" ShortID="610780428">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_fuel_cutoff_crossfeed_switch" ID="{F2A3480E-9236-4B6C-AA72-A9B1AE11B15B}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_taxi_light_switch_on" ID="{A7778313-D624-4557-B040-9ADF530D21BC}">
+											<ChildrenList>
+												<Action Name="" ID="{15D378DD-197C-408A-B849-9A755C5FE9DD}" ShortID="245401366">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_fuel_cutoff_crossfeed_switch" ID="{F2A3480E-9236-4B6C-AA72-A9B1AE11B15B}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_console_light_select" ID="{B33BBE5D-CCEE-4154-B332-7649205381B3}">
+											<ChildrenList>
+												<Action Name="" ID="{BD934250-225B-4B4E-A89D-1230328280BD}" ShortID="1064516889">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_outer_knob" ID="{60F6341C-81E2-477A-905C-9504F7284450}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_inst_light_select" ID="{C6004617-96A9-470E-A52C-664112228BC2}">
+											<ChildrenList>
+												<Action Name="" ID="{7295492C-3A22-4C3A-A12E-46D07BBE0795}" ShortID="151267437">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_outer_knob" ID="{60F6341C-81E2-477A-905C-9504F7284450}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_form_light_select" ID="{99C3B670-D494-4827-8CE1-D2BC2A62F0B7}">
+											<ChildrenList>
+												<Action Name="" ID="{B081625D-41D9-4653-9ACD-97B8BFE8FD30}" ShortID="213409616">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_outer_knob" ID="{60F6341C-81E2-477A-905C-9504F7284450}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -741,6 +755,34 @@
 										<Event Name="Play_IndiaFoxtEcho_MB339PAN_pressurization_oxygen_switch_off" ID="{C781CAB1-2106-4734-A17E-A64900336ABA}">
 											<ChildrenList>
 												<Action Name="" ID="{AF6C5A9A-C020-431E-A8B3-B391B043EF1E}" ShortID="360500090">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_pressurization_oxygen_switch_off" ID="{D2E48FF1-4FEE-4884-AE9A-C9CB687BB774}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_oxygen_dilution_switch_on" ID="{99CD2C3A-2F03-4B73-AA47-81F505CB4431}">
+											<ChildrenList>
+												<Action Name="" ID="{A14C6130-B19A-4C2F-832D-24BD39AB9E5B}" ShortID="54332810">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_pressurization_oxygen_switch_on" ID="{44D38F81-77B1-4505-897A-97B310AB2BF5}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_oxygen_dilution_switch_off" ID="{1D94128C-D265-4E60-9891-E3756A852C34}">
+											<ChildrenList>
+												<Action Name="" ID="{4BF29558-A003-4844-B879-4DBD0BE43430}" ShortID="391912354">
 													<PropertyList>
 														<Property Name="ActionType" Type="int16" Value="1"/>
 													</PropertyList>
@@ -798,7 +840,7 @@
 												</Action>
 											</ChildrenList>
 										</Event>
-										<Event Name="Play_IndiaFoxtEcho_MB339PAN_avionic_switch_off" ID="{BE61A419-76F9-4CB6-AF85-5C1606C9BA1E}">
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_jpt_switch_off" ID="{BE61A419-76F9-4CB6-AF85-5C1606C9BA1E}">
 											<ChildrenList>
 												<Action Name="" ID="{7F8AF671-0B9C-43A1-B23C-1CB18A0B19AD}" ShortID="966953375">
 													<PropertyList>
@@ -812,7 +854,7 @@
 												</Action>
 											</ChildrenList>
 										</Event>
-										<Event Name="Play_IndiaFoxtEcho_MB339PAN_avionic_switch_on" ID="{B1E00217-5C3E-4A78-A534-25943550BEB5}">
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_jpt_switch_on" ID="{B1E00217-5C3E-4A78-A534-25943550BEB5}">
 											<ChildrenList>
 												<Action Name="" ID="{23641C2B-4BB4-4CFB-BBFB-888861E87ADC}" ShortID="957583244">
 													<PropertyList>
@@ -821,34 +863,6 @@
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="MB339_light_switch_on" ID="{0E232685-256D-41DC-A62D-53EC3407C106}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-											</ChildrenList>
-										</Event>
-										<Event Name="Play_IndiaFoxtEcho_MB339PAN_battery_switch_on" ID="{FE86E842-B261-42C8-9A25-7E1047CE65E6}">
-											<ChildrenList>
-												<Action Name="" ID="{4841C61A-4426-4E99-9FFB-34F6792F9A70}" ShortID="296157001">
-													<PropertyList>
-														<Property Name="ActionType" Type="int16" Value="1"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="MB339_light_switch_on" ID="{0E232685-256D-41DC-A62D-53EC3407C106}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-											</ChildrenList>
-										</Event>
-										<Event Name="Play_IndiaFoxtEcho_MB339PAN_battery_switch_off" ID="{3C7214BF-3D61-43FD-9F86-6F8C79B61A6C}">
-											<ChildrenList>
-												<Action Name="" ID="{03EFBA3F-8D3F-480E-A38F-FFDF2ED806FD}" ShortID="23225436">
-													<PropertyList>
-														<Property Name="ActionType" Type="int16" Value="1"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="MB339_light_switch_off" ID="{D5AAB37E-DA46-4651-98DB-7C872981E6CA}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -863,62 +877,6 @@
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="MB339_fuel_cutoff_crossfeed_switch" ID="{F2A3480E-9236-4B6C-AA72-A9B1AE11B15B}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-											</ChildrenList>
-										</Event>
-										<Event Name="Play_IndiaFoxtEcho_MB339PAN_pitot_heat_switch_on" ID="{C4F1F6CF-872D-4134-8A5B-AF2D24CB5AC9}">
-											<ChildrenList>
-												<Action Name="" ID="{65BF21F8-2845-4E64-A14A-3A66FAECC4F1}" ShortID="450500850">
-													<PropertyList>
-														<Property Name="ActionType" Type="int16" Value="1"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="MB339_light_switch_on" ID="{0E232685-256D-41DC-A62D-53EC3407C106}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-											</ChildrenList>
-										</Event>
-										<Event Name="Play_IndiaFoxtEcho_MB339PAN_pitot_heat_switch_off" ID="{DD9A153E-71B9-4739-BD14-5D06A872EAED}">
-											<ChildrenList>
-												<Action Name="" ID="{BC22D82B-1D36-4E0D-A54E-52FC2AEE8582}" ShortID="518201497">
-													<PropertyList>
-														<Property Name="ActionType" Type="int16" Value="1"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="MB339_light_switch_off" ID="{D5AAB37E-DA46-4651-98DB-7C872981E6CA}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-											</ChildrenList>
-										</Event>
-										<Event Name="Play_IndiaFoxtEcho_MB339PAN_alternator_switch_on" ID="{53759F92-4292-480E-9934-C6C73DB715BA}">
-											<ChildrenList>
-												<Action Name="" ID="{0DF1445C-7167-48BF-A0D8-0B9C5FBC22D6}" ShortID="824625112">
-													<PropertyList>
-														<Property Name="ActionType" Type="int16" Value="1"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="MB339_light_switch_on" ID="{0E232685-256D-41DC-A62D-53EC3407C106}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-											</ChildrenList>
-										</Event>
-										<Event Name="Play_IndiaFoxtEcho_MB339PAN_alternator_switch_off" ID="{CEA96CFD-B3E0-474B-92D8-9C4F34FCCAC4}">
-											<ChildrenList>
-												<Action Name="" ID="{B96CF7E6-F5C2-41CA-A64C-C9050AB4C514}" ShortID="508605457">
-													<PropertyList>
-														<Property Name="ActionType" Type="int16" Value="1"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="MB339_light_switch_off" ID="{D5AAB37E-DA46-4651-98DB-7C872981E6CA}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -970,34 +928,6 @@
 												</Action>
 											</ChildrenList>
 										</Event>
-										<Event Name="Play_IndiaFoxtEcho_MB339PAN_fuel_pump_switch_off" ID="{2F72111A-874F-4228-864F-76DD34CD1352}">
-											<ChildrenList>
-												<Action Name="" ID="{928340E4-C577-4787-AAB7-B71497FFB937}" ShortID="167742443">
-													<PropertyList>
-														<Property Name="ActionType" Type="int16" Value="1"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="MB339_light_switch_off" ID="{D5AAB37E-DA46-4651-98DB-7C872981E6CA}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-											</ChildrenList>
-										</Event>
-										<Event Name="Play_IndiaFoxtEcho_MB339PAN_fuel_pump_switch_on" ID="{6759EB45-4C98-411F-83AF-381919278A11}">
-											<ChildrenList>
-												<Action Name="" ID="{D3F8A2DC-959B-4FFA-9788-885A9667EAAF}" ShortID="108085664">
-													<PropertyList>
-														<Property Name="ActionType" Type="int16" Value="1"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="MB339_light_switch_on" ID="{0E232685-256D-41DC-A62D-53EC3407C106}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-											</ChildrenList>
-										</Event>
 										<Event Name="Play_IndiaFoxtEcho_MB339PAN_fuel_blocker_switch_off" ID="{9C81EAB3-DF34-4B9B-963B-8C49955E040F}">
 											<ChildrenList>
 												<Action Name="" ID="{6CE1B024-5E9E-4511-8CF2-B11260F610FD}" ShortID="265347454">
@@ -1030,20 +960,6 @@
 								</Folder>
 								<Folder Name="levers" ID="{33C049A6-066E-4D4B-B818-B748050CA203}" ShortID="265466249">
 									<ChildrenList>
-										<Event Name="Play_IndiaFoxtEcho_MB339PAN_pressurization_bleed_switch" ID="{D7685448-0822-41DD-95F4-A3F24BE1F508}">
-											<ChildrenList>
-												<Action Name="" ID="{42CF971C-6C5B-4378-BCD4-E0545257608D}" ShortID="142877918">
-													<PropertyList>
-														<Property Name="ActionType" Type="int16" Value="1"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="MB339_light_switch" ID="{3DBA8717-8344-40D0-8D74-D92BAB52FD11}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-											</ChildrenList>
-										</Event>
 										<Event Name="Play_IndiaFoxtEcho_MB339PAN_lever_fuel_selector" ID="{0C66D939-00DE-47CF-9061-6E6C72600D69}">
 											<ChildrenList>
 												<Action Name="" ID="{B17F8799-68B8-4936-95D8-7DE2F94A765D}" ShortID="208827253">
@@ -1081,6 +997,636 @@
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="MB339_light_switch_off" ID="{D5AAB37E-DA46-4651-98DB-7C872981E6CA}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_servo_switch_on" ID="{32245B43-B573-4281-B452-D38EA0762BAC}">
+											<ChildrenList>
+												<Action Name="" ID="{782D0696-D234-4E01-8B22-BA4CD6CB0989}" ShortID="1758824">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_cover_deice_alternate_open" ID="{1FCC3BC6-C423-4D03-84D6-B1819224DBC4}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_servo_switch_off" ID="{5C7CAE4A-3AED-4810-AA31-F7ABE48A0CE4}">
+											<ChildrenList>
+												<Action Name="" ID="{55C2E6A1-E8C3-41AF-A618-D24544FB8642}" ShortID="1022386286">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_cover_deice_alternate_close" ID="{C21211A4-C2C8-4FF8-8BAE-F6749F7C175C}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_speedbrake" ID="{29253DA5-D99C-4F39-B39B-DDBDCE3AC2EF}">
+											<ChildrenList>
+												<Action Name="" ID="{35E5E10D-37AB-47DD-89A8-E145406A5806}" ShortID="152727915">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_g1000_push_button_on" ID="{E3307E52-26E2-4852-B4CC-585AF3ED3B4A}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_flap_switch" ID="{436EA8DE-1F78-4B5A-9A7C-C164850FD8CE}">
+											<ChildrenList>
+												<Action Name="" ID="{2DC82FDE-CFAC-4F1C-9282-30937DC2349D}" ShortID="324318489">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_flaps_button" ID="{64B33A23-FB72-4608-BFB8-A34CE84010EA}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_anti_skid_switch_on" ID="{292ABA50-2678-4DDA-ACFE-94282EB035D3}">
+											<ChildrenList>
+												<Action Name="" ID="{3A2DA810-251E-4FE0-A331-B006CDCC53AE}" ShortID="276103011">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_light_switch_on" ID="{0E232685-256D-41DC-A62D-53EC3407C106}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_anti_skid_switch_off" ID="{4BFF6E69-34DB-4CCC-8BDC-D067480760EB}">
+											<ChildrenList>
+												<Action Name="" ID="{7ED92E19-6147-4912-B83D-A6CBB2D230C5}" ShortID="833160637">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_light_switch_off" ID="{D5AAB37E-DA46-4651-98DB-7C872981E6CA}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_canopy_lock_action" ID="{465A701E-FD0E-46DC-A464-0560ACF1A950}">
+											<ChildrenList>
+												<Action Name="" ID="{42E67914-2C13-48C9-B376-FE49FD0BF15E}" ShortID="668252212">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+														<Property Name="FadeInCurve" Type="int16" Value="1"/>
+														<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_parkingbrake_pedal" ID="{6B3DD9C5-1816-4EBA-A968-7F21F22AEE78}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{DFD1C5A7-8063-4E5E-8787-464D7318FD7B}" ShortID="652981370">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+														<Property Name="Delay" Type="Real64" Value="4"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_parkingbrake_pedal" ID="{6B3DD9C5-1816-4EBA-A968-7F21F22AEE78}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_ejection_lock_action" ID="{D6B5BFE8-04C9-4AF1-BD2E-55662BF1DC94}">
+											<ChildrenList>
+												<Action Name="" ID="{59D9FC94-AAA5-4C53-B2CE-E0F1D196DF9C}" ShortID="273435548">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+														<Property Name="FadeInCurve" Type="int16" Value="1"/>
+														<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_parkingbrake_pedal" ID="{6B3DD9C5-1816-4EBA-A968-7F21F22AEE78}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{79DB6E3C-9984-41AD-AEA2-31FCB9CF8FAD}" ShortID="102522736">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+														<Property Name="Delay" Type="Real64" Value="4"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_parkingbrake_pedal" ID="{6B3DD9C5-1816-4EBA-A968-7F21F22AEE78}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_canopy_switch" ID="{95D7C866-21AE-4E57-8A44-135A72652B8F}">
+											<ChildrenList>
+												<Action Name="" ID="{E6322A56-583D-4E59-A9A8-87B82A4B2F27}" ShortID="199045449">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_flaps_button" ID="{64B33A23-FB72-4608-BFB8-A34CE84010EA}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_rudder_trim_switch" ID="{3D439CBA-71B4-4149-ACAF-B0D8BCAFE299}">
+											<ChildrenList>
+												<Action Name="" ID="{2738AB4E-8DE6-4F4B-B87F-D69593F526AC}" ShortID="601473443">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_light_switch" ID="{3DBA8717-8344-40D0-8D74-D92BAB52FD11}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_pitot_heat_switch_on" ID="{C4F1F6CF-872D-4134-8A5B-AF2D24CB5AC9}">
+											<ChildrenList>
+												<Action Name="" ID="{65BF21F8-2845-4E64-A14A-3A66FAECC4F1}" ShortID="450500850">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_light_switch_on" ID="{0E232685-256D-41DC-A62D-53EC3407C106}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_pitot_heat_switch_off" ID="{DD9A153E-71B9-4739-BD14-5D06A872EAED}">
+											<ChildrenList>
+												<Action Name="" ID="{BC22D82B-1D36-4E0D-A54E-52FC2AEE8582}" ShortID="518201497">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_light_switch_off" ID="{D5AAB37E-DA46-4651-98DB-7C872981E6CA}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_engine_ice_switch_on" ID="{34D46212-4B6A-46F7-8B6C-6E1E913A3164}">
+											<ChildrenList>
+												<Action Name="" ID="{F4E03E49-9F44-4A19-A286-DEA1BDD26B41}" ShortID="899552715">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_light_switch_on" ID="{0E232685-256D-41DC-A62D-53EC3407C106}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_engine_ice_switch_off" ID="{B1AF5335-D1CF-41D4-859D-A044E274601C}">
+											<ChildrenList>
+												<Action Name="" ID="{89C99D82-6C3D-416D-A32E-EFE83197D0C2}" ShortID="512549482">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_light_switch_off" ID="{D5AAB37E-DA46-4651-98DB-7C872981E6CA}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="radio" ID="{C35D6DC2-9E02-4AC2-9DBE-E739EC70E798}" ShortID="375819741">
+									<ChildrenList>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_com2_select" ID="{7FE33614-2918-4EAA-BCC8-47167E9132C4}">
+											<ChildrenList>
+												<Action Name="" ID="{68579CA4-BDC8-4108-84A5-17DB5A76B8EE}" ShortID="154763362">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_outer_knob" ID="{60F6341C-81E2-477A-905C-9504F7284450}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_com2_second_select" ID="{3692FE37-A03B-440C-81CE-B8C405224AB8}">
+											<ChildrenList>
+												<Action Name="" ID="{90242313-B381-406E-A93E-31C202678EDF}" ShortID="282432901">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_outer_knob" ID="{60F6341C-81E2-477A-905C-9504F7284450}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_com2_freq_select" ID="{81A1CC28-8C7D-4BAF-A01D-2F5FD962D341}">
+											<ChildrenList>
+												<Action Name="" ID="{87846112-15EE-49D9-B2A6-759E9E5AEC72}" ShortID="606117224">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_g1000_knob_turn" ID="{8869EA66-AB9E-464D-BA7E-F82D623202C3}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_com1_select" ID="{E00E8693-AF6C-47E0-84C3-B57FA2D4597A}">
+											<ChildrenList>
+												<Action Name="" ID="{3AA9B5DB-8817-4B63-B9AE-5E5D1D657355}" ShortID="253825863">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_outer_knob" ID="{60F6341C-81E2-477A-905C-9504F7284450}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_com1_freq_select" ID="{2A2FF9A9-F489-40D2-A351-78C467E64355}">
+											<ChildrenList>
+												<Action Name="" ID="{2190C448-1DAB-4035-9D2C-0B1F5A26D44A}" ShortID="726222161">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_g1000_knob_turn" ID="{8869EA66-AB9E-464D-BA7E-F82D623202C3}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_com_audio_select" ID="{40DC1A64-112F-4A0C-8FDF-798A7C8EFDA0}">
+											<ChildrenList>
+												<Action Name="" ID="{876879C4-01CF-4A46-8229-DEB79F24D4BB}" ShortID="289217354">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_g1000_knob_turn" ID="{8869EA66-AB9E-464D-BA7E-F82D623202C3}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="cockpit" ID="{53BD1120-168C-401E-9B01-0BB65333F043}" ShortID="509227129">
+									<ChildrenList>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_g_reset_push" ID="{DBACAD3B-67A7-4014-99E2-F269BAE833AB}">
+											<ChildrenList>
+												<Action Name="" ID="{98E112AB-3BE7-447E-A499-AAD221782088}" ShortID="511117221">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_fuel_blockers" ID="{DA45A64F-92C5-4D61-8934-2AB8342CABFA}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_speed_bug_push" ID="{5F573D88-EC09-4BCC-A739-85AC9B76916F}">
+											<ChildrenList>
+												<Action Name="" ID="{65D84FBB-1516-4C9F-9F7F-001E5F7A8EE0}" ShortID="264030495">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_fuel_blockers" ID="{DA45A64F-92C5-4D61-8934-2AB8342CABFA}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_master_caution_push" ID="{78CD518D-6493-4022-B1FC-5943BD00C465}">
+											<ChildrenList>
+												<Action Name="" ID="{40E7A384-847D-4962-B01A-87A02084C202}" ShortID="260356946">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_g1000_knob_push_button_on" ID="{03C8F19E-2689-404D-8FD7-47DE9B6CCCB1}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_alt_select" ID="{50D1F330-3FCE-4D15-B505-E7990879852E}">
+											<ChildrenList>
+												<Action Name="" ID="{4C9F7402-7DA7-4AB8-A17F-B575542F02A2}" ShortID="481560359">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_g1000_big_knob_turn" ID="{A8BA8CDF-CC9E-4589-B424-0D4345CF737D}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_hdg_select" ID="{639CDE1F-95BA-43F8-8059-3543B99EBB25}">
+											<ChildrenList>
+												<Action Name="" ID="{F2FA20F4-3C95-478E-908F-59E052C167D4}" ShortID="663511181">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_little_push_buttons_on" ID="{BD9B6AAC-C0C1-4C7E-8768-79D53311C381}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_cdi_select" ID="{08B276D8-2B04-49FF-B5DD-F396FD697034}">
+											<ChildrenList>
+												<Action Name="" ID="{C9A16102-B018-46A7-87E2-4BDAECFCF533}" ShortID="634588223">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_g1000_knob_turn" ID="{8869EA66-AB9E-464D-BA7E-F82D623202C3}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_kohlsman_select" ID="{BCF0EA5D-E609-40EC-8A03-088933C56F2D}">
+											<ChildrenList>
+												<Action Name="" ID="{8865B444-FDFA-4F6F-AB62-0E423DA73885}" ShortID="698680470">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_g1000_knob_turn" ID="{8869EA66-AB9E-464D-BA7E-F82D623202C3}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_hsi_push" ID="{35A9173A-BAC6-4D58-BB17-697BE2F6C3AD}">
+											<ChildrenList>
+												<Action Name="" ID="{5A45DFB3-E23D-4681-B9CD-B4BE22D744DA}" ShortID="822033271">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_g1000_push_button_on" ID="{E3307E52-26E2-4852-B4CC-585AF3ED3B4A}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_fuel_select" ID="{1AFD8B3C-F806-4219-8818-EAEC3A4259F5}">
+											<ChildrenList>
+												<Action Name="" ID="{B8AD29CB-4833-44A3-A2A3-ACA1D225AF3B}" ShortID="326196766">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_outer_knob" ID="{60F6341C-81E2-477A-905C-9504F7284450}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_fuel_test_push" ID="{8756AC60-42B5-4014-8EB4-6D6EB0C7E525}">
+											<ChildrenList>
+												<Action Name="" ID="{1CFACFAB-2ECE-4A3D-A33D-A2D2209F571A}" ShortID="558701064">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_g1000_knob_push_button_on" ID="{03C8F19E-2689-404D-8FD7-47DE9B6CCCB1}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_warning_test_push_on" ID="{7FB36D9B-B3F0-4884-8209-8BD298553434}">
+											<ChildrenList>
+												<Action Name="" ID="{83F580D2-A978-4D3A-8BD6-8B0ACCDF1FCD}" ShortID="472060">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_g1000_push_button_on" ID="{E3307E52-26E2-4852-B4CC-585AF3ED3B4A}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_warning_test_push_off" ID="{C9AD7098-BCA8-4FD6-8EC3-F2CA4ACE765C}">
+											<ChildrenList>
+												<Action Name="" ID="{BED3B63F-B9A7-4341-ADF3-6BE4A59B806F}" ShortID="316793961">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_g1000_push_button_off" ID="{A59CD197-320A-4C7A-8812-1F11CCA86150}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_flt_dir_push" ID="{B7540E80-EA1B-4CF0-BFBB-81C52057CDE6}">
+											<ChildrenList>
+												<Action Name="" ID="{EBE2D57F-FB48-4CF7-985D-7F6ADF6E03B2}" ShortID="1868531">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_g1000_knob_push_button_on" ID="{03C8F19E-2689-404D-8FD7-47DE9B6CCCB1}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="elect" ID="{06B7EC38-AED2-4B9E-A2BA-2567340AAA1C}" ShortID="742003298">
+									<ChildrenList>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_alternator_switch_off" ID="{CEA96CFD-B3E0-474B-92D8-9C4F34FCCAC4}">
+											<ChildrenList>
+												<Action Name="" ID="{B96CF7E6-F5C2-41CA-A64C-C9050AB4C514}" ShortID="508605457">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_light_switch_off" ID="{D5AAB37E-DA46-4651-98DB-7C872981E6CA}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_battery_switch_off" ID="{3C7214BF-3D61-43FD-9F86-6F8C79B61A6C}">
+											<ChildrenList>
+												<Action Name="" ID="{03EFBA3F-8D3F-480E-A38F-FFDF2ED806FD}" ShortID="23225436">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_light_switch_off" ID="{D5AAB37E-DA46-4651-98DB-7C872981E6CA}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_battery_switch_on" ID="{FE86E842-B261-42C8-9A25-7E1047CE65E6}">
+											<ChildrenList>
+												<Action Name="" ID="{4841C61A-4426-4E99-9FFB-34F6792F9A70}" ShortID="296157001">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_light_switch_on" ID="{0E232685-256D-41DC-A62D-53EC3407C106}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_alternator_switch_on" ID="{53759F92-4292-480E-9934-C6C73DB715BA}">
+											<ChildrenList>
+												<Action Name="" ID="{0DF1445C-7167-48BF-A0D8-0B9C5FBC22D6}" ShortID="824625112">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_light_switch_on" ID="{0E232685-256D-41DC-A62D-53EC3407C106}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="nav" ID="{40F60D1A-6F70-4F61-B7F8-7909AD489FB5}" ShortID="926971813">
+									<ChildrenList>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_gps_switch_on" ID="{664A4872-C802-4EEF-B15F-76792913307E}">
+											<ChildrenList>
+												<Action Name="" ID="{8D9ADB6B-DF86-49B2-BE18-9B4E6C90E68D}" ShortID="214841980">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_light_switch_on" ID="{0E232685-256D-41DC-A62D-53EC3407C106}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_gps_switch_off" ID="{AAA7380F-9A84-45ED-8B29-6C669FB8FD01}">
+											<ChildrenList>
+												<Action Name="" ID="{497F1F0D-3633-45D4-A2FC-32FC9C15E951}" ShortID="594716102">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_light_switch_off" ID="{D5AAB37E-DA46-4651-98DB-7C872981E6CA}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_tacan_select" ID="{155CD686-5F3E-4F28-9E6A-A96D6E949828}">
+											<ChildrenList>
+												<Action Name="" ID="{02C75B31-E855-4A67-9D3A-E62B1F0CEAC5}" ShortID="42505614">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_outer_knob" ID="{60F6341C-81E2-477A-905C-9504F7284450}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_vor_select" ID="{D6A043C0-6BBF-41D3-82F0-0D00EB3167A6}">
+											<ChildrenList>
+												<Action Name="" ID="{0D9E6EC3-3309-4625-9962-CEDE1E0AAC5B}" ShortID="503469909">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_outer_knob" ID="{60F6341C-81E2-477A-905C-9504F7284450}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_IndiaFoxtEcho_MB339PAN_xpdr_select" ID="{ACD00BE8-7B33-49E5-80AA-25B7CAABD63C}">
+											<ChildrenList>
+												<Action Name="" ID="{905C8387-3DE6-47C7-B5EB-300693D110BC}" ShortID="981748734">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MB339_g1000_knob_turn" ID="{8869EA66-AB9E-464D-BA7E-F82D623202C3}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>

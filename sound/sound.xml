@@ -128,7 +128,7 @@
       </Requires>
     </Sound>
 
-      <!-- RATTLES ========================================================================================== -->  
+    <!-- RATTLES ========================================================================================== -->  
     <Sound WwiseData="true" WwiseEvent="rattle_ground" ViewPoint="Inside" FadeOutType="2" FadeOutTime="0.5" ContinuousStopDelay="0.5" SimVar="SIM ON GROUND" Units="BOOLEAN" Index="0">
       <Range LowerBound="1.0" />
 	    <Requires SimVar="GROUND VELOCITY" Units="METERS PER SECOND" Index="0">
@@ -141,8 +141,6 @@
     </Sound> 
 
     <!-- FLIGHT CONTROL SURFACES SOUNDS ====================================================================== --> 
-
-    
     <Sound WwiseData="true" WwiseEvent="aileron_left" NodeName="WING_LEFT_AILERON" ContinuousStopDelay="1.0" SimVar="AILERON POSITION" Units="PERCENT">
       <WwiseRTPC SimVar="AILERON POSITION" Units="PERCENT" Derived="true" RTPCName="SIMVAR_AILERON_POSITION_DERIVED" />
       <WwiseRTPC SimVar="AILERON POSITION" Units="PERCENT" RTPCName="SIMVAR_AILERON_POSITION" />
@@ -151,6 +149,7 @@
       <WwiseRTPC SimVar="AILERON POSITION" Units="PERCENT" Derived="true" RTPCName="SIMVAR_AILERON_POSITION_DERIVED" />
       <WwiseRTPC SimVar="AILERON POSITION" Units="PERCENT" RTPCName="SIMVAR_AILERON_POSITION" />
     </Sound>
+
     <!-- TO TEST (Outside ok, inside pas ok)-->
     <Sound WwiseData="true" WwiseEvent="rudder" NodeName="RUDDER" ContinuousStopDelay="1.0" SimVar="RUDDER POSITION" Units="PERCENT">
       <WwiseRTPC SimVar="RUDDER POSITION" Units="PERCENT" Derived="true" RTPCName="SIMVAR_RUDDER_POSITION_DERIVED" />
@@ -166,13 +165,13 @@
     <Sound WwiseData="true" WwiseEvent="flaps_right" NodeName="WING_RIGHT_FLAP" ContinuousStopDelay="1.0" SimVar="TRAILING EDGE FLAPS RIGHT PERCENT" Units="PERCENT">
       <WwiseRTPC SimVar="TRAILING EDGE FLAPS RIGHT PERCENT" Units="PERCENT" Derived="true" RTPCName="SIMVAR_TRAILING_EDGE_FLAPS_RIGHT_PERCENT_DERIVED" />
     </Sound>
-    <Sound WwiseEvent="GEAR_MOVEMENT" WwiseData="true" FadeOutType="2" FadeOutTime="0.1" SimVar="GEAR TOTAL PCT EXTENDED" Units="PERCENT">
+    <Sound WwiseData="true" WwiseEvent="GEAR_MOVEMENT" FadeOutType="2" FadeOutTime="0.1" SimVar="GEAR TOTAL PCT EXTENDED" Units="PERCENT">
       <WwiseRTPC SimVar="GEAR TOTAL PCT EXTENDED" Units="PERCENT" Index="0" RTPCName="SIMVAR_GEAR_TOTAL_PCT_EXTENDED" />
       <WwiseRTPC SimVar="GEAR TOTAL PCT EXTENDED" Units="PERCENT" Derived="true" Index="0" RTPCName="SIMVAR_GEAR_TOTAL_PCT_EXTENDED_DERIVED" />
     </Sound>    
 
     <!-- INSTRUMENTS FOLEYS  =========================================================================  --> 
-        <Sound WwiseData="true" WwiseEvent="lever_throttle" ViewPoint="Inside" NodeName="ENGINE_LEVER_THROTTLE_1" ContinuousStopDelay="1.0" SimVar="GENERAL ENG THROTTLE LEVER POSITION" Units="PERCENT" Index="1">
+    <Sound WwiseData="true" WwiseEvent="lever_throttle" ViewPoint="Inside" NodeName="ENGINE_LEVER_THROTTLE_1" ContinuousStopDelay="1.0" SimVar="GENERAL ENG THROTTLE LEVER POSITION" Units="PERCENT" Index="1">
       <WwiseRTPC SimVar="GENERAL ENG THROTTLE LEVER POSITION" Units="PERCENT" Index="1" Derived="true" RTPCName="SIMVAR_GENERAL_ENG_THROTTLE_LEVER_POSITION_DERIVED" />
 	  </Sound>
     <Sound WwiseData="true" WwiseEvent="pedal_movement" ViewPoint="Inside" NodeName="PEDALS_LEFT" ContinuousStopDelay="1.0" SimVar="RUDDER PEDAL POSITION" Units="PERCENT" Index="0">
@@ -191,17 +190,58 @@
 	  <Sound WwiseData="true" WwiseEvent="gear_lever" ViewPoint="Inside" NodeName="LANDING_GEAR_LEVER_GEAR" ContinuousStopDelay="1.0" SimVar="GEAR HANDLE POSITION" Units="BOOL" Index="0">
     </Sound>
 
-
   	<!-- FUELPUMP	========================================================================================== -->  
-             
     <!-- TO TEST (Index was 1) / Ok but shouldn't be continous -->
-    <Sound WwiseEvent="fuel_pump1_on" WwiseData="true" FadeOutType="2" FadeOutTime="0.2" SimVar="GENERAL ENG FUEL VALVE" Units="BOOLEAN" Index="1">
+    <Sound WwiseData="true"  WwiseEvent="fuel_pump1_on" FadeOutType="2" FadeOutTime="0.2" SimVar="GENERAL ENG FUEL VALVE" Units="BOOLEAN" Index="1">
       <Range LowerBound="1"/>
 	    <WwiseRTPC SimVar="GENERAL ENG FUEL VALVE" Units="BOOLEAN" Index="1" RTPCName="SIMVAR_GENERAL_ENG_FUEL_PUMP_ON_INTERPOLATION_A1_R1"/>
 	    <Requires SimVar="ELECTRICAL MASTER BATTERY" Units="BOOLEAN" Index="1">
         <Range LowerBound="1" />
       </Requires>
     </Sound>
+
+  	<!-- COCKPIT	========================================================================================== -->  
+	  <Sound WwiseData="true" WwiseEvent="com2_select" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" LocalVar="SwitchGeneric5Pos2" />
+	  <Sound WwiseData="true" WwiseEvent="com2_second_select" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" LocalVar="SwitchGeneric5Pos4" />
+    <Sound WwiseData="true" WwiseEvent="com2_freq_select" Continuous="false" NodeName="AILERON_LEFT" SimVar="COM ACTIVE FREQUENCY" Units="BOOLEAN" Index="2" />
+	  <Sound WwiseData="true" WwiseEvent="com1_select" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" LocalVar="SwitchGeneric3Pos00" />
+    <Sound WwiseData="true" WwiseEvent="com1_freq_select" Continuous="false" NodeName="AILERON_LEFT" SimVar="COM ACTIVE FREQUENCY" Units="BOOLEAN" Index="1" />
+	  <Sound WwiseData="true" WwiseEvent="servo_switch_off" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" LocalVar="AileronServo">
+     <Range LowerBound="0.5" />
+    </Sound>
+	  <Sound WwiseData="true" WwiseEvent="servo_switch_on" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" LocalVar="AileronServo">
+      <Range UpperBound="0.5" />
+    </Sound>
+	  <Sound WwiseData="true" WwiseEvent="pressurization_oxygen_switch_off" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" LocalVar="SwitchOxygen">
+     <Range LowerBound="0.5" />
+    </Sound>
+	  <Sound WwiseData="true" WwiseEvent="pressurization_oxygen_switch_on" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" LocalVar="SwitchOxygen">
+      <Range UpperBound="0.5" />
+    </Sound>
+	  <Sound WwiseData="true" WwiseEvent="oxygen_dilution_switch_off" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" LocalVar="SwitchOxygenDilution">
+     <Range LowerBound="0.5" />
+    </Sound>
+	  <Sound WwiseData="true" WwiseEvent="oxygen_dilution_switch_on" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" LocalVar="SwitchOxygenDilution">
+      <Range UpperBound="0.5" />
+    </Sound>
+    <Sound WwiseData="true" WwiseEvent="rudder_trim_switch" Continuous="false" NodeName="AILERON_LEFT" SimVar="RUDDER TRIM PCT" Units="NUMBER" Index="0" />
+    <Sound WwiseData="true" WwiseEvent="speedbrake" Continuous="false" NodeName="AILERON_LEFT" SimVar="SPOILERS HANDLE POSITION" Units="PERCENT" Index="0" />
+    <Sound WwiseData="true" WwiseEvent="flap_switch" Continuous="false" NodeName="AILERON_LEFT" SimVar="TRAILING EDGE FLAPS RIGHT PERCENT" Units="PERCENT" Index="0" />
+	  <Sound WwiseData="true" WwiseEvent="anti_skid_switch_off" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" SimVar="ANTISKID BRAKES ACTIVE" Units="BOOLEAN" Index="0">
+     <Range LowerBound="0.5" />
+    </Sound>
+	  <Sound WwiseData="true" WwiseEvent="anti_skid_switch_on" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" SimVar="ANTISKID BRAKES ACTIVE" Units="BOOLEAN" Index="0">
+      <Range UpperBound="0.5" />
+    </Sound>
+	  <Sound WwiseData="true" WwiseEvent="fuel_blocker_switch_off" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" SimVar="GENERAL ENG FUEL VALVE" Units="BOOLEAN" Index="1">
+     <Range LowerBound="0.5" />
+    </Sound>
+	  <Sound WwiseData="true" WwiseEvent="fuel_blocker_switch_on" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" SimVar="GENERAL ENG FUEL VALVE" Units="BOOLEAN" Index="1">
+      <Range UpperBound="0.5" />
+    </Sound>
+
+
+
 
     <!-- TO TEST (Index was 9) -->
 <!-- 	  <Sound WwiseEvent="fuel_transfert1" WwiseData="true" FadeOutType="2" FadeOutTime="0.2" SimVar="CIRCUIT ON" Units="BOOLEAN" Index="0">
