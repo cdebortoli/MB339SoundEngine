@@ -207,13 +207,13 @@
 	  <Sound WwiseData="true" WwiseEvent="com1_select" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" LocalVar="SwitchGeneric3Pos00" />
     <Sound WwiseData="true" WwiseEvent="com1_freq_select" Continuous="false" NodeName="AILERON_LEFT" SimVar="COM ACTIVE FREQUENCY" Units="BOOLEAN" Index="1" />
 	  <Sound WwiseData="true" WwiseEvent="servo_switch_off" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" LocalVar="AileronServo">
-     <Range LowerBound="0.5" />
+      <Range LowerBound="0.5" />
     </Sound>
 	  <Sound WwiseData="true" WwiseEvent="servo_switch_on" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" LocalVar="AileronServo">
       <Range UpperBound="0.5" />
     </Sound>
 	  <Sound WwiseData="true" WwiseEvent="pressurization_oxygen_switch_off" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" LocalVar="SwitchOxygen">
-     <Range LowerBound="0.5" />
+      <Range LowerBound="0.5" />
     </Sound>
 	  <Sound WwiseData="true" WwiseEvent="pressurization_oxygen_switch_on" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" LocalVar="SwitchOxygen">
       <Range UpperBound="0.5" />
@@ -228,20 +228,125 @@
     <Sound WwiseData="true" WwiseEvent="speedbrake" Continuous="false" NodeName="AILERON_LEFT" SimVar="SPOILERS HANDLE POSITION" Units="PERCENT" Index="0" />
     <Sound WwiseData="true" WwiseEvent="flap_switch" Continuous="false" NodeName="AILERON_LEFT" SimVar="TRAILING EDGE FLAPS RIGHT PERCENT" Units="PERCENT" Index="0" />
 	  <Sound WwiseData="true" WwiseEvent="anti_skid_switch_off" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" SimVar="ANTISKID BRAKES ACTIVE" Units="BOOLEAN" Index="0">
-     <Range LowerBound="0.5" />
+      <Range LowerBound="0.5" />
     </Sound>
 	  <Sound WwiseData="true" WwiseEvent="anti_skid_switch_on" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" SimVar="ANTISKID BRAKES ACTIVE" Units="BOOLEAN" Index="0">
       <Range UpperBound="0.5" />
     </Sound>
 	  <Sound WwiseData="true" WwiseEvent="fuel_blocker_switch_off" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" SimVar="GENERAL ENG FUEL VALVE" Units="BOOLEAN" Index="1">
-     <Range LowerBound="0.5" />
+      <Range LowerBound="0.5" />
     </Sound>
 	  <Sound WwiseData="true" WwiseEvent="fuel_blocker_switch_on" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" SimVar="GENERAL ENG FUEL VALVE" Units="BOOLEAN" Index="1">
       <Range UpperBound="0.5" />
     </Sound>
-
-
-
+	  <Sound WwiseData="true" WwiseEvent="engine_master_switch_off" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" SimVar="MASTER IGNITION SWITCH" Units="BOOLEAN" Index="0">
+      <Range LowerBound="0.5" />
+    </Sound>
+	  <Sound WwiseData="true" WwiseEvent="engine_master_switch_on" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" SimVar="MASTER IGNITION SWITCH" Units="BOOLEAN" Index="0">
+      <Range UpperBound="0.5" />
+    </Sound>
+	  <Sound WwiseData="true" WwiseEvent="jpt_switch_off" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" LocalVar="JPTLimiter">
+      <Range LowerBound="0.5" />
+    </Sound>
+	  <Sound WwiseData="true" WwiseEvent="jpt_switch_on" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" LocalVar="JPTLimiter">
+      <Range UpperBound="0.5" />
+    </Sound>
+	  <Sound WwiseData="true" WwiseEvent="starter_push_button_off" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" SimVar="GENERAL ENGINE START" Units="BOOLEAN" Index="1">
+      <Range LowerBound="0.5" />
+    </Sound>
+	  <Sound WwiseData="true" WwiseEvent="starter_push_button_on" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" SimVar="GENERAL ENGINE START" Units="BOOLEAN" Index="1">
+      <Range UpperBound="0.5" />
+    </Sound>
+	  <Sound WwiseData="true" WwiseEvent="fuel_cutoff_crossfeed_switch" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" SimVar="FUEL DUMP SWITCH" Units="BOOLEAN" Index="0" />
+	  <Sound WwiseData="true" WwiseEvent="landing_light_switch_off" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" SimVar="LIGHT LANDING" Units="BOOLEAN" Index="0">
+      <Range LowerBound="0.5" />
+    </Sound>
+	  <Sound WwiseData="true" WwiseEvent="landing_light_switch_on" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" SimVar="LIGHT LANDING" Units="BOOLEAN" Index="0">
+      <Range UpperBound="0.5" />
+    </Sound>
+	  <Sound WwiseData="true" WwiseEvent="taxi_light_switch_off" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" SimVar="LIGHT TAXI" Units="BOOLEAN" Index="0">
+      <Range LowerBound="0.5" />
+    </Sound>
+	  <Sound WwiseData="true" WwiseEvent="taxi_light_switch_on" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" SimVar="LIGHT TAXI" Units="BOOLEAN" Index="0">
+      <Range UpperBound="0.5" />
+    </Sound>
+	  <Sound WwiseData="true" WwiseEvent="canopy_lock_action" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" LocalVar="CanopyLockCommand" />
+	  <Sound WwiseData="true" WwiseEvent="ejection_lock_action" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" LocalVar="EjectionSeatSafetyPinPilot" />
+	  <Sound WwiseData="true" WwiseEvent="g_reset_push" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" LocalVar="G_reset" />
+	  <Sound WwiseData="true" WwiseEvent="flt_dir_push" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" LocalVar="FDModeCD" />
+	  <Sound WwiseData="true" WwiseEvent="flt_dir_push" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" LocalVar="FDModeSTBY" />
+	  <Sound WwiseData="true" WwiseEvent="flt_dir_push" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" LocalVar="FDModeGSARM" />
+	  <Sound WwiseData="true" WwiseEvent="flt_dir_push" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" LocalVar="FDModeGS" />
+	  <Sound WwiseData="true" WwiseEvent="speed_bug_push" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" LocalVar="SpeedBug" />
+	  <Sound WwiseData="true" WwiseEvent="master_caution_push" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" LocalVar="MasterCautionPressed" />
+	  <Sound WwiseData="true" WwiseEvent="alt_select" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" LocalVar="Attitude calibration" />
+	  <Sound WwiseData="true" WwiseEvent="hdg_select" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" SimVar="AUTOPILOT HEADING LOCK DIR" Units="NUMBER" Index="0" />
+	  <Sound WwiseData="true" WwiseEvent="cdi_select" Continuous="false" ViewPoint="Inside" NodeName="AILERON_RIGHT" SimVar="NAV OBS" Units="NUMBER" Index="1" />
+	  <Sound WwiseData="true" WwiseEvent="kohlsman_select" Continuous="false" ViewPoint="Inside" NodeName="AILERON_RIGHT" SimVar="KOHLSMAN SETTING HG" Units="NUMBER" Index="0" />
+	  <Sound WwiseData="true" WwiseEvent="hsi_push" Continuous="false" ViewPoint="Inside" NodeName="AILERON_RIGHT" LocalVar="HSIMode" />
+	  <Sound WwiseData="true" WwiseEvent="fuel_select" Continuous="false" ViewPoint="Inside" NodeName="AILERON_RIGHT" LocalVar="SwitchGeneric5Pos1" />
+	  <Sound WwiseData="true" WwiseEvent="fuel_test_push" Continuous="false" ViewPoint="Inside" NodeName="AILERON_RIGHT" LocalVar="SwitchFuelTest" />
+	  <Sound WwiseData="true" WwiseEvent="fuel_test_push" Continuous="false" ViewPoint="Inside" NodeName="AILERON_RIGHT" LocalVar="switch_lights_test" />
+	  <Sound WwiseData="true" WwiseEvent="warning_test_push_off" Continuous="false" ViewPoint="Inside" NodeName="AILERON_RIGHT" LocalVar="switch_lights_test">
+      <Range LowerBound="0.5" />
+    </Sound>
+	  <Sound WwiseData="true" WwiseEvent="warning_test_push_on" Continuous="false" ViewPoint="Inside" NodeName="AILERON_RIGHT" LocalVar="switch_lights_test">
+      <Range UpperBound="0.5" />
+    </Sound>
+	  <Sound WwiseData="true" WwiseEvent="com_audio_select" Continuous="false" ViewPoint="Inside" NodeName="AILERON_RIGHT" SimVar="COM TRANSMIT" Units="NUMBER" Index="1" />
+	  <Sound WwiseData="true" WwiseEvent="com_audio_select" Continuous="false" ViewPoint="Inside" NodeName="AILERON_RIGHT" SimVar="COM RECEIVE" Units="NUMBER" Index="1" />
+	  <Sound WwiseData="true" WwiseEvent="battery_switch_off" Continuous="false" ViewPoint="Inside" NodeName="AILERON_RIGHT" SimVar="ELECTRICAL MASTER BATTERY" Units="BOOLEAN" Index="0">
+      <Range LowerBound="0.5" />
+    </Sound>
+	  <Sound WwiseData="true" WwiseEvent="battery_switch_on" Continuous="false" ViewPoint="Inside" NodeName="AILERON_RIGHT" SimVar="ELECTRICAL MASTER BATTERY" Units="BOOLEAN" Index="0">
+      <Range UpperBound="0.5" />
+    </Sound>
+	  <Sound WwiseData="true" WwiseEvent="alternator_switch_off" Continuous="false" ViewPoint="Inside" NodeName="AILERON_RIGHT" SimVar="GENERAL ENG MASTER ALTERNATOR" Units="BOOLEAN" Index="1">
+      <Range LowerBound="0.5" />
+    </Sound>
+	  <Sound WwiseData="true" WwiseEvent="alternator_switch_on" Continuous="false" ViewPoint="Inside" NodeName="AILERON_RIGHT" SimVar="GENERAL ENG MASTER ALTERNATOR" Units="BOOLEAN" Index="1">
+      <Range UpperBound="0.5" />
+    </Sound>
+	  <Sound WwiseData="true" WwiseEvent="gps_switch_off" Continuous="false" ViewPoint="Inside" NodeName="AILERON_RIGHT" LocalVar="SwitchGPSPower">
+      <Range LowerBound="0.5" />
+    </Sound>
+	  <Sound WwiseData="true" WwiseEvent="gps_switch_on" Continuous="false" ViewPoint="Inside" NodeName="AILERON_RIGHT" LocalVar="SwitchGPSPower">
+      <Range UpperBound="0.5" />
+    </Sound>
+	  <Sound WwiseData="true" WwiseEvent="canopy_switch" Continuous="false" ViewPoint="Inside" NodeName="AILERON_RIGHT" LocalVar="CanopyCommand" />
+	  <Sound WwiseData="true" WwiseEvent="pitot_heat_switch_off" Continuous="false" ViewPoint="Inside" NodeName="AILERON_RIGHT" SimVar="PITOT HEAT" Units="BOOLEAN" Index="0">
+      <Range LowerBound="0.5" />
+    </Sound>
+	  <Sound WwiseData="true" WwiseEvent="pitot_heat_switch_on" Continuous="false" ViewPoint="Inside" NodeName="AILERON_RIGHT" SimVar="PITOT HEAT" Units="BOOLEAN" Index="0">
+      <Range UpperBound="0.5" />
+    </Sound>
+	  <Sound WwiseData="true" WwiseEvent="engine_ice_switch_off" Continuous="false" ViewPoint="Inside" NodeName="AILERON_RIGHT" SimVar="GENERAL ENG ANTI ICE POSITION" Units="BOOLEAN" Index="1">
+      <Range LowerBound="0.5" />
+    </Sound>
+	  <Sound WwiseData="true" WwiseEvent="engine_ice_switch_on" Continuous="false" ViewPoint="Inside" NodeName="AILERON_RIGHT" SimVar="GENERAL ENG ANTI ICE POSITION" Units="BOOLEAN" Index="1">
+      <Range UpperBound="0.5" />
+    </Sound>
+	  <Sound WwiseData="true" WwiseEvent="tacan_select" Continuous="false" ViewPoint="Inside" NodeName="AILERON_RIGHT" LocalVar="SwitchGeneric5Pos3" />
+	  <Sound WwiseData="true" WwiseEvent="tacan_select" Continuous="false" ViewPoint="Inside" NodeName="AILERON_RIGHT" LocalVar="TacanChannel" />
+	  <Sound WwiseData="true" WwiseEvent="tacan_select" Continuous="false" ViewPoint="Inside" NodeName="AILERON_RIGHT" LocalVar="TacanChannelY" />
+	  <Sound WwiseData="true" WwiseEvent="vor_select" Continuous="false" ViewPoint="Inside" NodeName="AILERON_RIGHT" SimVar="NAV ACTIVE FREQUENCY" Units="NUMBER" Index="1" />
+	  <Sound WwiseData="true" WwiseEvent="xpdr_select" Continuous="false" ViewPoint="Inside" NodeName="AILERON_RIGHT" SimVar="TRANSPONDER CODE" Units="NUMBER" Index="1" />
+	  <Sound WwiseData="true" WwiseEvent="inst_light_select" Continuous="false" ViewPoint="Inside" NodeName="AILERON_RIGHT" SimVar="LIGHT PANEL" Units="BOOLEAN" Index="0" />
+	  <Sound WwiseData="true" WwiseEvent="flood_light_select" Continuous="false" ViewPoint="Inside" NodeName="AILERON_RIGHT" SimVar="LIGHT CABIN" Units="BOOLEAN" Index="0" />
+	  <Sound WwiseData="true" WwiseEvent="console_light_select" Continuous="false" ViewPoint="Inside" NodeName="AILERON_RIGHT" SimVar="LIGHT PANEL" Units="BOOLEAN" Index="0" />
+	  <Sound WwiseData="true" WwiseEvent="form_light_select" Continuous="false" ViewPoint="Inside" NodeName="AILERON_RIGHT" SimVar="LIGHT LOGO" Units="BOOLEAN" Index="0" />
+	  <Sound WwiseData="true" WwiseEvent="nav_light_switch_off" Continuous="false" ViewPoint="Inside" NodeName="AILERON_RIGHT" SimVar="LIGHT NAV" Units="BOOLEAN" Index="0">
+      <Range LowerBound="0.5" />
+    </Sound>
+	  <Sound WwiseData="true" WwiseEvent="nav_light_switch_on" Continuous="false" ViewPoint="Inside" NodeName="AILERON_RIGHT" SimVar="LIGHT NAV" Units="BOOLEAN" Index="0">
+      <Range UpperBound="0.5" />
+    </Sound>
+	  <Sound WwiseData="true" WwiseEvent="beacon_light_switch_off" Continuous="false" ViewPoint="Inside" NodeName="AILERON_RIGHT" SimVar="LIGHT STROBE" Units="BOOLEAN" Index="0">
+      <Range LowerBound="0.5" />
+    </Sound>
+	  <Sound WwiseData="true" WwiseEvent="beacon_light_switch_on" Continuous="false" ViewPoint="Inside" NodeName="AILERON_RIGHT" SimVar="LIGHT STROBE" Units="BOOLEAN" Index="0">
+      <Range UpperBound="0.5" />
+    </Sound>
 
     <!-- TO TEST (Index was 9) -->
 <!-- 	  <Sound WwiseEvent="fuel_transfert1" WwiseData="true" FadeOutType="2" FadeOutTime="0.2" SimVar="CIRCUIT ON" Units="BOOLEAN" Index="0">
