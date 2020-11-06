@@ -250,7 +250,7 @@
 	<ValidationCacheItem File="E:\Utils\Git\MB339Sound\MB339SoundEngine\WwiseSampleProject\Game Parameters\control_signal.wwu" DateLow="1594153472" DateHigh="0"/>
 	<ValidationCacheItem File="E:\Utils\Git\MB339Sound\MB339SoundEngine\WwiseSampleProject\Game Parameters\_NOT_IN_GAME\Factory SoundSeed Air Game Syncs.wwu" DateLow="1594153472" DateHigh="0"/>
 	<ValidationCacheItem File="E:\Utils\Git\MB339Sound\MB339SoundEngine\WwiseSampleProject\FlightSim.wproj" DateLow="1603661444" DateHigh="0"/>
-	<ValidationCacheItem File="E:\Utils\Git\MB339Sound\MB339SoundEngine\WwiseSampleProject\FlightSim.debor.wsettings" DateLow="1604528563" DateHigh="0"/>
+	<ValidationCacheItem File="E:\Utils\Git\MB339Sound\MB339SoundEngine\WwiseSampleProject\FlightSim.debor.wsettings" DateLow="1604616704" DateHigh="0"/>
 	<ValidationCacheItem File="E:\Utils\Git\MB339Sound\MB339SoundEngine\WwiseSampleProject\Events\Default Work Unit.wwu" DateLow="1594153472" DateHigh="0"/>
 	<ValidationCacheItem File="E:\Utils\Git\MB339Sound\MB339SoundEngine\WwiseSampleProject\Events\AIRCRAFTS\AIRCRAFT_WWISEDATA\AIRCRAFT_PLAYER\MyCompany_Simple_Aircraft.wwu" DateLow="1594153472" DateHigh="0"/>
 	<ValidationCacheItem File="E:\Utils\Git\MB339Sound\MB339SoundEngine\WwiseSampleProject\Events\AIRCRAFTS\AIRCRAFT_WWISEDATA\AIRCRAFT_PLAYER\MyCompany_Gauge_Aircraft.wwu" DateLow="1594153472" DateHigh="0"/>
@@ -277,13 +277,13 @@
 	<ValidationCacheItem File="E:\Utils\Git\MB339Sound\MB339SoundEngine\WwiseSampleProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1594153472" DateHigh="0"/>
 	<ValidationCacheItem File="E:\Utils\Git\MB339Sound\MB339SoundEngine\WwiseSampleProject\Actor-Mixer Hierarchy\AIRCRAFTS\AIRCRAFT_WWISEDATA\AIRCRAFT_PLAYER\MyCompany_Simple_Aircraft.wwu" DateLow="1596474744" DateHigh="0"/>
 	<ValidationCacheItem File="E:\Utils\Git\MB339Sound\MB339SoundEngine\WwiseSampleProject\Actor-Mixer Hierarchy\AIRCRAFTS\AIRCRAFT_WWISEDATA\AIRCRAFT_PLAYER\MyCompany_Gauge_Aircraft.wwu" DateLow="1596474744" DateHigh="0"/>
-	<ValidationCacheItem File="E:\Utils\Git\MB339Sound\MB339SoundEngine\WwiseSampleProject\Actor-Mixer Hierarchy\AIRCRAFTS\AIRCRAFT_WWISEDATA\AIRCRAFT_PLAYER\IndiaFoxtEcho_MB339PAN.wwu" DateLow="1604527508" DateHigh="0"/>
+	<ValidationCacheItem File="E:\Utils\Git\MB339Sound\MB339SoundEngine\WwiseSampleProject\Actor-Mixer Hierarchy\AIRCRAFTS\AIRCRAFT_WWISEDATA\AIRCRAFT_PLAYER\IndiaFoxtEcho_MB339PAN.wwu" DateLow="1604698832" DateHigh="0"/>
 	<ValidationCacheItem File="E:\Utils\Git\MB339Sound\MB339SoundEngine\WwiseSampleProject\Actor-Mixer Hierarchy\AIRCRAFTS\AIRCRAFT_WWISEDATA\AIRCRAFT_PLAYER\DA62_SDK_AIRCRAFT.wwu" DateLow="1604181086" DateHigh="0"/>
 	<ValidationCacheItem File="E:\Utils\Git\MB339Sound\MB339SoundEngine\WwiseSampleProject\Actor-Mixer Hierarchy\AIRCRAFTS\AIRCRAFT_WWISEDATA\AIRCRAFT_PLAYER\_Templates.wwu" DateLow="1603657921" DateHigh="0"/>
 	<ValidationCacheItem File="E:\Utils\Git\MB339Sound\MB339SoundEngine\WwiseSampleProject\Actor-Mixer Hierarchy\AIRCRAFTS\AIRCRAFT_WWISEDATA\AIRCRAFT_PLAYER\_Template_Turboprop.wwu" DateLow="1603829862" DateHigh="0"/>
 	<ValidationCacheItem File="E:\Utils\Git\MB339Sound\MB339SoundEngine\WwiseSampleProject\Actor-Mixer Hierarchy\AIRCRAFTS\AIRCRAFT_WWISEDATA\AIRCRAFT_PLAYER\_Template_Piston.wwu" DateLow="1596474744" DateHigh="0"/>
 	<ValidationCacheItem File="E:\Utils\Git\MB339Sound\MB339SoundEngine\WwiseSampleProject\Actor-Mixer Hierarchy\AIRCRAFTS\AIRCRAFT_WWISEDATA\AIRCRAFT_PLAYER\_Template_Jet.wwu" DateLow="1596474744" DateHigh="0"/>
-	<ValidationCacheItem File="E:\Utils\Git\MB339Sound\MB339SoundEngine\WwiseSampleProject\Actor-Mixer Hierarchy\AIRCRAFTS\AIRCRAFT_WWISEDATA\AIRCRAFT_PLAYER\_Template_Airliner.wwu" DateLow="1596474744" DateHigh="0"/>
+	<ValidationCacheItem File="E:\Utils\Git\MB339Sound\MB339SoundEngine\WwiseSampleProject\Actor-Mixer Hierarchy\AIRCRAFTS\AIRCRAFT_WWISEDATA\AIRCRAFT_PLAYER\_Template_Airliner.wwu" DateLow="1604696751" DateHigh="0"/>
 	<ValidationCacheItem File="E:\Utils\Git\MB339Sound\MB339SoundEngine\WwiseSampleProject\Actor-Mixer Hierarchy\AIRCRAFTS\AIRCRAFT_WWISEDATA\AIRCRAFT_AI\MyCompany_Simple_Aircraft_AI.wwu" DateLow="1596474744" DateHigh="0"/>
 	<ValidationCacheItem File="E:\Utils\Git\MB339Sound\MB339SoundEngine\WwiseSampleProject\Actor-Mixer Hierarchy\AIRCRAFTS\AIRCRAFT_WWISEDATA\AIRCRAFT_AI\MyCompany_Gauge_Aircraft_AI.wwu" DateLow="1596474744" DateHigh="0"/>
 	<ValidationCacheItem File="E:\Utils\Git\MB339Sound\MB339SoundEngine\WwiseSampleProject\Actor-Mixer Hierarchy\AIRCRAFTS\AIRCRAFT_WWISEDATA\AIRCRAFT_AI\DA62_SDK_AIRCRAFT_AI.wwu" DateLow="1604154400" DateHigh="0"/>
