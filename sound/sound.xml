@@ -93,38 +93,38 @@
   <SimVarSounds>
 
     <!-- CANOPY -->
-    <Sound WwiseData="true" WwiseEvent="canopy_close_loop" Continuous="true" ViewPoint="Inside" LocalVar="CanopyOpenPercent">
-      <Range LowerBound="0.05" UpperBound="0.95" />
+    <Sound WwiseData="true" WwiseEvent="canopy_close_loop" Continuous="true" ViewPoint="Inside" LocalVar="CanopyOpen">
+      <Range LowerBound="5" UpperBound="95" />
       <Requires LocalVar="CanopyCommand">
         <Range LowerBound="0.0" UpperBound="0.0" />
       </Requires>
     </Sound>
-    <Sound WwiseData="true" WwiseEvent="canopy_open_loop" Continuous="true" ViewPoint="Inside" LocalVar="CanopyOpenPercent">
-      <Range LowerBound="0.05" UpperBound="0.95" />
+    <Sound WwiseData="true" WwiseEvent="canopy_open_loop" Continuous="true" ViewPoint="Inside" LocalVar="CanopyOpen">
+      <Range LowerBound="5" UpperBound="95" />
       <Requires LocalVar="CanopyCommand">
         <Range LowerBound="1.0" UpperBound="1.0" />
       </Requires>
     </Sound>
-    <Sound WwiseData="true" WwiseEvent="canopy_close_end" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" LocalVar="CanopyOpenPercent">
-      <Range UpperBound="0.05" />
+    <Sound WwiseData="true" WwiseEvent="canopy_close_end" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" LocalVar="CanopyOpen">
+      <Range UpperBound="5" />
       <Requires LocalVar="CanopyCommand">
         <Range LowerBound="0.0" UpperBound="0.0" />
       </Requires>
     </Sound>
-    <Sound WwiseData="true" WwiseEvent="canopy_open_end" Continuous="false" ViewPoint="Inside" NodeName="AILERON_RIGHT" LocalVar="CanopyOpenPercent">
-      <Range LowerBound="0.95" />
+    <Sound WwiseData="true" WwiseEvent="canopy_open_end" Continuous="false" ViewPoint="Inside" NodeName="AILERON_RIGHT" LocalVar="CanopyOpen">
+      <Range LowerBound="95" />
       <Requires LocalVar="CanopyCommand">
         <Range LowerBound="1.0" UpperBound="1.0" />
       </Requires>
     </Sound>
     <Sound WwiseData="true" WwiseEvent="canopy_close" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" LocalVar="CanopyCommand">
-      <Requires LocalVar="CanopyOpenPercent">
-        <Range LowerBound="0.05" />
+      <Requires LocalVar="CanopyOpen">
+        <Range LowerBound="5" />
       </Requires>
     </Sound>
     <Sound WwiseData="true" WwiseEvent="canopy_open" Continuous="false" ViewPoint="Inside" NodeName="AILERON_RIGHT" LocalVar="CanopyCommand">
-      <Requires LocalVar="CanopyOpenPercent">
-        <Range UpperBound="0.05" />
+      <Requires LocalVar="CanopyOpen">
+        <Range UpperBound="5" />
       </Requires>
     </Sound>
 
