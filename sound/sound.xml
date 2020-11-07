@@ -62,34 +62,42 @@
   <MiscellaneousSounds>
   </MiscellaneousSounds>
 
+<!-- <EngineSoundTransitions>
+    <Sound WwiseEvent="Starter" FadeOutType="2" FadeOutTime="0.1" WwiseData="true" StateFrom="Off" StateTo="Start" EngineIndex="1" >  
+		  <WwiseRTPC Units="PERCENT" LocalVar="CanopyOpen" RTPCName="SIMVAR_CANOPY_OPEN_DERIVED"/> 
+    </Sound>
+    <Sound WwiseEvent="CombustionStart" FadeOutType="2" FadeOutTime="0.1" WwiseData="true" StateFrom="Start" StateTo="On" EngineIndex="1" >  
+		  <WwiseRTPC Units="PERCENT" LocalVar="CanopyOpen" RTPCName="SIMVAR_CANOPY_OPEN_DERIVED"/> 
+    </Sound>
+</EngineSoundTransitions>
+<EngineSoundStates>
+  <Sound WwiseEvent="Combustion" WwiseData="true" ConeHeading="180" RPMMin="1" FadeOutType="2" FadeOutTime="0.5" EngineIndex="1" StateOff="false" StateStart="false" StateOn="true">
+		<WwiseRTPC Units="PERCENT" LocalVar="CanopyOpen" RTPCName="SIMVAR_CANOPY_OPEN_DERIVED"/> 
+  </Sound>
+</EngineSoundStates> -->
   <EngineSoundPresets>
+
+    <Sound WwiseEvent="Starter" FadeOutType="2" FadeOutTime="0.1" WwiseData="true" EngineIndex="1" >  
+		  <WwiseRTPC Units="PERCENT" LocalVar="CanopyOpen" RTPCName="SIMVAR_CANOPY_OPEN_DERIVED"/> 
+    </Sound>
+    <Sound WwiseEvent="CombustionStart" ConeHeading="145"  WwiseData="true" EngineIndex="1" >  
+		  <WwiseRTPC Units="PERCENT" LocalVar="CanopyOpen" RTPCName="SIMVAR_CANOPY_OPEN_DERIVED"/> 
+	  </Sound>
     <Sound WwiseEvent="Combustion" ConeHeading="180" RPMMin="1" FadeOutType="2" FadeOutTime="0.5" WwiseData="true" EngineIndex="1">
 		  <WwiseRTPC Units="PERCENT" LocalVar="CanopyOpen" RTPCName="SIMVAR_CANOPY_OPEN_DERIVED"/> 
 	  </Sound>
-<!--     <Sound WwiseEvent="Combustion" ConeHeading="180" RPMMin="1" WwiseData="true" EngineIndex="2" >
-		<WwiseRTPC SimVar="GENERAL ENG COMBUSTION" Units="BOOL" Index="2" RTPCName="SIMVAR_GENERAL_ENG_COMBUSTION_A01_R4"/>
-	</Sound> -->
+    <Sound WwiseEvent="Shutdown" ConeHeading="145" RPMMin="1185" WwiseData="true" EngineIndex="1" > 
+		  <WwiseRTPC Units="PERCENT" LocalVar="CanopyOpen" RTPCName="SIMVAR_CANOPY_OPEN_DERIVED"/> 
+	  </Sound>
     <Sound WwiseEvent="JetWhine" ConeHeading="180" WwiseData="true" EngineIndex="1" RPMMin="1">
 		  <WwiseRTPC Units="PERCENT" LocalVar="CanopyOpen" RTPCName="SIMVAR_CANOPY_OPEN_DERIVED"/> 
     </Sound>
-  
-    <!-- TO TEST -->
-    <Sound WwiseEvent="Starter" FadeOutType="2" FadeOutTime="0.1" WwiseData="true" EngineIndex="1" >  
-      <!-- <WwiseRTPC SimVar="GENERAL ENG COMBUSTION SOUND PERCENT" Units="PERCENT OVER 100" RTPCReleaseTime="0.5" Index="1" RTPCName="SIMVAR_GENERAL_ENG_COMBUSTION_SOUND_PERCENT" /> -->
-		  <WwiseRTPC Units="PERCENT" LocalVar="CanopyOpen" RTPCName="SIMVAR_CANOPY_OPEN_DERIVED"/> 
-    </Sound>
-    <!-- TO TEST -->
-    <Sound WwiseEvent="CombustionStart" ConeHeading="145"  WwiseData="true" EngineIndex="1" >  
-		  <!-- <WwiseRTPC SimVar="GENERAL ENG COMBUSTION SOUND PERCENT" Units="PERCENT OVER 100" RTPCReleaseTime="0.5" Index="1" RTPCName="SIMVAR_GENERAL_ENG_COMBUSTION_SOUND_PERCENT" /> -->
-		  <WwiseRTPC Units="PERCENT" LocalVar="CanopyOpen" RTPCName="SIMVAR_CANOPY_OPEN_DERIVED"/> 
-	  </Sound>
-    <!-- TO TEST -->
-    <Sound WwiseEvent="Shutdown" ConeHeading="145" RPMMin="1185" WwiseData="true" EngineIndex="1" > 
-		  <!-- <WwiseRTPC SimVar="GENERAL ENG COMBUSTION SOUND PERCENT" Units="PERCENT OVER 100" RTPCReleaseTime="0.5" Index="1" RTPCName="SIMVAR_GENERAL_ENG_COMBUSTION_SOUND_PERCENT" /> -->
-		  <WwiseRTPC Units="PERCENT" LocalVar="CanopyOpen" RTPCName="SIMVAR_CANOPY_OPEN_DERIVED"/> 
-	  </Sound>
+
   </EngineSoundPresets>
 
+<!--     <Sound WwiseEvent="Combustion" ConeHeading="180" RPMMin="1" WwiseData="true" EngineIndex="2" >
+		<WwiseRTPC SimVar="GENERAL ENG COMBUSTION" Units="BOOL" Index="2" RTPCName="SIMVAR_GENERAL_ENG_COMBUSTION_A01_R4"/>
+	</Sound> -->
   <SimVarSounds>
 
     <!-- CANOPY -->

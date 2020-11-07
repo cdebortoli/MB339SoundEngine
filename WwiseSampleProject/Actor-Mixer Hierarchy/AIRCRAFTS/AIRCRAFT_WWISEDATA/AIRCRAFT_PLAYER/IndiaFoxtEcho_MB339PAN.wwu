@@ -234,46 +234,6 @@
 														<Property Name="OverrideOutput" Type="bool" Value="True"/>
 														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
-														<Property Name="Pitch" Type="int32">
-															<RTPCList>
-																<RTPC Name="" ID="{2347A29D-AFA9-4CF2-9E98-E680C654F9A4}" ShortID="374315717">
-																	<ReferenceList>
-																		<Reference Name="ControlInput">
-																			<ObjectRef Name="SIMVAR_GENERAL_ENG_PCT_MAX_RPM" ID="{07ECAD71-A158-4EAF-ABCC-B9D63738BCAD}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<Curve Name="" ID="{3F32C719-D317-42C5-97B9-AEE75C24D08E}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="65537"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>-2390</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>0.58258</XPos>
-																				<YPos>-1157</YPos>
-																				<Flags>0</Flags>
-																				<SegmentShape>Exp1</SegmentShape>
-																			</Point>
-																			<Point>
-																				<XPos>0.93843</XPos>
-																				<YPos>939</YPos>
-																				<Flags>0</Flags>
-																				<SegmentShape>SCurve</SegmentShape>
-																			</Point>
-																			<Point>
-																				<XPos>1.5</XPos>
-																				<YPos>901</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</RTPC>
-															</RTPCList>
-														</Property>
 														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="25"/>
 														<Property Name="UserAuxSendVolume1" Type="Real64">
 															<RTPCList>
@@ -317,41 +277,6 @@
 														</Property>
 														<Property Name="Volume" Type="Real64">
 															<RTPCList>
-																<RTPC Name="" ID="{0945D296-414C-4DC3-BEF4-B8F726328440}" ShortID="117247909">
-																	<ReferenceList>
-																		<Reference Name="ControlInput">
-																			<ObjectRef Name="SIMVAR_GENERAL_ENG_PCT_MAX_RPM" ID="{07ECAD71-A158-4EAF-ABCC-B9D63738BCAD}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<Curve Name="" ID="{05E9AD54-08C0-4B30-BD3F-C057845F28D0}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="3"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>-14.48203</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>0.74508</XPos>
-																				<YPos>-3.06323</YPos>
-																				<Flags>0</Flags>
-																				<SegmentShape>Exp2</SegmentShape>
-																			</Point>
-																			<Point>
-																				<XPos>0.98894</XPos>
-																				<YPos>-0.04471</YPos>
-																				<Flags>0</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>1.5</XPos>
-																				<YPos>-0.04471</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</RTPC>
 																<RTPC Name="" ID="{E711F3DE-F9C6-4EEB-9D04-747FBF487741}" ShortID="43942342">
 																	<ReferenceList>
 																		<Reference Name="ControlInput">
@@ -399,7 +324,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<Sound Name="MB339_combustion" ID="{AF847776-7B41-4A3F-868E-0901E86CF71C}" ShortID="516462833">
+														<Sound Name="MB326_comb_1" ID="{AF847776-7B41-4A3F-868E-0901E86CF71C}" ShortID="516462833">
 															<PropertyList>
 																<Property Name="3DSpatialization" Type="int16" Value="2"/>
 																<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
@@ -410,15 +335,89 @@
 																</Property>
 																<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																<Property Name="Pitch" Type="int32">
+																	<RTPCList>
+																		<RTPC Name="" ID="{DC3DE635-34D6-48F2-9519-8ED7F7CEB97F}" ShortID="662076378">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="SIMVAR_GENERAL_ENG_PCT_MAX_RPM" ID="{07ECAD71-A158-4EAF-ABCC-B9D63738BCAD}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{D95F50AC-AEE4-4A6A-B8AE-E09C146233DB}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="65537"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-1078</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>0.7</XPos>
+																						<YPos>-960</YPos>
+																						<Flags>0</Flags>
+																						<SegmentShape>Exp1</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>0.9</XPos>
+																						<YPos>48</YPos>
+																						<Flags>0</Flags>
+																						<SegmentShape>SCurve</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>1.5</XPos>
+																						<YPos>38</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
 																<Property Name="Priority" Type="int16">
 																	<ValueList>
 																		<Value>100</Value>
 																	</ValueList>
 																</Property>
 																<Property Name="Volume" Type="Real64">
-																	<ValueList>
-																		<Value>-2</Value>
-																	</ValueList>
+																	<RTPCList>
+																		<RTPC Name="" ID="{9DAECE9C-BF20-4AD9-A3C3-91B7DA4E780A}" ShortID="583266448">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="SIMVAR_GENERAL_ENG_PCT_MAX_RPM" ID="{07ECAD71-A158-4EAF-ABCC-B9D63738BCAD}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{C658D415-A950-46DA-BCBC-56B65A25A78F}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-9.56051</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>0.70421</XPos>
+																						<YPos>-0.874230000000011</YPos>
+																						<Flags>0</Flags>
+																						<SegmentShape>Exp2</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>0.98894</XPos>
+																						<YPos>-0.0447100000000091</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1.5</XPos>
+																						<YPos>-0.0447100000000091</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
 																</Property>
 															</PropertyList>
 															<ReferenceList>
@@ -446,6 +445,137 @@
 															</ChildrenList>
 															<ActiveSourceList>
 																<ActiveSource Name="MB339_combustion" ID="{F7350343-F9E1-45D8-A54B-5C169D7B922F}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="MB326_comb_0" ID="{693FB37D-7D35-47F6-8629-0A4670E1DAAE}" ShortID="110250251">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+																<Property Name="CenterPercentage" Type="int32">
+																	<ValueList>
+																		<Value>100</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																<Property Name="Pitch" Type="int32">
+																	<RTPCList>
+																		<RTPC Name="" ID="{83D42976-5C54-4281-AA1A-4AA9FEA1BAC4}" ShortID="752561006">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="SIMVAR_GENERAL_ENG_PCT_MAX_RPM" ID="{07ECAD71-A158-4EAF-ABCC-B9D63738BCAD}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{4A2B758C-FE7E-4071-9A9F-746DF18F834C}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="65537"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-480</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>0.6</XPos>
+																						<YPos>-480</YPos>
+																						<Flags>0</Flags>
+																						<SegmentShape>Exp1</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>0.99701</XPos>
+																						<YPos>2320</YPos>
+																						<Flags>0</Flags>
+																						<SegmentShape>SCurve</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>1.5</XPos>
+																						<YPos>2283</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+																<Property Name="Priority" Type="int16">
+																	<ValueList>
+																		<Value>100</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="Volume" Type="Real64">
+																	<RTPCList>
+																		<RTPC Name="" ID="{18280635-BE68-47CF-BE33-9A78A5913757}" ShortID="41431167">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="SIMVAR_GENERAL_ENG_PCT_MAX_RPM" ID="{07ECAD71-A158-4EAF-ABCC-B9D63738BCAD}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{542D9124-6A8A-4C24-89C8-DC8393B2685E}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>0.17847</XPos>
+																						<YPos>-7.78122</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>0.59658</XPos>
+																						<YPos>-1.22682</YPos>
+																						<Flags>0</Flags>
+																						<SegmentShape>Exp2</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>0.98894</XPos>
+																						<YPos>-0.0447100000000091</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1.5</XPos>
+																						<YPos>-0.0447100000000091</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="aircraft_player_outside_500m" ID="{E0A12C5A-64A0-4AB4-B7B1-2E71146E9FE2}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="combustion_outside_generic" ID="{7FF9CAE6-1D75-4441-8E63-E1F32BD1EEC0}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																</Reference>
+																<Reference Name="UserAuxSend0">
+																	<ObjectRef Name="rev_outdoor_aircraft" ID="{3070D14E-37F3-4DB4-8C7E-262318A02693}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="x_MB326_comb_0" ID="{BAA8FE50-3FF8-458C-8969-6B251C0758DD}">
+																	<PropertyList>
+																		<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																		<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>x_MB326_comb_0.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="x_MB326_comb_0" ID="{BAA8FE50-3FF8-458C-8969-6B251C0758DD}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
 													</ChildrenList>
@@ -1465,11 +1595,6 @@
 												<BlendContainer Name="combustion_start_inside" ID="{7E0F5B89-44C2-4C0E-9DF2-028432D21AB1}" ShortID="1029160152">
 													<PropertyList>
 														<Property Name="3DSpatialization" Type="int16" Value="1"/>
-														<Property Name="Highpass" Type="int16">
-															<ValueList>
-																<Value>25</Value>
-															</ValueList>
-														</Property>
 														<Property Name="Lowpass" Type="int16">
 															<RTPCList>
 																<RTPC Name="" ID="{CF9EC437-5D3A-4C3F-B137-0D051D1389BD}" ShortID="547848246">
@@ -1560,7 +1685,7 @@
 														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>5</Value>
+																<Value>-10</Value>
 															</ValueList>
 															<RTPCList>
 																<RTPC Name="" ID="{68A335B1-4D31-4915-A67E-0F18B3A06986}" ShortID="691585638">
@@ -1668,20 +1793,13 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<Sound Name="MB326_comb_start" ID="{8800FC16-796B-4800-8E2B-1C00BF7EED3D}" ShortID="613530138">
+														<RandomSequenceContainer Name="MB326_com_start_sequence" ID="{34527D35-B9A0-4602-8E3B-04A56CA58368}" ShortID="750909773">
 															<PropertyList>
-																<Property Name="3DSpatialization" Type="int16" Value="2"/>
-																<Property Name="OverridePositioning" Type="bool" Value="True"/>
-																<Property Name="Volume" Type="Real64">
-																	<ValueList>
-																		<Value>-2</Value>
-																	</ValueList>
-																</Property>
+																<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+																<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 															</PropertyList>
 															<ReferenceList>
-																<Reference Name="Attenuation">
-																	<ObjectRef Name="aircraft_player_inside_3m" ID="{538CDAF5-4564-463A-A841-C73D21967E20}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
-																</Reference>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
 																</Reference>
@@ -1690,21 +1808,101 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="MB326_comb_start" ID="{2E0714A6-69BF-4D40-B6FB-8CC7C96A6D21}">
+																<Sound Name="MB326_starter" ID="{840C6150-C931-466E-A0A7-B10A46AEF8AE}" ShortID="758925450">
 																	<PropertyList>
-																		<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-																		<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-																		<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-																		<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																		<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+																		<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+																		<Property Name="OverridePositioning" Type="bool" Value="True"/>
+																		<Property Name="Priority" Type="int16">
+																			<ValueList>
+																				<Value>100</Value>
+																			</ValueList>
+																		</Property>
 																	</PropertyList>
-																	<Language>SFX</Language>
-																	<AudioFile>MB326_comb_start.wav</AudioFile>
-																</AudioFileSource>
+																	<ReferenceList>
+																		<Reference Name="Attenuation">
+																			<ObjectRef Name="aircraft_player_inside_3m_spread40_focus70" ID="{3C29CCF2-E94C-4D61-8780-DC2F874F1A28}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+																		</Reference>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="combustion_inside_generic" ID="{F900BE9D-5340-45F1-B91E-571D4C83E671}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend1">
+																			<ObjectRef Name="disto_overspeed" ID="{5815E54F-778D-4C14-BF59-097980689171}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="MB326_starter" ID="{2D2FBD46-2560-4AD4-ADBB-E423B84FFE7B}">
+																			<PropertyList>
+																				<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="14.391"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>MB326_starter.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="MB326_starter" ID="{2D2FBD46-2560-4AD4-ADBB-E423B84FFE7B}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="MB326_comb_start" ID="{8800FC16-796B-4800-8E2B-1C00BF7EED3D}" ShortID="613530138">
+																	<PropertyList>
+																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																		<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+																		<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+																		<Property Name="OverridePositioning" Type="bool" Value="True"/>
+																		<Property Name="Priority" Type="int16">
+																			<ValueList>
+																				<Value>100</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>2</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Attenuation">
+																			<ObjectRef Name="aircraft_player_inside_3m_spread40_focus70" ID="{3C29CCF2-E94C-4D61-8780-DC2F874F1A28}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+																		</Reference>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="combustion_inside_generic" ID="{F900BE9D-5340-45F1-B91E-571D4C83E671}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend1">
+																			<ObjectRef Name="disto_overspeed" ID="{5815E54F-778D-4C14-BF59-097980689171}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="MB326_comb_start" ID="{2E0714A6-69BF-4D40-B6FB-8CC7C96A6D21}">
+																			<PropertyList>
+																				<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>MB326_comb_start.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="MB326_comb_start" ID="{2E0714A6-69BF-4D40-B6FB-8CC7C96A6D21}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
 															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="MB326_comb_start" ID="{2E0714A6-69BF-4D40-B6FB-8CC7C96A6D21}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
+															<Playlist>
+																<ItemRef Name="MB326_starter" ID="{840C6150-C931-466E-A0A7-B10A46AEF8AE}"/>
+																<ItemRef Name="MB326_comb_start" ID="{8800FC16-796B-4800-8E2B-1C00BF7EED3D}"/>
+															</Playlist>
+														</RandomSequenceContainer>
 													</ChildrenList>
 													<PositioningInfo>
 														<Panner Name="" ID="{F44E362B-B29A-4243-8F9F-DA7008366A0A}">
@@ -2393,13 +2591,14 @@
 														<Sound Name="MB326_starter" ID="{9FCA502C-95F5-4515-84E9-6CCFA3397EDC}" ShortID="110754862">
 															<PropertyList>
 																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 																<Property Name="OverridePositioning" Type="bool" Value="True"/>
 																<Property Name="Volume" Type="Real64">
 																	<RTPCList>
 																		<RTPC Name="" ID="{56725155-8CB4-4950-AE98-B141209E66A4}" ShortID="947158707">
 																			<ReferenceList>
 																				<Reference Name="ControlInput">
-																					<ObjectRef Name="SIMVAR_GENERAL_ENG_COMBUSTION_SOUND_PERCENT" ID="{6248DE76-391F-4AD0-84AA-AC5683CBB4A3}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
+																					<ObjectRef Name="SIMVAR_GENERAL_ENG_PCT_MAX_RPM" ID="{07ECAD71-A158-4EAF-ABCC-B9D63738BCAD}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
 																				</Reference>
 																			</ReferenceList>
 																			<Curve Name="" ID="{6B804525-6AA8-4632-93E6-0CABE2F8F7CD}">
@@ -2414,13 +2613,13 @@
 																						<SegmentShape>Log3</SegmentShape>
 																					</Point>
 																					<Point>
-																						<XPos>0.6</XPos>
+																						<XPos>0.9</XPos>
 																						<YPos>0</YPos>
 																						<Flags>0</Flags>
 																						<SegmentShape>Exp3</SegmentShape>
 																					</Point>
 																					<Point>
-																						<XPos>1</XPos>
+																						<XPos>1.5</XPos>
 																						<YPos>0</YPos>
 																						<Flags>37</Flags>
 																					</Point>
@@ -2444,8 +2643,10 @@
 															<ChildrenList>
 																<AudioFileSource Name="MB326_starter" ID="{10FF5AF1-F54B-4EB3-BCCA-400D262693E5}">
 																	<PropertyList>
-																		<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-																		<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																		<Property Name="CrossfadeDuration" Type="Real64" Value="3677.789"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="10.6745147639437"/>
+																		<Property Name="LoopEnd" Type="Real64" Value="14.391"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																		<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
 																		<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
 																	</PropertyList>
@@ -2507,6 +2708,7 @@
 																		<Value>100</Value>
 																	</ValueList>
 																</Property>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 																<Property Name="OverridePositioning" Type="bool" Value="True"/>
 															</PropertyList>
 															<ReferenceList>
@@ -2523,8 +2725,10 @@
 															<ChildrenList>
 																<AudioFileSource Name="x_MB326_starter" ID="{FA8FBE57-FD6F-4DA5-BEC5-F42AE8FBA823}">
 																	<PropertyList>
-																		<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-																		<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																		<Property Name="CrossfadeDuration" Type="Real64" Value="3724.522"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="10.596"/>
+																		<Property Name="LoopEnd" Type="Real64" Value="14.373"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																		<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
 																		<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
 																	</PropertyList>

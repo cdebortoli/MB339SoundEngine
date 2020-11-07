@@ -4484,9 +4484,13 @@
           </WObject>
         </File>
         <File Name="MB326_starter.wav">
+          <WObject ID="{2D2FBD46-2560-4AD4-ADBB-E423B84FFE7B}">
+            <MediaID ID="151201963" />
+            <Hash Platform="Windows" Value="846796012" />
+          </WObject>
           <WObject ID="{10FF5AF1-F54B-4EB3-BCCA-400D262693E5}">
             <MediaID ID="695214906" />
-            <Hash Platform="Windows" Value="2025688079" />
+            <Hash Platform="Windows" Value="1279994124" />
           </WObject>
         </File>
         <File Name="MB326_whine_0.wav">
@@ -8546,6 +8550,10 @@
           </WObject>
         </File>
         <File Name="x_MB326_comb_0.wav">
+          <WObject ID="{BAA8FE50-3FF8-458C-8969-6B251C0758DD}">
+            <MediaID ID="158262831" />
+            <Hash Platform="Windows" Value="1069876237" />
+          </WObject>
           <WObject ID="{0E17B037-F265-4BD6-99EF-09964C5DD068}">
             <MediaID ID="158262831" />
             <Hash Platform="Windows" Value="1069876237" />
@@ -8584,7 +8592,7 @@
         <File Name="x_MB326_starter.wav">
           <WObject ID="{FA8FBE57-FD6F-4DA5-BEC5-F42AE8FBA823}">
             <MediaID ID="840482445" />
-            <Hash Platform="Windows" Value="2025688079" />
+            <Hash Platform="Windows" Value="3727849529" />
           </WObject>
         </File>
         <File Name="x_MB326_whine_0.wav">
