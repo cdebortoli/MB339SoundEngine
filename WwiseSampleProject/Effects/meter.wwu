@@ -57,6 +57,16 @@
 	<GameParameter Name="SC_COMBUSTION" ID="{014CF58C-B34F-443D-8C94-7A18C9B9F512}"/>
 </PluginData>
 				</Effect>
+				<Effect Name="meter_sc_combustion_start" ID="{538F305F-B530-4259-A188-3F716F384844}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+					<PropertyList>
+						<Property Name="Hold" Type="Real32" Value="0.25"/>
+						<Property Name="Min" Type="Real32" Value="-96.3"/>
+						<Property Name="ReleaseTime" Type="Real32" Value="0.25"/>
+					</PropertyList>
+					<PluginData>
+	<GameParameter Name="SC_COMBUSTION_START" ID="{5E0258C9-D53D-40B4-88D8-59ECFD5E0B37}"/>
+</PluginData>
+				</Effect>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>
