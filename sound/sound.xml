@@ -85,6 +85,7 @@
 	  </Sound>
     <Sound WwiseEvent="Combustion" ConeHeading="180" RPMMin="1" FadeOutType="2" FadeOutTime="0.5" WwiseData="true" EngineIndex="1">
 		  <WwiseRTPC Units="PERCENT" LocalVar="CanopyOpen" RTPCName="SIMVAR_CANOPY_OPEN_DERIVED"/> 
+      <WwiseRTPC SimVar="TURB ENG N1" Units="PERCENT" Index="1" RTPCName="SIMVAR_TURB_ENG_N1" />
 	  </Sound>
     <Sound WwiseEvent="Shutdown" ConeHeading="145" RPMMin="1185" WwiseData="true" EngineIndex="1" > 
 		  <WwiseRTPC Units="PERCENT" LocalVar="CanopyOpen" RTPCName="SIMVAR_CANOPY_OPEN_DERIVED"/> 
