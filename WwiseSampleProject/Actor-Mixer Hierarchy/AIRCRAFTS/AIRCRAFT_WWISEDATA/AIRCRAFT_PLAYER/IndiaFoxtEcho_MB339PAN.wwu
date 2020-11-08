@@ -161,11 +161,6 @@
 												</Property>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 												<Property Name="SwitchBehavior" Type="int16" Value="1"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-2</Value>
-													</ValueList>
-												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -235,8 +230,37 @@
 																</RTPC>
 															</RTPCList>
 														</Property>
+														<Property Name="UserAuxSendVolume2" Type="Real64">
+															<ValueList>
+																<Value>-10</Value>
+															</ValueList>
+														</Property>
 														<Property Name="Volume" Type="Real64">
 															<RTPCList>
+																<RTPC Name="" ID="{0C755939-7C94-4E53-A968-406D42E3D25B}" ShortID="653279566">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="ENV_COCKPIT_INSULATION" ID="{41B00B57-897A-4477-A19B-88C4DE7B46F4}" WorkUnitID="{53AC294C-40DF-4FF3-A7A2-A02A6282BF91}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{90EC9C95-E34D-42A3-BCB1-65E58AB0B971}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>-24</XPos>
+																				<YPos>-0.1791</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
 																<RTPC Name="" ID="{952AD6D2-5E57-4E9C-ADB1-A43E9D201A6A}" ShortID="586530836">
 																	<ReferenceList>
 																		<Reference Name="ControlInput">
@@ -255,7 +279,7 @@
 																			</Point>
 																			<Point>
 																				<XPos>-89.89646</XPos>
-																				<YPos>-0</YPos>
+																				<YPos>0</YPos>
 																				<Flags>0</Flags>
 																				<SegmentShape>Log2</SegmentShape>
 																			</Point>
@@ -294,6 +318,9 @@
 														</Reference>
 														<Reference Name="UserAuxSend1">
 															<ObjectRef Name="disto_overspeed" ID="{5815E54F-778D-4C14-BF59-097980689171}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="rev_inside_custom" ID="{0144F838-F9D8-480E-A1A7-B07D86A7F342}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -403,36 +430,6 @@
 																		<Value>-2</Value>
 																	</ValueList>
 																	<RTPCList>
-																		<RTPC Name="" ID="{10846126-7188-4E0E-BCA3-E84B5EEC689B}" ShortID="1053310272">
-																			<ReferenceList>
-																				<Reference Name="ControlInput">
-																					<ObjectRef Name="SIMVAR_CANOPY_OPEN_DERIVED" ID="{4149B9E7-AB3F-4DB8-AF6F-47F27D924B7E}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<Curve Name="" ID="{63FB9292-33BE-4A1C-A3D5-FA471DBAABAC}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="3"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>-100</XPos>
-																						<YPos>-12.27106</YPos>
-																						<Flags>5</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>-0.09906</XPos>
-																						<YPos>-11.5719</YPos>
-																						<Flags>0</Flags>
-																						<SegmentShape>Exp1</SegmentShape>
-																					</Point>
-																					<Point>
-																						<XPos>100</XPos>
-																						<YPos>-0.0609499999999912</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</RTPC>
 																		<RTPC Name="" ID="{2711AD55-32AC-4EFC-83DE-A0213BFB2AD8}" ShortID="359113411">
 																			<ReferenceList>
 																				<Reference Name="ControlInput">
@@ -469,6 +466,36 @@
 																					<Point>
 																						<XPos>200</XPos>
 																						<YPos>-0.0447100000000091</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																		<RTPC Name="" ID="{3EDD129E-B01E-4DFA-AFB3-677240718F01}" ShortID="147838335">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="SIMVAR_CANOPY_OPEN_DERIVED" ID="{4149B9E7-AB3F-4DB8-AF6F-47F27D924B7E}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{BC36E138-E3DB-4EE0-8871-ECE849F37482}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>-100</XPos>
+																						<YPos>-8</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>-0.32815</XPos>
+																						<YPos>-8</YPos>
+																						<Flags>0</Flags>
+																						<SegmentShape>Exp2</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>100</XPos>
+																						<YPos>-0.0609499999999912</YPos>
 																						<Flags>37</Flags>
 																					</Point>
 																				</PointList>
@@ -620,12 +647,12 @@
 																				<PointList>
 																					<Point>
 																						<XPos>-100</XPos>
-																						<YPos>-10.92485</YPos>
+																						<YPos>-8</YPos>
 																						<Flags>5</Flags>
 																					</Point>
 																					<Point>
 																						<XPos>-0.32815</XPos>
-																						<YPos>-10.92485</YPos>
+																						<YPos>-8</YPos>
 																						<Flags>0</Flags>
 																						<SegmentShape>Exp2</SegmentShape>
 																					</Point>
@@ -764,7 +791,7 @@
 																			</Point>
 																			<Point>
 																				<XPos>-89.89646</XPos>
-																				<YPos>-0</YPos>
+																				<YPos>0</YPos>
 																				<Flags>0</Flags>
 																				<SegmentShape>Log2</SegmentShape>
 																			</Point>
@@ -1245,34 +1272,44 @@
 																<Value>100</Value>
 															</ValueList>
 														</Property>
+														<Property Name="GameAuxSendVolume" Type="Real64">
+															<ValueList>
+																<Value>-2</Value>
+															</ValueList>
+														</Property>
 														<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
 														<Property Name="OverrideOutput" Type="bool" Value="True"/>
 														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+														<Property Name="UserAuxSendVolume2" Type="Real64">
+															<ValueList>
+																<Value>-2</Value>
+															</ValueList>
+														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>-2</Value>
 															</ValueList>
 															<RTPCList>
-																<RTPC Name="" ID="{3FB26F6A-6B54-4F59-997F-B669460054C7}" ShortID="1040599019">
+																<RTPC Name="" ID="{55BCA157-01D1-401F-A6D3-879EA423D219}" ShortID="773431641">
 																	<ReferenceList>
 																		<Reference Name="ControlInput">
 																			<ObjectRef Name="SIMVAR_CANOPY_OPEN_DERIVED" ID="{4149B9E7-AB3F-4DB8-AF6F-47F27D924B7E}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
 																		</Reference>
 																	</ReferenceList>
-																	<Curve Name="" ID="{BF720F23-B985-4FFC-B7CF-2BCBA3A72F69}">
+																	<Curve Name="" ID="{C6DC9C9C-E47B-40C4-BEC7-F70C7A63F70A}">
 																		<PropertyList>
 																			<Property Name="Flags" Type="int32" Value="3"/>
 																		</PropertyList>
 																		<PointList>
 																			<Point>
 																				<XPos>-100</XPos>
-																				<YPos>-9.75957</YPos>
+																				<YPos>-8</YPos>
 																				<Flags>5</Flags>
 																			</Point>
 																			<Point>
-																				<XPos>-0.09906</XPos>
-																				<YPos>-9.75957</YPos>
+																				<XPos>-0.32815</XPos>
+																				<YPos>-8</YPos>
 																				<Flags>0</Flags>
 																				<SegmentShape>Exp2</SegmentShape>
 																			</Point>
@@ -1872,31 +1909,37 @@
 																</RTPC>
 															</RTPCList>
 														</Property>
-														<Property Name="Volume" Type="Real64">
+														<Property Name="UserAuxSendVolume2" Type="Real64">
 															<ValueList>
 																<Value>-10</Value>
 															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-5</Value>
+															</ValueList>
 															<RTPCList>
-																<RTPC Name="" ID="{68A335B1-4D31-4915-A67E-0F18B3A06986}" ShortID="691585638">
+																<RTPC Name="" ID="{60986454-2232-4F6A-9554-CFA7CA9882BB}" ShortID="1002299366">
 																	<ReferenceList>
 																		<Reference Name="ControlInput">
 																			<ObjectRef Name="SIMVAR_CANOPY_OPEN_DERIVED" ID="{4149B9E7-AB3F-4DB8-AF6F-47F27D924B7E}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
 																		</Reference>
 																	</ReferenceList>
-																	<Curve Name="" ID="{F5D0E1C5-7B69-4146-917D-0849874CD953}">
+																	<Curve Name="" ID="{2F9A613B-92DF-4387-BEC3-8C3ACB0BBCDB}">
 																		<PropertyList>
 																			<Property Name="Flags" Type="int32" Value="3"/>
 																		</PropertyList>
 																		<PointList>
 																			<Point>
 																				<XPos>-100</XPos>
-																				<YPos>-6.98312000000001</YPos>
+																				<YPos>-8</YPos>
 																				<Flags>5</Flags>
 																			</Point>
 																			<Point>
-																				<XPos>0.13004</XPos>
-																				<YPos>-6.98312000000001</YPos>
+																				<XPos>-0.32815</XPos>
+																				<YPos>-8</YPos>
 																				<Flags>0</Flags>
+																				<SegmentShape>Exp2</SegmentShape>
 																			</Point>
 																			<Point>
 																				<XPos>100</XPos>
@@ -1979,6 +2022,9 @@
 														</Reference>
 														<Reference Name="UserAuxSend1">
 															<ObjectRef Name="disto_overspeed" ID="{5815E54F-778D-4C14-BF59-097980689171}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="rev_inside_custom" ID="{0144F838-F9D8-480E-A1A7-B07D86A7F342}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -2140,7 +2186,7 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-11</Value>
+														<Value>-5</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -2470,31 +2516,37 @@
 																</RTPC>
 															</RTPCList>
 														</Property>
+														<Property Name="UserAuxSendVolume2" Type="Real64">
+															<ValueList>
+																<Value>-10</Value>
+															</ValueList>
+														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>-3</Value>
 															</ValueList>
 															<RTPCList>
-																<RTPC Name="" ID="{B6D9B658-7DF8-4C4C-A93B-57B8B41F4BD6}" ShortID="41947423">
+																<RTPC Name="" ID="{87BEB09E-11D8-4166-BBDD-6A101B41D106}" ShortID="988251432">
 																	<ReferenceList>
 																		<Reference Name="ControlInput">
 																			<ObjectRef Name="SIMVAR_CANOPY_OPEN_DERIVED" ID="{4149B9E7-AB3F-4DB8-AF6F-47F27D924B7E}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
 																		</Reference>
 																	</ReferenceList>
-																	<Curve Name="" ID="{0A57810C-B154-47A1-841C-11546812E13E}">
+																	<Curve Name="" ID="{57521173-EC09-40A7-BC76-B38873B40337}">
 																		<PropertyList>
 																			<Property Name="Flags" Type="int32" Value="3"/>
 																		</PropertyList>
 																		<PointList>
 																			<Point>
 																				<XPos>-100</XPos>
-																				<YPos>-6.98312000000001</YPos>
+																				<YPos>-8</YPos>
 																				<Flags>5</Flags>
 																			</Point>
 																			<Point>
-																				<XPos>0.13004</XPos>
-																				<YPos>-6.98312000000001</YPos>
+																				<XPos>-0.32815</XPos>
+																				<YPos>-8</YPos>
 																				<Flags>0</Flags>
+																				<SegmentShape>Exp2</SegmentShape>
 																			</Point>
 																			<Point>
 																				<XPos>100</XPos>
@@ -2577,6 +2629,9 @@
 														</Reference>
 														<Reference Name="UserAuxSend1">
 															<ObjectRef Name="disto_overspeed" ID="{5815E54F-778D-4C14-BF59-097980689171}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="rev_inside_custom" ID="{0144F838-F9D8-480E-A1A7-B07D86A7F342}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -2735,37 +2790,41 @@
 															</RTPCList>
 														</Property>
 														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+														<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 														<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 														<Property Name="UserAuxSendVolume0" Type="Real64">
 															<ValueList>
 																<Value>-15</Value>
 															</ValueList>
 														</Property>
-														<Property Name="Volume" Type="Real64">
+														<Property Name="UserAuxSendVolume2" Type="Real64">
 															<ValueList>
 																<Value>-10</Value>
 															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
 															<RTPCList>
-																<RTPC Name="" ID="{97B6A1B4-36B4-42F2-9E33-2F1F72F494F9}" ShortID="831257264">
+																<RTPC Name="" ID="{CA0C1641-102E-4F5F-9BE1-F1018994511D}" ShortID="497694091">
 																	<ReferenceList>
 																		<Reference Name="ControlInput">
 																			<ObjectRef Name="SIMVAR_CANOPY_OPEN_DERIVED" ID="{4149B9E7-AB3F-4DB8-AF6F-47F27D924B7E}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
 																		</Reference>
 																	</ReferenceList>
-																	<Curve Name="" ID="{F3D5276C-57CF-4437-853D-481C2031B6AD}">
+																	<Curve Name="" ID="{CE88E2DF-4CC4-4AD5-A7A5-02873B835E20}">
 																		<PropertyList>
 																			<Property Name="Flags" Type="int32" Value="3"/>
 																		</PropertyList>
 																		<PointList>
 																			<Point>
 																				<XPos>-100</XPos>
-																				<YPos>-6.98312000000001</YPos>
+																				<YPos>-8</YPos>
 																				<Flags>5</Flags>
 																			</Point>
 																			<Point>
-																				<XPos>0.13004</XPos>
-																				<YPos>-6.98312000000001</YPos>
+																				<XPos>-0.32815</XPos>
+																				<YPos>-8</YPos>
 																				<Flags>0</Flags>
+																				<SegmentShape>Exp2</SegmentShape>
 																			</Point>
 																			<Point>
 																				<XPos>100</XPos>
@@ -2784,6 +2843,9 @@
 														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="combustion_inside_generic" ID="{F900BE9D-5340-45F1-B91E-571D4C83E671}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="rev_inside_custom" ID="{0144F838-F9D8-480E-A1A7-B07D86A7F342}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -11272,6 +11334,13 @@ Wood (20-planks)
 													</ChildrenList>
 												</BlendContainer>
 												<BlendContainer Name="rattle_ground_bumpy_inside" ID="{26BA71FA-418B-4717-93D6-86E5B3C0927D}" ShortID="463261119">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-9</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
@@ -13620,7 +13689,7 @@ Wood (20-planks)
 																<Property Name="OverridePositioning" Type="bool" Value="True"/>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>-9</Value>
+																		<Value>-6</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -14002,7 +14071,7 @@ Wood (20-planks)
 																</Property>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>-9</Value>
+																		<Value>-6</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -14372,7 +14441,7 @@ Wood (20-planks)
 																</Property>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>-9</Value>
+																		<Value>-6</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -14733,7 +14802,7 @@ Wood (20-planks)
 																<Property Name="OverridePositioning" Type="bool" Value="True"/>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>-9</Value>
+																		<Value>-6</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -15120,7 +15189,7 @@ Wood (20-planks)
 																</Property>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>-9</Value>
+																		<Value>-6</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -15491,7 +15560,7 @@ Wood (20-planks)
 																</Property>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>-9</Value>
+																		<Value>-6</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -15861,7 +15930,7 @@ Wood (20-planks)
 																</Property>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>-33</Value>
+																		<Value>-28</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -16088,7 +16157,7 @@ Wood (20-planks)
 																</Property>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>-33</Value>
+																		<Value>-28</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -16927,7 +16996,7 @@ Wood (20-planks)
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-10</Value>
+														<Value>-8</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -16976,7 +17045,7 @@ Wood (20-planks)
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-9</Value>
+														<Value>-8</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -17027,7 +17096,7 @@ Wood (20-planks)
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-10</Value>
+														<Value>-8</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -17182,7 +17251,7 @@ Wood (20-planks)
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-10</Value>
+														<Value>-8</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -17627,7 +17696,7 @@ Wood (20-planks)
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-26</Value>
+														<Value>-22</Value>
 													</ValueList>
 													<RTPCList>
 														<RTPC Name="" ID="{59BFBEF0-CD8F-4340-AACF-533A2CE9341B}" ShortID="309211591">
@@ -18988,7 +19057,7 @@ Wood (20-planks)
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-17</Value>
+														<Value>-10</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -25623,6 +25692,326 @@ Wood (20-planks)
 												</Sound>
 											</ChildrenList>
 										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="MB339_canopy_lock_lever" ID="{17B98055-FD37-4496-A655-D92ECCC9F7E7}" ShortID="75762039">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismLoopCount" Type="int32" Value="1"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.5"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="Priority" Type="int16">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-13</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="aircraft_player_inside_3m_spread15" ID="{F5FBB6BB-1F86-4FA7-99C5-7D1DAE906FF9}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="instruments_inside" ID="{4D67557A-CB3C-4574-8DBC-4643E77C31BD}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="DA62_instru_fuel_selector_valve_02" ID="{4E32920E-FE36-4C58-84C0-BFAAA10A3DBB}" ShortID="861968433">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="CenterPercentage" Type="int32">
+															<ValueList>
+																<Value>100</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="game_sfx" ID="{5AE4AA49-0F85-491C-B9DC-40166DBD7F80}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="DA62_instru_fuel_selector_valve_02" ID="{967D0829-C0B4-40D8-BFA1-CD7DCDD9E8DA}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0514899064500246"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0504736582964057"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.112464795667159"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>DA62_instru_fuel_selector_valve_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="DA62_instru_fuel_selector_valve_02" ID="{967D0829-C0B4-40D8-BFA1-CD7DCDD9E8DA}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="DA62_instru_fuel_selector_valve_03" ID="{7ABD770C-55BC-4EC3-9DC4-BAFB50B8B77B}" ShortID="404466636">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="CenterPercentage" Type="int32">
+															<ValueList>
+																<Value>100</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="game_sfx" ID="{5AE4AA49-0F85-491C-B9DC-40166DBD7F80}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="DA62_instru_fuel_selector_valve_03" ID="{51112CB2-639A-41A0-A5DC-9ACCD8E07FA4}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00244214672575086"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.109896602658789"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0329689807976366"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.158739537173806"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>DA62_instru_fuel_selector_valve_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="DA62_instru_fuel_selector_valve_03" ID="{51112CB2-639A-41A0-A5DC-9ACCD8E07FA4}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="DA62_instru_fuel_selector_valve_01" ID="{AA60807F-0B92-4C07-8CDE-72FCC1731527}" ShortID="309969818">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="CenterPercentage" Type="int32">
+															<ValueList>
+																<Value>100</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="game_sfx" ID="{5AE4AA49-0F85-491C-B9DC-40166DBD7F80}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="DA62_instru_fuel_selector_valve_01" ID="{BE57C674-80DE-4C00-BE46-43C0590B9A89}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0876651895617922"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0274465780403742"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.160992614475628"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>DA62_instru_fuel_selector_valve_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="DA62_instru_fuel_selector_valve_01" ID="{BE57C674-80DE-4C00-BE46-43C0590B9A89}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="DA62_instru_fuel_selector_valve_04" ID="{56D40E38-0939-4E78-808A-8CA964B2118F}" ShortID="284150813">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="CenterPercentage" Type="int32">
+															<ValueList>
+																<Value>100</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="game_sfx" ID="{5AE4AA49-0F85-491C-B9DC-40166DBD7F80}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="DA62_instru_fuel_selector_valve_01" ID="{3D13F878-C380-41EA-8D2E-4B0306D68955}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.13436533727228"/>
+																<Property Name="FadeOutShape" Type="int16" Value="6"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.167137370753323"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.313792220580995"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>DA62_instru_fuel_selector_valve_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="DA62_instru_fuel_selector_valve_01" ID="{3D13F878-C380-41EA-8D2E-4B0306D68955}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="DA62_instru_fuel_selector_valve_05" ID="{F1D8FCD1-6FA4-46ED-A329-39714A54B768}" ShortID="713754579">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="CenterPercentage" Type="int32">
+															<ValueList>
+																<Value>100</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>8</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="game_sfx" ID="{5AE4AA49-0F85-491C-B9DC-40166DBD7F80}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="DA62_instru_fuel_selector_valve_01" ID="{02514D3B-7BC0-428E-8FCE-B5DC741CF35C}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.13436533727228"/>
+																<Property Name="FadeOutShape" Type="int16" Value="6"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.312563269325455"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.499363860167405"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>DA62_instru_fuel_selector_valve_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="DA62_instru_fuel_selector_valve_01" ID="{02514D3B-7BC0-428E-8FCE-B5DC741CF35C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="DA62_instru_fuel_selector_valve_06" ID="{FB6208BF-3CA2-429B-BD17-4DDBC71ACDB4}" ShortID="504502516">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="CenterPercentage" Type="int32">
+															<ValueList>
+																<Value>100</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="game_sfx" ID="{5AE4AA49-0F85-491C-B9DC-40166DBD7F80}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="DA62_instru_fuel_selector_valve_03" ID="{425928B6-017F-473C-9091-E83F22862A59}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00244214672575086"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.109896602658789"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.157518463810931"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.312838995568685"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>DA62_instru_fuel_selector_valve_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="DA62_instru_fuel_selector_valve_03" ID="{425928B6-017F-473C-9091-E83F22862A59}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="DA62_instru_fuel_selector_valve_07" ID="{CF44BE58-F67B-4E57-B478-F38CF49F758C}" ShortID="472428902">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="CenterPercentage" Type="int32">
+															<ValueList>
+																<Value>100</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>6</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="game_sfx" ID="{5AE4AA49-0F85-491C-B9DC-40166DBD7F80}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="DA62_instru_fuel_selector_valve_02" ID="{A1B183C8-C8E3-4FCE-93CF-3EB6FE52376B}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0514899064500246"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.182924667651403"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.311310684391925"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>DA62_instru_fuel_selector_valve_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="DA62_instru_fuel_selector_valve_02" ID="{A1B183C8-C8E3-4FCE-93CF-3EB6FE52376B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="VIEWPOINT" ID="{13BEFA7F-C929-4FAA-8B48-86589D04F1D6}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="INSIDE" ID="{FFECDB48-6798-4725-AB04-DCC845B2904E}"/>
+														<CustomState Name="" ID="{5BEA8576-5380-4978-AAAD-6001AC507C58}" ShortID="56449277">
+															<PropertyList>
+																<Property Name="Pitch" Type="int32" Value="-1770"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="OUTSIDE" ID="{A2B684CD-A8E1-4B6B-A69B-84CC4AD39406}"/>
+														<CustomState Name="" ID="{865E2EC5-BEF3-448B-BE91-D711F78B1390}" ShortID="314147845">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-96"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
+										</RandomSequenceContainer>
 									</ChildrenList>
 								</ActorMixer>
 							</ChildrenList>
@@ -31727,7 +32116,7 @@ Wood (20-planks)
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-26</Value>
+												<Value>-19</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -31854,6 +32243,9 @@ Wood (20-planks)
 																	</RTPCList>
 																</Property>
 																<Property Name="Pitch" Type="int32">
+																	<ValueList>
+																		<Value>-430</Value>
+																	</ValueList>
 																	<RTPCList>
 																		<RTPC Name="" ID="{9087745A-C8F3-4D47-8267-BF9099323B17}" ShortID="418123236">
 																			<ReferenceList>
@@ -31911,9 +32303,6 @@ Wood (20-planks)
 																	</ValueList>
 																</Property>
 																<Property Name="Volume" Type="Real64">
-																	<ValueList>
-																		<Value>-2</Value>
-																	</ValueList>
 																	<RTPCList>
 																		<RTPC Name="" ID="{CF87B635-C025-4044-8D90-23A33D8D205F}" ShortID="758421676">
 																			<ReferenceList>
@@ -32251,6 +32640,9 @@ Wood (20-planks)
 																	</RTPCList>
 																</Property>
 																<Property Name="Pitch" Type="int32">
+																	<ValueList>
+																		<Value>-430</Value>
+																	</ValueList>
 																	<RTPCList>
 																		<RTPC Name="" ID="{AF123A13-F767-41D1-BFE9-FCBD887EA732}" ShortID="368818567">
 																			<ReferenceList>
@@ -32296,9 +32688,6 @@ Wood (20-planks)
 																	</ValueList>
 																</Property>
 																<Property Name="Volume" Type="Real64">
-																	<ValueList>
-																		<Value>-5</Value>
-																	</ValueList>
 																	<RTPCList>
 																		<RTPC Name="" ID="{C0DB045E-6C9D-4308-90B2-B510859D12E5}" ShortID="815386919">
 																			<ReferenceList>
@@ -32636,6 +33025,9 @@ Wood (20-planks)
 																	</RTPCList>
 																</Property>
 																<Property Name="Pitch" Type="int32">
+																	<ValueList>
+																		<Value>-430</Value>
+																	</ValueList>
 																	<RTPCList>
 																		<RTPC Name="" ID="{8A40B081-D9F6-4A0A-BBCE-1DECD0664E60}" ShortID="665713537">
 																			<ReferenceList>
@@ -32693,9 +33085,6 @@ Wood (20-planks)
 																	</ValueList>
 																</Property>
 																<Property Name="Volume" Type="Real64">
-																	<ValueList>
-																		<Value>-5</Value>
-																	</ValueList>
 																	<RTPCList>
 																		<RTPC Name="" ID="{6D672154-3C39-4647-8433-D9CBFE28A43A}" ShortID="916744444">
 																			<ReferenceList>

@@ -3286,6 +3286,14 @@
             <MediaID ID="943800012" />
             <Hash Platform="Windows" Value="1628254717" />
           </WObject>
+          <WObject ID="{3D13F878-C380-41EA-8D2E-4B0306D68955}">
+            <MediaID ID="389189219" />
+            <Hash Platform="Windows" Value="2984787775" />
+          </WObject>
+          <WObject ID="{02514D3B-7BC0-428E-8FCE-B5DC741CF35C}">
+            <MediaID ID="527748155" />
+            <Hash Platform="Windows" Value="4153419942" />
+          </WObject>
           <WObject ID="{7CD67ABC-90D9-42E1-B6F4-DFDA063864C7}">
             <MediaID ID="527748155" />
             <Hash Platform="Windows" Value="4153419942" />
@@ -3302,12 +3310,20 @@
             <MediaID ID="389189219" />
             <Hash Platform="Windows" Value="2984787775" />
           </WObject>
+          <WObject ID="{BE57C674-80DE-4C00-BE46-43C0590B9A89}">
+            <MediaID ID="943800012" />
+            <Hash Platform="Windows" Value="1628254717" />
+          </WObject>
           <WObject ID="{5AD795B7-1B4C-4F6D-BF9D-34346990E2ED}">
             <MediaID ID="527748155" />
             <Hash Platform="Windows" Value="4153419942" />
           </WObject>
         </File>
         <File Name="DA62_instru_fuel_selector_valve_02.wav">
+          <WObject ID="{967D0829-C0B4-40D8-BFA1-CD7DCDD9E8DA}">
+            <MediaID ID="193987070" />
+            <Hash Platform="Windows" Value="2178294804" />
+          </WObject>
           <WObject ID="{D58283D8-CBA2-42A0-A6F8-BA6AE55433CB}">
             <MediaID ID="1059249819" />
             <Hash Platform="Windows" Value="3309765688" />
@@ -3324,9 +3340,21 @@
             <MediaID ID="193987070" />
             <Hash Platform="Windows" Value="2178294804" />
           </WObject>
+          <WObject ID="{A1B183C8-C8E3-4FCE-93CF-3EB6FE52376B}">
+            <MediaID ID="1059249819" />
+            <Hash Platform="Windows" Value="3309765688" />
+          </WObject>
         </File>
         <File Name="DA62_instru_fuel_selector_valve_03.wav">
+          <WObject ID="{51112CB2-639A-41A0-A5DC-9ACCD8E07FA4}">
+            <MediaID ID="517032341" />
+            <Hash Platform="Windows" Value="2042857640" />
+          </WObject>
           <WObject ID="{5DF645B0-ABAA-451C-921B-1326E6CA9E7C}">
+            <MediaID ID="591047462" />
+            <Hash Platform="Windows" Value="3322821265" />
+          </WObject>
+          <WObject ID="{425928B6-017F-473C-9091-E83F22862A59}">
             <MediaID ID="591047462" />
             <Hash Platform="Windows" Value="3322821265" />
           </WObject>

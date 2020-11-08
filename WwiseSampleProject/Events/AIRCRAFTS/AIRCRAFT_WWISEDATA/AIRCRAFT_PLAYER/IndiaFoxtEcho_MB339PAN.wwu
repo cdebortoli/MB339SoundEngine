@@ -1092,24 +1092,19 @@
 													<PropertyList>
 														<Property Name="ActionType" Type="int16" Value="1"/>
 														<Property Name="FadeInCurve" Type="int16" Value="1"/>
-														<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="MB339_parkingbrake_pedal" ID="{6B3DD9C5-1816-4EBA-A968-7F21F22AEE78}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+															<ObjectRef Name="MB339_canopy_lock_lever" ID="{17B98055-FD37-4496-A655-D92ECCC9F7E7}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
 												<Action Name="" ID="{DFD1C5A7-8063-4E5E-8787-464D7318FD7B}" ShortID="652981370">
 													<PropertyList>
-														<Property Name="ActionType" Type="int16" Value="2"/>
-														<Property Name="Delay" Type="Real64" Value="4"/>
+														<Property Name="ActionType" Type="int16" Value="3"/>
+														<Property Name="Delay" Type="Real64" Value="2"/>
 													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="MB339_parkingbrake_pedal" ID="{6B3DD9C5-1816-4EBA-A968-7F21F22AEE78}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
-														</Reference>
-													</ReferenceList>
+													<ReferenceList/>
 												</Action>
 											</ChildrenList>
 										</Event>
