@@ -8622,23 +8622,27 @@
             <MediaID ID="840482445" />
             <Hash Platform="Windows" Value="3727849529" />
           </WObject>
+          <WObject ID="{7662431C-437E-4F98-B34E-B9C0CE19BB1B}">
+            <MediaID ID="16554997" />
+            <Hash Platform="Windows" Value="1157335514" />
+          </WObject>
         </File>
         <File Name="x_MB326_whine_0.wav">
           <WObject ID="{C9D50160-9E3F-4632-96A9-08FDA0B262DD}">
             <MediaID ID="402039410" />
-            <Hash Platform="Windows" Value="2025688079" />
+            <Hash Platform="Windows" Value="1069876237" />
           </WObject>
         </File>
         <File Name="x_MB326_whine_1.wav">
           <WObject ID="{FCB8E8A2-D87B-489C-8DAD-9CEB264BDBD5}">
             <MediaID ID="170593576" />
-            <Hash Platform="Windows" Value="2025688079" />
+            <Hash Platform="Windows" Value="1069876237" />
           </WObject>
         </File>
         <File Name="x_MB326_whine_2.wav">
           <WObject ID="{221A58BC-77B1-4931-A6C9-2A39FA467D21}">
             <MediaID ID="1019604987" />
-            <Hash Platform="Windows" Value="2025688079" />
+            <Hash Platform="Windows" Value="1069876237" />
           </WObject>
         </File>
       </Language>

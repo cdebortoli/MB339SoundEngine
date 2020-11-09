@@ -62,19 +62,6 @@
   <MiscellaneousSounds>
   </MiscellaneousSounds>
 
-<!-- <EngineSoundTransitions>
-    <Sound WwiseEvent="Starter" FadeOutType="2" FadeOutTime="0.1" WwiseData="true" StateFrom="Off" StateTo="Start" EngineIndex="1" >  
-		  <WwiseRTPC Units="PERCENT" LocalVar="CanopyOpen" RTPCName="SIMVAR_CANOPY_OPEN_DERIVED"/> 
-    </Sound>
-    <Sound WwiseEvent="CombustionStart" FadeOutType="2" FadeOutTime="0.1" WwiseData="true" StateFrom="Start" StateTo="On" EngineIndex="1" >  
-		  <WwiseRTPC Units="PERCENT" LocalVar="CanopyOpen" RTPCName="SIMVAR_CANOPY_OPEN_DERIVED"/> 
-    </Sound>
-</EngineSoundTransitions>
-<EngineSoundStates>
-  <Sound WwiseEvent="Combustion" WwiseData="true" ConeHeading="180" RPMMin="1" FadeOutType="2" FadeOutTime="0.5" EngineIndex="1" StateOff="false" StateStart="false" StateOn="true">
-		<WwiseRTPC Units="PERCENT" LocalVar="CanopyOpen" RTPCName="SIMVAR_CANOPY_OPEN_DERIVED"/> 
-  </Sound>
-</EngineSoundStates> -->
   <EngineSoundPresets>
 
     <Sound WwiseEvent="Starter" FadeOutType="2" FadeOutTime="0.1" WwiseData="true" EngineIndex="1" >  
@@ -279,7 +266,8 @@
 	  <Sound WwiseData="true" WwiseEvent="taxi_light_switch_on" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" SimVar="LIGHT TAXI" Units="BOOLEAN" Index="0">
       <Range UpperBound="0.5" />
     </Sound>
-	  <Sound WwiseData="true" WwiseEvent="canopy_lock_action" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" LocalVar="CanopyLockCommand" />
+	  <Sound WwiseData="true" WwiseEvent="canopy_lock_action" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" LocalVar="CanopyLockCommand">
+    </Sound>
 	  <Sound WwiseData="true" WwiseEvent="ejection_lock_action" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" LocalVar="EjectionSeatSafetyPinPilot" />
 	  <Sound WwiseData="true" WwiseEvent="g_reset_push" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" LocalVar="G_reset" />
 	  <Sound WwiseData="true" WwiseEvent="flt_dir_push" Continuous="false" ViewPoint="Inside" NodeName="AILERON_LEFT" LocalVar="FDModeCD" />
