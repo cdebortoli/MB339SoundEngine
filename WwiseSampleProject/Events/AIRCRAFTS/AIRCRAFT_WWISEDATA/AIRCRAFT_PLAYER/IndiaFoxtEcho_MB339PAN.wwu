@@ -540,7 +540,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="MB339_elevator_trim" ID="{C97F7200-B4C9-4C69-A8F6-8ED2176D473D}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
+													<ObjectRef Name="MB339_g1000_joystick" ID="{B74A2E01-9133-44AB-8420-4441EF6908B8}" WorkUnitID="{3DDB19EA-B466-446E-9315-EB04B4B3F6B6}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
