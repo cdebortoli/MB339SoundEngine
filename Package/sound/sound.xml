@@ -54,7 +54,7 @@
     </Sound>
     <Sound WwiseEvent="GROUND_ROLL" FadeOutType="2" FadeOutTime="0.2" WwiseData="true" />
     <!-- Search Sound files -->
- <!--    <Sound WwiseEvent="RIGHT_WING_SCRAPE" ContinuousStopDelay="0.25" FadeOutType="2" FadeOutTime="0.25"  WwiseData="true" NodeName="WING_RIGHT_AILERON"/>
+    <!-- <Sound WwiseEvent="RIGHT_WING_SCRAPE" ContinuousStopDelay="0.25" FadeOutType="2" FadeOutTime="0.25"  WwiseData="true" NodeName="WING_RIGHT_AILERON"/>
     <Sound WwiseEvent="LEFT_WING_SCRAPE" ContinuousStopDelay="0.25" FadeOutType="2" FadeOutTime="0.25"  WwiseData="true" NodeName="WING_LEFT_AILERON" />
     <Sound WwiseEvent="FUSELAGE_SCRAPE" ContinuousStopDelay="0.5" FadeOutType="1" FadeOutTime="0.1" WwiseData="true" /> -->
   </GroundSounds>
@@ -83,12 +83,9 @@
 
   </EngineSoundPresets>
 
-<!--     <Sound WwiseEvent="Combustion" ConeHeading="180" RPMMin="1" WwiseData="true" EngineIndex="2" >
-		<WwiseRTPC SimVar="GENERAL ENG COMBUSTION" Units="BOOL" Index="2" RTPCName="SIMVAR_GENERAL_ENG_COMBUSTION_A01_R4"/>
-	</Sound> -->
   <SimVarSounds>
 
-    <!-- CANOPY -->
+    <!-- CANOPY ========================================================================================== -->
     <Sound WwiseData="true" WwiseEvent="canopy_close_loop" Continuous="true" ViewPoint="Inside" LocalVar="CanopyOpen">
       <Range LowerBound="5" UpperBound="95" />
       <Requires LocalVar="CanopyCommand">
@@ -187,7 +184,7 @@
     </Sound>
 
   	<!-- FUELPUMP	========================================================================================== -->  
-    <!-- TO TEST (Index was 1) / Ok but shouldn't be continous -->
+    <!-- Ok but shouldn't be continous -->
     <Sound WwiseData="true"  WwiseEvent="fuel_pump1_on" NodeName="SwitchFuelShutoff" FadeOutType="2" FadeOutTime="0.2" SimVar="GENERAL ENG FUEL VALVE" Units="BOOLEAN" Index="1">
       <Range LowerBound="1"/>
 	    <WwiseRTPC SimVar="GENERAL ENG FUEL VALVE" Units="BOOLEAN" Index="1" RTPCName="SIMVAR_GENERAL_ENG_FUEL_PUMP_ON_INTERPOLATION_A1_R1"/>
@@ -247,10 +244,10 @@
 	  <Sound WwiseData="true" WwiseEvent="jpt_switch_on" Continuous="false" ViewPoint="Inside" NodeName="SwitchJPTLimiter" LocalVar="JPTLimiter">
       <Range UpperBound="0.5" />
     </Sound>
-	  <Sound WwiseData="true" WwiseEvent="starter_push_button_off" Continuous="false" ViewPoint="Inside" NodeName="SwitchStarter" SimVar="GENERAL ENGINE START" Units="BOOLEAN" Index="1">
+	  <Sound WwiseData="true" WwiseEvent="starter_push_button_off" Continuous="false" ViewPoint="Inside" NodeName="SwitchStarter" SimVar="GENERAL ENG STARTER" Units="BOOLEAN" Index="1">
       <Range LowerBound="0.5" />
     </Sound>
-	  <Sound WwiseData="true" WwiseEvent="starter_push_button_on" Continuous="false" ViewPoint="Inside" NodeName="SwitchStarter" SimVar="GENERAL ENGINE START" Units="BOOLEAN" Index="1">
+	  <Sound WwiseData="true" WwiseEvent="starter_push_button_on" Continuous="false" ViewPoint="Inside" NodeName="SwitchStarter" SimVar="GENERAL ENG STARTER" Units="BOOLEAN" Index="1">
       <Range UpperBound="0.5" />
     </Sound>
 	  <Sound WwiseData="true" WwiseEvent="fuel_cutoff_crossfeed_switch" Continuous="false" ViewPoint="Inside" NodeName="SwitchFuelDump" SimVar="FUEL DUMP SWITCH" Units="BOOLEAN" Index="0" />
@@ -347,24 +344,23 @@
       <Range UpperBound="0.5" />
     </Sound>
 
-    <!-- TO TEST (Index was 9) -->
-<!-- 	  <Sound WwiseEvent="fuel_transfert1" WwiseData="true" FadeOutType="2" FadeOutTime="0.2" SimVar="CIRCUIT ON" Units="BOOLEAN" Index="0">
+    <!-- TO TEST -->
+    <!-- <Sound WwiseEvent="fuel_transfert1" WwiseData="true" FadeOutType="2" FadeOutTime="0.2" SimVar="CIRCUIT ON" Units="BOOLEAN" Index="0">
       <Range LowerBound="1" />
     </Sound> -->
 
 		<!-- INTRUMENTS MISC ========================================================================================== --> 	
-<!-- 	  <Sound WwiseData="true" WwiseEvent="circuit_battery" SimVar="ELECTRICAL MASTER BATTERY" Units="BOOLEAN" NodeName="INSTRUMENT_KNOB_ATTITUDEINDICATOR" Index="0" FadeOutType="2" ContinuousStopDelay="4" FadeOutTime="4">
+    <!-- <Sound WwiseData="true" WwiseEvent="circuit_battery" SimVar="ELECTRICAL MASTER BATTERY" Units="BOOLEAN" NodeName="INSTRUMENT_KNOB_ATTITUDEINDICATOR" Index="0" FadeOutType="2" ContinuousStopDelay="4" FadeOutTime="4">
 	    <WwiseRTPC SimVar="ELECTRICAL MASTER BATTERY" Units="BOOLEAN" Index="0" RTPCName="SIMVAR_ELECTRICAL_MASTER_BATTERY_INTERPOLATION_A4_R4" />
       <Range LowerBound="1.0" />
-    </Sound>  -->
+    </Sound> -->
 	
   	<!-- RAIN ========================================================================================== --> 
-<!-- 	
-    <Sound WwiseData="true" WwiseEvent="rain_sound" SimVar="AMBIENT PRECIP RATE" Units="millimeters of water" Index="0"> 
-		<Range LowerBound="0.1" />
+    <!-- <Sound WwiseData="true" WwiseEvent="rain_sound" SimVar="AMBIENT PRECIP RATE" Units="millimeters of water" Index="0"> 
+		  <Range LowerBound="0.1" />
 	    <WwiseRTPC SimVar="AMBIENT PRECIP RATE" Units="millimeters of water" Index="0" RTPCName="SIMVAR_AMBIENT_PRECIP_RATE"/> 
         <WwiseRTPC SimVar="AIRSPEED TRUE" Units="KNOTS" Index="0" RTPCName="SIMVAR_AIRSPEED_TRUE"/> 
-    </Sound>  -->
+    </Sound> -->
 
   </SimVarSounds>
 
