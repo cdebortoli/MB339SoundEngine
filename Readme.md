@@ -15,6 +15,10 @@ Instructions :
 \Community\indiafoxtecho-indiafoxtecho_mb339pan\SimObjects\Airplanes\IndiaFoxtEcho_MB339PAN\sound
 \Community\indiafoxtecho-indiafoxtecho_mb339pan\SimObjects\Airplanes\IndiaFoxtEcho_MB339A\sound
 
+2) Rename this two folders from "sound" to "sound_old"
+3) Add in IndiaFoxtEcho_MB339PAN and IndiaFoxtEcho_MB339A folders the Sound folder from the mod.
+4) Locate the layout.json file (\Community\indiafoxtecho-indiafoxtecho_mb339pan\layout.json) and rename it to "layout.json.old".
+5) Add the layout.json file from the mod in the \Community\indiafoxtecho-indiafoxtecho_mb339pan\ folder.
 
 
 TODO:
