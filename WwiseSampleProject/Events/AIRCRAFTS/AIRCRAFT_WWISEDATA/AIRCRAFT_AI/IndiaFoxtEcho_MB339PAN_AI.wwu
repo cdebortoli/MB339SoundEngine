@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{170B087D-9B30-441B-9B75-D04F25FE30A5}" SchemaVersion="97">
+	<Events>
+		<WorkUnit Name="IndiaFoxtEcho_MB339PAN_AI" ID="{170B087D-9B30-441B-9B75-D04F25FE30A5}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="engine" ID="{EABE349A-8EB4-452A-A9BE-D4190303BCF9}" ShortID="884316548">
+					<ChildrenList>
+						<Event Name="Play_IndiaFoxtEcho_MB339PAN_ai_eng1_combustion" ID="{FD32F248-5CE3-4F4C-9C1A-AF5988E4B6C3}">
+							<ChildrenList>
+								<Action Name="" ID="{084AE1C3-420C-473B-B4B1-F0C73500407E}" ShortID="328605538">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="combustion" ID="{2E530B53-B714-4B5C-9F99-F4B9EEDFD33A}" WorkUnitID="{5B14FF0D-43E9-4057-82FA-9515C682350A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_IndiaFoxtEcho_MB339PAN_ai_eng1_jet_whine" ID="{062A7EF0-8FBD-41E5-9739-62A6A5DAF182}">
+							<ChildrenList>
+								<Action Name="" ID="{8DE09DDB-5E62-45DB-9EF2-9D5A218EE0BA}" ShortID="959938078">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="jet_whine_outside_jet" ID="{94DB3B09-2AA8-4EE6-BEE1-9756193D9335}" WorkUnitID="{5B14FF0D-43E9-4057-82FA-9515C682350A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_IndiaFoxtEcho_MB339PAN_ai_eng1_combustion_start" ID="{73D6AC36-E796-4D96-B7C8-1D690DFAC759}">
+							<ChildrenList>
+								<Action Name="" ID="{0A5A7819-B8A4-4FA6-B862-32C8ECB5532B}" ShortID="815560616">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="FadeInCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="combustion_start" ID="{D251F14D-3DBF-4ADD-949A-6247E27482F8}" WorkUnitID="{5B14FF0D-43E9-4057-82FA-9515C682350A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_IndiaFoxtEcho_MB339PAN_ai_eng1_shutdown" ID="{744AA572-117E-46FA-9EEF-1826CDB50A4A}">
+							<ChildrenList>
+								<Action Name="" ID="{2E2AB374-BDDA-4BCD-9BCE-7EA2E0D880E7}" ShortID="150915113">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="FadeInCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="shutdown" ID="{3FF5FE11-D5AC-4B80-B797-CF8BD7A23985}" WorkUnitID="{5B14FF0D-43E9-4057-82FA-9515C682350A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_IndiaFoxtEcho_MB339PAN_ai_eng1_starter" ID="{BF18827E-4F0D-41B2-9D01-EEE6B91DC219}">
+							<ChildrenList>
+								<Action Name="" ID="{3FD9F1D3-85B9-436C-91A6-8AD1CB113E36}" ShortID="220614780">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="FadeInCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="starter" ID="{2227A252-F579-4C12-B4DF-99BA67322C4F}" WorkUnitID="{5B14FF0D-43E9-4057-82FA-9515C682350A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="ground" ID="{AA507BD9-F2F2-4673-A918-A60F5911F345}" ShortID="275892882">
+					<ChildrenList>
+						<Event Name="Play_IndiaFoxtEcho_MB339PAN_ai_right_touchdown" ID="{307C929E-B1D0-48BF-8A14-6895CC24BC7E}">
+							<ChildrenList>
+								<Action Name="" ID="{3FEDAA5D-8390-40B6-8CBC-397AF15F281E}" ShortID="416956901">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ground_touchdown_concrete" ID="{D71376B5-5CB7-4EB2-BBA5-82796388A463}" WorkUnitID="{5B14FF0D-43E9-4057-82FA-9515C682350A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_IndiaFoxtEcho_MB339PAN_ai_center_touchdown" ID="{1AEEBC45-A4F2-4F0B-8201-140B37028FC9}">
+							<ChildrenList>
+								<Action Name="" ID="{C0DE724C-41E0-4769-BB08-67BD1B209B13}" ShortID="207871147">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ground_touchdown_concrete" ID="{D71376B5-5CB7-4EB2-BBA5-82796388A463}" WorkUnitID="{5B14FF0D-43E9-4057-82FA-9515C682350A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_IndiaFoxtEcho_MB339PAN_ai_left_touchdown" ID="{84A69875-459B-4CD3-BBC4-6946C31680CC}">
+							<ChildrenList>
+								<Action Name="" ID="{1511D101-72F9-4394-BEE3-495DE02DA4D0}" ShortID="32477441">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ground_touchdown_concrete" ID="{D71376B5-5CB7-4EB2-BBA5-82796388A463}" WorkUnitID="{5B14FF0D-43E9-4057-82FA-9515C682350A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

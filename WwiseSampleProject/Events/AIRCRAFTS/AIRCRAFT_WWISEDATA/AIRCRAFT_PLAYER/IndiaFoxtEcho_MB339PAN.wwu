@@ -228,11 +228,6 @@
 								<Action Name="" ID="{ECBDDED0-F3F5-4CBB-86DE-8C5146E50C0E}" ShortID="280803921">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">

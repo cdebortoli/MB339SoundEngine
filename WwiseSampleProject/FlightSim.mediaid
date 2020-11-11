@@ -8340,6 +8340,10 @@
             <MediaID ID="858638435" />
             <Hash Platform="Windows" Value="2161346312" />
           </WObject>
+          <WObject ID="{8061EFAA-4BAA-4882-A3A4-A54C8FAE224C}">
+            <MediaID ID="858638435" />
+            <Hash Platform="Windows" Value="2161346312" />
+          </WObject>
           <WObject ID="{ABB58811-A587-4886-9992-38D8CF1540B5}">
             <MediaID ID="858638435" />
             <Hash Platform="Windows" Value="2161346312" />
@@ -8398,6 +8402,10 @@
             <MediaID ID="376557657" />
             <Hash Platform="Windows" Value="971921990" />
           </WObject>
+          <WObject ID="{172F0C69-7B94-4A16-B730-0E7E6D8E04CD}">
+            <MediaID ID="376557657" />
+            <Hash Platform="Windows" Value="971921990" />
+          </WObject>
           <WObject ID="{EF779D45-F625-4BEC-9624-03951C7B8DC2}">
             <MediaID ID="376557657" />
             <Hash Platform="Windows" Value="971921990" />
@@ -8423,6 +8431,10 @@
           <WObject ID="{3F476370-BC78-4285-B1ED-0C5D93FB570A}">
             <MediaID ID="421321684" />
             <Hash Platform="Windows" Value="1990975733" />
+          </WObject>
+          <WObject ID="{4B1650EF-9C9A-43B8-91F1-6901CB0BFB0E}">
+            <MediaID ID="570096822" />
+            <Hash Platform="Windows" Value="1534318977" />
           </WObject>
           <WObject ID="{C250C6EF-D497-4441-84E7-66E9F4EBD750}">
             <MediaID ID="570096822" />
@@ -8467,6 +8479,10 @@
         </File>
         <File Name="Sample_Aircraft_Piston_touchdown_squeak_04.wav">
           <WObject ID="{C504AE0C-6773-4051-8FC8-71FAF1BF8D61}">
+            <MediaID ID="1071205572" />
+            <Hash Platform="Windows" Value="4098221674" />
+          </WObject>
+          <WObject ID="{88109E14-BB42-414D-90E5-6AFF13CE8551}">
             <MediaID ID="1071205572" />
             <Hash Platform="Windows" Value="4098221674" />
           </WObject>
@@ -8528,6 +8544,10 @@
             <MediaID ID="583103062" />
             <Hash Platform="Windows" Value="1331344656" />
           </WObject>
+          <WObject ID="{63B39993-CBCE-443F-BF5D-96B7561B705B}">
+            <MediaID ID="583103062" />
+            <Hash Platform="Windows" Value="1331344656" />
+          </WObject>
           <WObject ID="{F5A2C3D7-2562-4539-9F6A-5229503A4933}">
             <MediaID ID="583103062" />
             <Hash Platform="Windows" Value="1331344656" />
@@ -8578,6 +8598,10 @@
           </WObject>
         </File>
         <File Name="x_MB326_comb_0.wav">
+          <WObject ID="{A6DE11E7-F9B3-4480-A6E9-610C77A8DEA7}">
+            <MediaID ID="158262831" />
+            <Hash Platform="Windows" Value="1069876237" />
+          </WObject>
           <WObject ID="{BAA8FE50-3FF8-458C-8969-6B251C0758DD}">
             <MediaID ID="158262831" />
             <Hash Platform="Windows" Value="1069876237" />
@@ -8592,9 +8616,17 @@
             <MediaID ID="770407345" />
             <Hash Platform="Windows" Value="1069876237" />
           </WObject>
+          <WObject ID="{5ED3C713-73C1-4FEF-8AC5-95BAA67F4B05}">
+            <MediaID ID="770407345" />
+            <Hash Platform="Windows" Value="1069876237" />
+          </WObject>
         </File>
         <File Name="x_MB326_comb_start.wav">
           <WObject ID="{4BD886F1-DF6A-4147-876C-A091F38C9B4D}">
+            <MediaID ID="699848468" />
+            <Hash Platform="Windows" Value="2025688079" />
+          </WObject>
+          <WObject ID="{D66E8356-A36E-4890-B1AE-2D40367BD920}">
             <MediaID ID="699848468" />
             <Hash Platform="Windows" Value="2025688079" />
           </WObject>
@@ -8604,9 +8636,17 @@
             <MediaID ID="1001287674" />
             <Hash Platform="Windows" Value="1069876237" />
           </WObject>
+          <WObject ID="{EAB23340-AB4F-4FB2-97FB-A2690DBE4916}">
+            <MediaID ID="1001287674" />
+            <Hash Platform="Windows" Value="1069876237" />
+          </WObject>
         </File>
         <File Name="x_MB326_full.wav">
           <WObject ID="{1BE3A597-AD98-4AFF-A10E-17B3E4E45F22}">
+            <MediaID ID="243553611" />
+            <Hash Platform="Windows" Value="1069876237" />
+          </WObject>
+          <WObject ID="{C0777D9A-050C-4D06-A6BB-FC15B49546E0}">
             <MediaID ID="243553611" />
             <Hash Platform="Windows" Value="1069876237" />
           </WObject>
@@ -8616,11 +8656,23 @@
             <MediaID ID="554025227" />
             <Hash Platform="Windows" Value="2025688079" />
           </WObject>
+          <WObject ID="{741259B5-AFEC-4D49-875E-85D3749F13B3}">
+            <MediaID ID="554025227" />
+            <Hash Platform="Windows" Value="2025688079" />
+          </WObject>
         </File>
         <File Name="x_MB326_starter.wav">
+          <WObject ID="{D4FA838A-2D59-45A8-B81E-0D44564C4769}">
+            <MediaID ID="840482445" />
+            <Hash Platform="Windows" Value="3727849529" />
+          </WObject>
           <WObject ID="{FA8FBE57-FD6F-4DA5-BEC5-F42AE8FBA823}">
             <MediaID ID="840482445" />
             <Hash Platform="Windows" Value="3727849529" />
+          </WObject>
+          <WObject ID="{1336802F-E64B-4F3F-BAD8-7BD7BB73AD83}">
+            <MediaID ID="16554997" />
+            <Hash Platform="Windows" Value="1157335514" />
           </WObject>
           <WObject ID="{7662431C-437E-4F98-B34E-B9C0CE19BB1B}">
             <MediaID ID="16554997" />
@@ -8632,8 +8684,16 @@
             <MediaID ID="402039410" />
             <Hash Platform="Windows" Value="1069876237" />
           </WObject>
+          <WObject ID="{87BDFC56-FA4B-4EE1-8BD5-2825437235F1}">
+            <MediaID ID="402039410" />
+            <Hash Platform="Windows" Value="1069876237" />
+          </WObject>
         </File>
         <File Name="x_MB326_whine_1.wav">
+          <WObject ID="{C91F48B9-0EB8-4264-B747-D912DA4A9E7D}">
+            <MediaID ID="170593576" />
+            <Hash Platform="Windows" Value="1069876237" />
+          </WObject>
           <WObject ID="{FCB8E8A2-D87B-489C-8DAD-9CEB264BDBD5}">
             <MediaID ID="170593576" />
             <Hash Platform="Windows" Value="1069876237" />
@@ -8641,6 +8701,10 @@
         </File>
         <File Name="x_MB326_whine_2.wav">
           <WObject ID="{221A58BC-77B1-4931-A6C9-2A39FA467D21}">
+            <MediaID ID="1019604987" />
+            <Hash Platform="Windows" Value="1069876237" />
+          </WObject>
+          <WObject ID="{3F0ADE9A-6108-4F9C-BBE9-0CC990EC29F7}">
             <MediaID ID="1019604987" />
             <Hash Platform="Windows" Value="1069876237" />
           </WObject>

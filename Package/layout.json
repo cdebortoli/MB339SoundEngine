@@ -196,6 +196,16 @@
       "date": 132456751666312794
     },
     {
+      "path": "SimObjects/Airplanes/IndiaFoxtEcho_MB339A/soundai/IndiaFoxtEcho_MB339PAN_AI.PC.PCK",
+      "size": 2059175,
+      "date": 132456751666312794
+    },
+    {
+      "path": "SimObjects/Airplanes/IndiaFoxtEcho_MB339A/soundai/soundai.xml",
+      "size": 1439,
+      "date": 132456751666312794
+    },
+    {
       "path": "SimObjects/Airplanes/IndiaFoxtEcho_MB339A/systems.cfg",
       "size": 12711,
       "date": 132467258610469979
@@ -1128,6 +1138,16 @@
     {
       "path": "SimObjects/Airplanes/IndiaFoxtEcho_MB339PAN/sound/sound.xml",
       "size": 29122,
+      "date": 132456751666312794
+    },
+    {
+      "path": "SimObjects/Airplanes/IndiaFoxtEcho_MB339PAN/soundai/IndiaFoxtEcho_MB339PAN_AI.PC.PCK",
+      "size": 2059175,
+      "date": 132456751666312794
+    },
+    {
+      "path": "SimObjects/Airplanes/IndiaFoxtEcho_MB339PAN/soundai/soundai.xml",
+      "size": 1439,
       "date": 132456751666312794
     },
     {

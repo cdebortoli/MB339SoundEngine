@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright (c) Asobo Studio, All rights reserved. www.asobostudio.com -->
+
+<SoundInfo Version="0.1">
+
+	<WwisePackages>
+		<MainPackage Name="IndiaFoxtEcho_MB339PAN_AI"/>
+	</WwisePackages>
+
+  <GroundSounds>
+    <Sound WwiseEvent="CENTER_TOUCHDOWN" FadeOutType="2" FadeOutTime="0.5" WwiseData="true" />
+	  <Sound WwiseEvent="LEFT_TOUCHDOWN" FadeOutType="2" FadeOutTime="0.5" WwiseData="true" />  
+    <Sound WwiseEvent="RIGHT_TOUCHDOWN" FadeOutType="2" FadeOutTime="0.5" WwiseData="true" />
+  </GroundSounds>
+
+  <EngineSoundPresets>
+
+    <Sound WwiseEvent="Starter" FadeOutType="2" FadeOutTime="0.1" WwiseData="true" EngineIndex="1" >  
+    </Sound>
+    <Sound WwiseEvent="CombustionStart" FadeOutType="2" FadeOutTime="0.5" ConeHeading="180"  WwiseData="true" EngineIndex="1" >  
+	  </Sound>
+    <Sound WwiseEvent="Combustion" FadeOutType="2" FadeOutTime="0.1" ConeHeading="180" RPMMin="5500" FadeOutType="2" FadeOutTime="0.5" WwiseData="true" EngineIndex="1">
+      <WwiseRTPC SimVar="TURB ENG N1" Units="PERCENT" Index="1" RTPCName="SIMVAR_TURB_ENG_N1" />
+	  </Sound>
+    <Sound WwiseEvent="Shutdown" ConeHeading="180" RPMMin="5500" WwiseData="true" EngineIndex="1" > 
+	  </Sound>
+    <Sound WwiseEvent="JetWhine" FadeOutType="2" FadeOutTime="0.1" ConeHeading="180" RPMMin="5500" WwiseData="true" EngineIndex="1">
+    </Sound>
+
+  </EngineSoundPresets>
+
+</SoundInfo>

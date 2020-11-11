@@ -11,6 +11,14 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
+				<SoundBank Name="IndiaFoxtEcho_MB339PAN_AI" ID="{5E513659-12A1-4E02-AF0A-103B3695696B}">
+					<ObjectInclusionList>
+						<ObjectRef Name="meter_sc_combustion_start" ID="{538F305F-B530-4259-A188-3F716F384844}" WorkUnitID="{CFF7735B-DE85-4371-8F61-84A56DE57A8B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="IndiaFoxtEcho_MB339PAN_AI" ID="{170B087D-9B30-441B-9B75-D04F25FE30A5}" WorkUnitID="{170B087D-9B30-441B-9B75-D04F25FE30A5}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>
