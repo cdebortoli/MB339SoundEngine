@@ -21,7 +21,7 @@
       <WwiseRTPC SimVar="ROTATION VELOCITY BODY Z" Units="PERCENT" Index="0" RTPCName="SIMVAR_ROTATION_VELOCITY_BODY_Z"/>            
     </Sound>    
 
-    <Sound WwiseData="true" WwiseEvent="YOKE_MOVEMENT" ViewPoint="Inside" NodeName="HANDLING_YOKE">
+    <Sound WwiseData="true" WwiseEvent="YOKE_MOVEMENT" ViewPoint="Inside" NodeName="ControlStick">
       <WwiseRTPC SimVar="YOKE X POSITION" Units="PERCENT" Index="0" Derived="true" RTPCName="SIMVAR_YOKE_X_POSITION_DERIVED"/>
       <WwiseRTPC SimVar="YOKE Y POSITION" Units="PERCENT" Index="0" Derived="true" RTPCName="SIMVAR_YOKE_Y_POSITION_DERIVED"/>
     </Sound>
@@ -367,9 +367,5 @@
     </Sound>  -->
 
   </SimVarSounds>
-
-<!--   <AnimationSounds>     
-    <Sound WwiseData="true" WwiseEvent="canopy_close" ViewPoint="Inside" />  
-  </AnimationSounds> -->
 
 </SoundInfo>
