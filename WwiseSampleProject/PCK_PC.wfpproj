@@ -58,7 +58,7 @@
           <ContentItemBase Id="0" Language="" FileName="" />
         </LayoutItems>
       </Package>
-      <Package Id="0d890e39-02fd-4e5f-9b55-70bc8ad317e8" Name="IndiaFoxtEcho_MB339PAN_AI.PC.pck">
+      <Package Id="0d890e39-02fd-4e5f-9b55-70bc8ad317e8" Name="IndiaFoxtEcho_MB339PAN_AI.PC.PCK">
         <Items>
           <PackageContentItem Id="883427871" Language="SFX" FileName="IndiaFoxtEcho_MB339PAN_AI" InclusionMode="BankAndStreamsAndLooseMedia" />
         </Items>
