@@ -20,8 +20,3 @@ Installation:
 4) Add in IndiaFoxtEcho_MB339PAN and IndiaFoxtEcho_MB339A folders the Soundai folder from the mod.
 5) Locate the layout.json file (\Community\indiafoxtecho-indiafoxtecho_mb339pan\layout.json) and rename it to "layout.json.old".
 6) Add the layout.json file from the mod in the \Community\indiafoxtecho-indiafoxtecho_mb339pan\ folder.
-
-
-TODO:
-- Rain.
-- Fuel transfer.
